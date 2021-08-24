@@ -3,38 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/BookMyShow/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18888888888888888" />
-        <entry key="..\:/BookMyShow/app/src/main/res/drawable/bookmyshow_icon.xml" value="0.25" />
-        <entry key="..\:/BookMyShow/app/src/main/res/drawable/bookmyshow_logo.xml" value="0.13333333333333333" />
-        <entry key="..\:/BookMyShow/app/src/main/res/drawable/buzz_bookmark_icon.xml" value="0.18888888888888888" />
-        <entry key="..\:/BookMyShow/app/src/main/res/drawable/buzz_heart_icon.xml" value="0.18888888888888888" />
-        <entry key="..\:/BookMyShow/app/src/main/res/drawable/buzz_icon.xml" value="0.1265625" />
-        <entry key="..\:/BookMyShow/app/src/main/res/drawable/buzz_share_icon.xml" value="0.18888888888888888" />
-        <entry key="..\:/BookMyShow/app/src/main/res/drawable/profile_icon.xml" value="0.1265625" />
-        <entry key="..\:/BookMyShow/app/src/main/res/drawable/profile_top_bar_icon.xml" value="0.18888888888888888" />
-        <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_home.xml" value="0.1272644927536232" />
-        <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_main.xml" value="0.18" />
-        <entry key="..\:/BookMyShow/app/src/main/res/layout/buzz_item_layout.xml" value="0.17" />
-        <entry key="..\:/BookMyShow/app/src/main/res/layout/custom_tab.xml" value="0.1094224924012158" />
-        <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_buzz.xml" value="0.17" />
-        <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_home.xml" value="0.17" />
-        <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_profile.xml" value="0.21" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/entertainment_layout.xml" value="0.16" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_first_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_second_layout.xml" value="0.18" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streamingevents_layout.xml" value="0.18" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="openjdk-16" project-jdk-type="JavaSDK">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/bookmyshow_logo.xml" value="0.2703125" />
-        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/btnshape.xml" value="0.1" />
-        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_login_screen.xml" value="0.264" />
-        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_select_language.xml" value="0.264" />
-      </map>
-    </option>
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
