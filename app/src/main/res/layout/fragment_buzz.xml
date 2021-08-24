@@ -7,7 +7,7 @@
     tools:context=".BuzzFragment">
 
     <View
-        android:id="@+id/vTopBarItAllStartsHere"
+        android:id="@+id/vTopBarBuzz"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#152238"
@@ -26,7 +26,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@id/vTopBarItAllStartsHere" />
+        app:layout_constraintTop_toTopOf="@id/vTopBarBuzz" />
 
     <TextView
         android:layout_width="wrap_content"
