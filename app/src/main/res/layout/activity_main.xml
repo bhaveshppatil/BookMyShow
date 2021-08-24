@@ -42,7 +42,7 @@
         <com.smarteist.autoimageslider.SliderView
             android:id="@+id/image_slider_two"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="460dp"
             app:sliderAnimationDuration="200"
             app:sliderAutoCycleDirection="right"
             app:sliderAutoCycleEnabled="false"
@@ -75,10 +75,31 @@
            android:layout_height="wrap_content"
            android:layout_width="match_parent"
            layout="@layout/entertainment_layout"/>
-
-
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Streaming Events"
+            android:textColor="#353935"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All >"
+                android:textColor="#FA5F55"
+                android:textSize="13dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="50dp"/>
+        </LinearLayout>
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/streamingevents_layout"/>
     </LinearLayout>
-
-
 </ScrollView>
