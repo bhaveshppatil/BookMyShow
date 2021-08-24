@@ -2,8 +2,6 @@ package com.example.bookmyshow;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.graphics.Color;
@@ -40,9 +38,9 @@ public class HomeActivity extends AppCompatActivity {
 
         tabLayout.setupWithViewPager(viewPager);
 
-        tabLayout.getTabAt(0).setIcon(R.drawable.bookmyshow_icon);
-        tabLayout.getTabAt(1).setIcon(R.drawable.buzz_icon);
-        tabLayout.getTabAt(2).setIcon(R.drawable.profile_icon);
+        tabLayout.getTabAt(0).setIcon(R.drawable.home_bookmyshow_icon);
+        tabLayout.getTabAt(1).setIcon(R.drawable.home_buzz_icon);
+        tabLayout.getTabAt(2).setIcon(R.drawable.home_profile_icon);
         tabLayout.getTabAt(0).setText("Home");
         tabLayout.getTabAt(1).setText("Buzz");
         tabLayout.getTabAt(2).setText("Profile");
