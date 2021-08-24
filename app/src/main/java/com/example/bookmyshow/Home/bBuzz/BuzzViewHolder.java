@@ -1,4 +1,4 @@
-package com.example.bookmyshow.Home.Buzz;
+package com.example.bookmyshow.Home.bBuzz;
 
 import android.view.View;
 import android.widget.ImageView;

@@ -1,4 +1,4 @@
-package com.example.bookmyshow.Home.Profile;
+package com.example.bookmyshow.Home.cProfile;
 
 import android.os.Bundle;
 
