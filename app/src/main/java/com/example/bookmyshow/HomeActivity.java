@@ -29,11 +29,11 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
                 if (position == 0)
-                    tab.setText("Names");
+                    tab.setText("Home");
                 else if (position == 1)
-                    tab.setText("Places");
+                    tab.setText("Buzz");
                 else if (position == 2)
-                    tab.setText("Tourism");
+                    tab.setText("Profile");
             }
         }).attach();
     }
