@@ -6,21 +6,18 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
-    private int[] tabIcons = {
-            R.drawable.bookmyshow_icon,
-            R.drawable.buzz_icon,
-            R.drawable.profile_icon
-    };
+
+    ViewPager viewPager;
+    TabLayout tabLayout;
+    ArrayList<Fragment> fragments;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,53 +25,46 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
-        setupViewPager(viewPager);
-
         tabLayout = (TabLayout) findViewById(R.id.tabs);
+
+        fragments = new ArrayList<>();
+
+        fragments.add(new HomeFragment());
+        fragments.add(new BuzzFragment());
+        fragments.add(new ProfileFragment());
+
+
+        FragmentAdapter pagerAdapter = new FragmentAdapter(getSupportFragmentManager(), getApplicationContext(), fragments);
+        viewPager.setAdapter(pagerAdapter);
+
         tabLayout.setupWithViewPager(viewPager);
-        setupTabIcons();
-    }
 
-    private void setupTabIcons() {
-        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
-        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
-        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
-    }
+        tabLayout.getTabAt(0).setIcon(R.drawable.bookmyshow_icon);
+        tabLayout.getTabAt(1).setIcon(R.drawable.buzz_icon);
+        tabLayout.getTabAt(2).setIcon(R.drawable.profile_icon);
+        tabLayout.getTabAt(0).setText("Home");
+        tabLayout.getTabAt(1).setText("Buzz");
+        tabLayout.getTabAt(2).setText("Profile");
 
-    private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new HomeFragment(), "Home");
-        adapter.addFrag(new BuzzFragment(), "Buzz");
-        adapter.addFrag(new ProfileFragment(), "Profile");
-        viewPager.setAdapter(adapter);
-    }
+        tabLayout.getTabAt(0).getIcon().setColorFilter(getResources().getColor(android.R.color.holo_red_light), PorterDuff.Mode.SRC_IN);
+        tabLayout.getTabAt(1).getIcon().setColorFilter(getResources().getColor(android.R.color.darker_gray), PorterDuff.Mode.SRC_IN);
+        tabLayout.getTabAt(2).getIcon().setColorFilter(getResources().getColor(android.R.color.darker_gray), PorterDuff.Mode.SRC_IN);
 
-    class ViewPagerAdapter extends FragmentPagerAdapter {
-        private final List<Fragment> mFragmentList = new ArrayList<>();
-        private final List<String> mFragmentTitleList = new ArrayList<>();
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                tabLayout.getTabAt(tab.getPosition()).getIcon().setColorFilter(getResources().getColor(android.R.color.holo_red_light), PorterDuff.Mode.SRC_IN);
+            }
 
-        public ViewPagerAdapter(FragmentManager manager) {
-            super(manager);
-        }
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                tabLayout.getTabAt(tab.getPosition()).getIcon().setColorFilter(getResources().getColor(android.R.color.darker_gray), PorterDuff.Mode.SRC_IN);
+            }
 
-        @Override
-        public Fragment getItem(int position) {
-            return mFragmentList.get(position);
-        }
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
 
-        @Override
-        public int getCount() {
-            return mFragmentList.size();
-        }
-
-        public void addFrag(Fragment fragment, String title) {
-            mFragmentList.add(fragment);
-            mFragmentTitleList.add(title);
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return mFragmentTitleList.get(position);
-        }
+            }
+        });
     }
 }
