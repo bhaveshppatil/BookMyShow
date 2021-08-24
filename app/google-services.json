@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "538754363910",
+    "project_id": "bookmyshow-demowork",
+    "storage_bucket": "bookmyshow-demowork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538754363910:android:dd7e84e7126420d4838987",
+        "android_client_info": {
+          "package_name": "com.example.bookmyshow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538754363910-ih22kmmpf8ot1skmbhhu4vgd5tdklg5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookmyshow",
+            "certificate_hash": "0039e88458390306b8b1203475c9e82a93c86bee"
+          }
+        },
+        {
+          "client_id": "538754363910-1g052k7r76h3iuf795nc2bsi6qmmj014.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfE-V_tpY6t161RFWUV1R7PlOtU6Ctb7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538754363910-1g052k7r76h3iuf795nc2bsi6qmmj014.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
