@@ -1,4 +1,4 @@
-package com.example.bookmyshow;
+package com.example.bookmyshow.Home;
 
 
 import android.content.Context;

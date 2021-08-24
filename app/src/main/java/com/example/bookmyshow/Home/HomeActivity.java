@@ -1,4 +1,4 @@
-package com.example.bookmyshow;
+package com.example.bookmyshow.Home;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 
+import com.example.bookmyshow.R;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
