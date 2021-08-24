@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 
+import com.example.bookmyshow.Home.Buzz.BuzzFragment;
 import com.example.bookmyshow.R;
 import com.google.android.material.tabs.TabLayout;
 
