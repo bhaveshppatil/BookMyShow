@@ -12,7 +12,7 @@ import com.example.bookmyshow.R;
 public class BuzzViewHolder extends RecyclerView.ViewHolder {
 
     private ImageView mIvBuzzImage;
-    private TextView mTvName, mTvAge, mTvDob, mTvAddress;
+    private TextView mTvBuzzTitle, mTvBuzzTime;
 
     public BuzzViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -21,12 +21,13 @@ public class BuzzViewHolder extends RecyclerView.ViewHolder {
 
     private void initViews(View itemView) {
         mIvBuzzImage = itemView.findViewById(R.id.ivBuzzImage);
-        mTvName = itemView.findViewById(R.id.tvBuzzTitle);
+        mTvBuzzTitle = itemView.findViewById(R.id.tvBuzzTitle);
+        mTvBuzzTime = itemView.findViewById(R.id.tvBuzzTime);
     }
 
     public void setData(BuzzModel buzzModel) {
         mIvBuzzImage.setImageResource(buzzModel.getBuzzImageId());
-        mTvName.setText(buzzModel.getBuzzTitle());
-
+        mTvBuzzTitle.setText(buzzModel.getBuzzTitle());
+        mTvBuzzTime.setText(buzzModel.getBuzzTime());
     }
 }
