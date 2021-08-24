@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">538754363910-1g052k7r76h3iuf795nc2bsi6qmmj014.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">538754363910</string>
+    <string name="google_api_key" translatable="false">AIzaSyBfE-V_tpY6t161RFWUV1R7PlOtU6Ctb7I</string>
+    <string name="google_app_id" translatable="false">1:538754363910:android:dd7e84e7126420d4838987</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBfE-V_tpY6t161RFWUV1R7PlOtU6Ctb7I</string>
+    <string name="google_storage_bucket" translatable="false">bookmyshow-demowork.appspot.com</string>
+    <string name="project_id" translatable="false">bookmyshow-demowork</string>
+</resources>

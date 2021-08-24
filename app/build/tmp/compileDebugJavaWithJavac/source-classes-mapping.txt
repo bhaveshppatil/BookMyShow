@@ -1,0 +1,35 @@
+com/example/bookmyshow/Home/Buzz/BuzzViewHolder.java
+ com.example.bookmyshow.Home.Buzz.BuzzViewHolder
+com/example/bookmyshow/Home/Buzz/BuzzModel.java
+ com.example.bookmyshow.Home.Buzz.BuzzModel
+com/example/bookmyshow/Home/Buzz/BuzzAdapter.java
+ com.example.bookmyshow.Home.Buzz.BuzzAdapter
+com/example/bookmyshow/Home/HomeActivity.java
+ com.example.bookmyshow.Home.HomeActivity
+ com.example.bookmyshow.Home.HomeActivity$1
+com/example/bookmyshow/Home/ProfileFragment.java
+ com.example.bookmyshow.Home.ProfileFragment
+com/example/bookmyshow/Home/HomeFragment.java
+ com.example.bookmyshow.Home.HomeFragment
+com/example/bookmyshow/BuildConfig.java
+ com.example.bookmyshow.BuildConfig
+com/example/bookmyshow/Home/Buzz/BuzzFragment.java
+ com.example.bookmyshow.Home.Buzz.BuzzFragment
+com/example/bookmyshow/Home/FragmentAdapter.java
+ com.example.bookmyshow.Home.FragmentAdapter
+com/example/bookmyshow/LoginScreen.java
+ com.example.bookmyshow.LoginScreen
+ com.example.bookmyshow.LoginScreen$1
+ com.example.bookmyshow.LoginScreen$2
+ com.example.bookmyshow.LoginScreen$3
+ com.example.bookmyshow.LoginScreen$4
+ com.example.bookmyshow.LoginScreen$5
+ com.example.bookmyshow.LoginScreen$6
+ com.example.bookmyshow.LoginScreen$7
+ com.example.bookmyshow.LoginScreen$8
+com/example/bookmyshow/SelectLanguage.java
+ com.example.bookmyshow.SelectLanguage
+ com.example.bookmyshow.SelectLanguage$1
+com/example/bookmyshow/MainActivity.java
+ com.example.bookmyshow.MainActivity
+ com.example.bookmyshow.MainActivity$1
