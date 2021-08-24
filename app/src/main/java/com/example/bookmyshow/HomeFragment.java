@@ -7,12 +7,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
+import com.smarteist.autoimageslider.SliderViewAdapter;
+
 import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
     SliderView sliderView;
     private ArrayList<Integer> list = new ArrayList<>();
-
+/*
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -30,5 +35,5 @@ public class HomeFragment extends Fragment {
         sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
         sliderView.startAutoCycle();
     }
-
+*/
 }

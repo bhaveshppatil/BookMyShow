@@ -2,4 +2,5 @@
     <string name="app_name">BookMyShow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="it_all_starts_here">It All Starts Here</string>
 </resources>
