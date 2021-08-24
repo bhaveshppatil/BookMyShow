@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "538754363910-ih22kmmpf8ot1skmbhhu4vgd5tdklg5o.apps.googleusercontent.com",
+          "client_id": "538754363910-duvn246cjuidh0fuprls8jpccl8k6mu9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookmyshow",
+            "certificate_hash": "cf3ba5210684af2f10eef4e2d2e0538fd93aa54d"
+          }
+        },
+        {
+          "client_id": "538754363910-qadegl4qll8l7k09l7ojlt0ruc2mopcb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.bookmyshow",
