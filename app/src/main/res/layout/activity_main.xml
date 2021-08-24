@@ -1,27 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<com.smarteist.autoimageslider.SliderView
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:id="@+id/image_slider"
-    app:sliderAnimationDuration="200"
-    app:sliderAutoCycleDirection="right"
-    app:sliderAutoCycleEnabled="false"
-    app:sliderIndicatorAnimationDuration="200"
-    app:sliderIndicatorGravity="center_horizontal|bottom"
-    app:sliderIndicatorMargin="20dp"
-    app:sliderIndicatorOrientation="horizontal"
-    app:sliderIndicatorPadding="3dp"
-    app:sliderIndicatorRadius="2dp"
-    app:sliderIndicatorSelectedColor="@color/white"
-    app:sliderIndicatorUnselectedColor="@color/black"
-    app:sliderScrollTimeInSec="2"
-    app:sliderStartAutoCycle="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:sliderAnimationDuration="200"
+                app:sliderAutoCycleDirection="right"
+                app:sliderAutoCycleEnabled="false"
+                app:sliderIndicatorAnimationDuration="200"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="20dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="@color/white"
+                app:sliderIndicatorUnselectedColor="#808080"
+                app:sliderScrollTimeInSec="2"
+                app:sliderStartAutoCycle="true" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/streamimage"/>
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/image_slider_two"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:sliderAnimationDuration="200"
+            app:sliderAutoCycleDirection="right"
+            app:sliderAutoCycleEnabled="false"
+            app:sliderIndicatorAnimationDuration="200"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="20dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="@color/white"
+            app:sliderIndicatorUnselectedColor="#808080"
+            app:sliderScrollTimeInSec="2"
+            app:sliderStartAutoCycle="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Best Of Entertainment"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#353935"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step out or stay in,interesting experience for everyone."
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+       <include
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           layout="@layout/entertainment_layout"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
