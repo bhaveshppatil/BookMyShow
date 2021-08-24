@@ -1,4 +1,4 @@
-package com.example.bookmyshow;
+package com.example.bookmyshow.Home.aMyHome;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.bookmyshow.R;
 import com.smarteist.autoimageslider.SliderViewAdapter;
 
 import java.util.ArrayList;
