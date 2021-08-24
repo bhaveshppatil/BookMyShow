@@ -1,4 +1,4 @@
-package com.example.bookmyshow.Home;
+package com.example.bookmyshow.Home.MyHome;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
