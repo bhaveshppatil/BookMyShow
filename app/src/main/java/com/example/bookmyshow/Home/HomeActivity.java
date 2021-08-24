@@ -8,9 +8,9 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 
-import com.example.bookmyshow.Home.Buzz.BuzzFragment;
-import com.example.bookmyshow.Home.MyHome.HomeFragment;
-import com.example.bookmyshow.Home.Profile.ProfileFragment;
+import com.example.bookmyshow.Home.bBuzz.BuzzFragment;
+import com.example.bookmyshow.Home.aMyHome.HomeFragment;
+import com.example.bookmyshow.Home.cProfile.ProfileFragment;
 import com.example.bookmyshow.R;
 import com.google.android.material.tabs.TabLayout;
 

@@ -1,4 +1,4 @@
-package com.example.bookmyshow.Home.Buzz;
+package com.example.bookmyshow.Home.bBuzz;
 
 public class BuzzModel {
     private int buzzImageId;
