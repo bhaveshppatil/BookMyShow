@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.bookmyshow.Home.HomeActivity;
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
@@ -51,7 +52,7 @@ public class LoginScreen extends AppCompatActivity {
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
         if (user != null) {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(LoginScreen.this, HomeActivity.class);
             startActivity(intent);
         }
     }
@@ -74,7 +75,6 @@ public class LoginScreen extends AppCompatActivity {
             public void onSuccess(LoginResult loginResult) {
                 Log.d(TAG, "onSuccess" + loginResult);
                 HandleFacebookToken(loginResult.getAccessToken());
-
             }
 
             @Override
@@ -126,6 +126,8 @@ public class LoginScreen extends AppCompatActivity {
                     Log.d(TAG, "Sign in credential successful");
                     FirebaseUser user = firebaseAuth.getCurrentUser();
                     Toast.makeText(LoginScreen.this, "Facebook Login Successful", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(LoginScreen.this, HomeActivity.class);
+                    startActivity(intent);
                 } else {
                     Log.d(TAG, "Sign in credential successful: Failed");
 
@@ -206,6 +208,8 @@ public class LoginScreen extends AppCompatActivity {
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(LoginScreen.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(LoginScreen.this, HomeActivity.class);
+                            startActivity(intent);
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
