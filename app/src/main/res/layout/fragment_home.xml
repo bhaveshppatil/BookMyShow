@@ -85,7 +85,7 @@
             <com.smarteist.autoimageslider.SliderView
                 android:id="@+id/image_slider_two"
                 android:layout_width="match_parent"
-                android:layout_height="460dp"
+                android:layout_height="370dp"
                 app:sliderAnimationDuration="200"
                 app:sliderAutoCycleDirection="right"
                 app:sliderAutoCycleEnabled="false"
@@ -114,10 +114,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:text="Step out or stay in,interesting experience for everyone." />
 
             <include
+                android:id="@+id/layoutEntertainment"
                 layout="@layout/entertainment_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -125,32 +126,40 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/onlineStreamingEvents"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
                     android:text="Online Streaming Events"
                     android:textColor="#353935"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
-                    android:layout_marginTop="40dp"
                     android:text="See All >"
+                    android:id="@+id/txtSeeAll"
                     android:textColor="#FA5F55"
-                    android:textSize="13dp" />
+                    android:textSize="15dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>
-
             <include
                 layout="@layout/streamingevents_layout"
                 android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/onlineStreamingEvents"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

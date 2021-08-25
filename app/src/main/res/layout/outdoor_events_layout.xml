@@ -19,20 +19,20 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/mic"/>
+                android:src="@drawable/jawaharlal"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="FrontRow Open \nMics"
-            android:textSize="15dp"
-            android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            android:layout_marginStart="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Comedy Shows"
+                android:text="Jawaharlal Nehru\nPlanetarium"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jawaharlal Nehru.."
                 android:textSize="15dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
@@ -49,18 +49,18 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/digitalmarketing"/>
+                android:src="@drawable/clubnight"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Digital Marketing \nCommunication"
+                android:text="CLUB NIGHTS"
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_marginStart="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Education"
+                android:text="IndigoXP :Bengaluru"
                 android:textSize="15dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
@@ -77,18 +77,18 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/vipulgoyal"/>
+                android:src="@drawable/mystory"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vipul Goyal \nLive"
+                android:text="Mystery Rooms-\nBangalore"
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_marginStart="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Stand up Comedy"
+                android:text="Mystery Rooms.."
                 android:textSize="15dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
@@ -105,18 +105,18 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/datascience"/>
+                android:src="@drawable/sitdown"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Digital Marketing \nCommunication"
+                android:text="Sit Down Buffet \nSultans"
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_marginStart="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Education"
+                android:text="Restaurant(Koraman..."
                 android:textSize="15dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
@@ -133,12 +133,12 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/algebra"/>
+                android:src="@drawable/wonderala"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FrontRow Open \nMics"
+                android:text="Wonderala Amusement\nPark ..."
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
@@ -146,7 +146,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Comedy Shows"
+                android:text="Park Bangalore..."
                 android:textSize="15dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
