@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -54,6 +55,7 @@
                 android:fontFamily="@font/basic"
                 android:paddingStart="30dp"
                 android:text="English"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <View
@@ -71,6 +73,7 @@
                 android:fontFamily="@font/basic"
                 android:paddingStart="30dp"
                 android:text="Hindi (हिंदी)"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <View
@@ -89,7 +92,7 @@
                 android:fontFamily="@font/basic"
                 android:paddingStart="30dp"
                 android:text="Marathi (मराठी)"
-
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <View
@@ -107,6 +110,7 @@
                 android:fontFamily="@font/basic"
                 android:paddingStart="30dp"
                 android:text="Tamil (தமிழ்)"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <View
@@ -124,6 +128,7 @@
                 android:fontFamily="@font/basic"
                 android:paddingStart="30dp"
                 android:text="Kannada (ಕನ್ನಡ)"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <View
@@ -141,7 +146,7 @@
                 android:fontFamily="@font/basic"
                 android:paddingStart="30dp"
                 android:text="Telugu (తెలుగు)"
-
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <View
@@ -159,6 +164,7 @@
                 android:fontFamily="@font/basic"
                 android:paddingStart="30dp"
                 android:text="Malayalam (മലയാളം)"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <View
