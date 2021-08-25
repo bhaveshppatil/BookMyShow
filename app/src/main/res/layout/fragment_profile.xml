@@ -16,14 +16,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvBuzz"
+        android:id="@+id/tvProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:drawableRight="@drawable/profile_top_bar_icon"
-        android:gravity="center_vertical"
         android:text="Hey!"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -31,5 +30,497 @@
         app:layout_constraintBottom_toBottomOf="@id/vTopBarProfile"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/vTopBarProfile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Edit Profile >"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/tvProfile"
+        app:layout_constraintLeft_toLeftOf="@id/tvProfile" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vTopBarProfile">
+
+        <RelativeLayout
+            android:id="@+id/profileRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/purchaseHistoryBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg" />
+
+            <ImageView
+                android:id="@+id/ivPurchaseHistory"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/purchaseHistoryBar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/profile_purchase_history" />
+
+            <TextView
+                android:id="@+id/tvPurchaseHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/purchaseHistoryBar"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ivPurchaseHistory"
+                android:text="Purchase History"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPurchaseHistoryDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPurchaseHistory"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/ivPurchaseHistory"
+                android:text="View all your booking &amp; purchases" />
+
+            <ImageView
+                android:id="@+id/ivRightArrow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/purchaseHistoryBar"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="206dp"
+                android:src="@drawable/arrow_right" />
+
+            <View
+                android:id="@+id/streamLibraryBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/purchaseHistoryBar"
+                android:background="@drawable/bg" />
+
+            <ImageView
+                android:id="@+id/ivStreamLibrary"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/streamLibraryBar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile_stream_library" />
+
+            <TextView
+                android:id="@+id/tvStreamLibrary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/streamLibraryBar"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ivStreamLibrary"
+                android:text="Stream Library"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvStreamLibraryDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvStreamLibrary"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/ivStreamLibrary"
+                android:text="Rented, Purchased and Downloaded movies" />
+
+            <ImageView
+                android:id="@+id/ivRightArrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/streamLibraryBar"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="206dp"
+                android:src="@drawable/arrow_right" />
+
+            <View
+                android:id="@+id/helpAndSupportBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/streamLibraryBar"
+                android:background="@drawable/bg" />
+
+            <ImageView
+                android:id="@+id/ivHelpAndSupport"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/helpAndSupportBar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile_help_and_support" />
+
+            <TextView
+                android:id="@+id/tvHelpAndSupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/helpAndSupportBar"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ivHelpAndSupport"
+                android:text="Help &amp; Support"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHelpAndSupportDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvHelpAndSupport"
+                android:layout_toRightOf="@id/ivHelpAndSupport"
+                android:text="View commonly asked queries and Chat" />
+
+            <ImageView
+                android:id="@+id/ivRightArrow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/helpAndSupportBar"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="206dp"
+                android:src="@drawable/arrow_right" />
+
+            <View
+                android:id="@+id/accountAndSettingBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/helpAndSupportBar"
+                android:background="@drawable/bg" />
+
+            <ImageView
+                android:id="@+id/ivAccountAndSetting"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/accountAndSettingBar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile_account_and_setting" />
+
+            <TextView
+                android:id="@+id/tvAccountAndSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/accountAndSettingBar"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ivAccountAndSetting"
+                android:text="Accounts &amp; Setting"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAccountAndSettingDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAccountAndSetting"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/ivAccountAndSetting"
+                android:text="Location, Payments, Addresses &amp; More" />
+
+            <ImageView
+                android:id="@+id/ivRightArrow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/accountAndSettingBar"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="206dp"
+                android:src="@drawable/arrow_right" />
+
+            <View
+                android:id="@+id/rewardsBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/accountAndSettingBar"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg" />
+
+            <ImageView
+                android:id="@+id/ivRewards"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/rewardsBar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile_rewards" />
+
+            <TextView
+                android:id="@+id/tvRewards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/rewardsBar"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ivRewards"
+                android:text="Rewards"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvRewardsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvRewards"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/ivRewards"
+                android:text="View your rewards &amp; unlock new ones" />
+
+            <ImageView
+                android:id="@+id/ivRightArrow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/rewardsBar"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="206dp"
+                android:src="@drawable/arrow_right" />
+
+            <View
+                android:id="@+id/offersBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/rewardsBar"
+                android:background="@drawable/bg" />
+
+            <ImageView
+                android:id="@+id/ivOffers"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/offersBar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile_offers" />
+
+            <TextView
+                android:id="@+id/tvOffers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/offersBar"
+                android:layout_alignBottom="@id/offersBar"
+                android:layout_toRightOf="@id/ivOffers"
+                android:gravity="center_vertical"
+                android:text="Offers"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivRightArrow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/offersBar"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="206dp"
+                android:src="@drawable/arrow_right" />
+
+
+            <View
+                android:id="@+id/giftCardsBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/offersBar"
+                android:background="@drawable/bg" />
+
+            <ImageView
+                android:id="@+id/ivGiftCards"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/giftCardsBar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile_gift_card" />
+
+            <TextView
+                android:id="@+id/tvGiftCards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/giftCardsBar"
+                android:layout_alignBottom="@id/giftCardsBar"
+                android:layout_toRightOf="@id/ivGiftCards"
+                android:gravity="center_vertical"
+                android:text="Gift Cards"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivRightArrow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/giftCardsBar"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="206dp"
+                android:src="@drawable/arrow_right" />
+
+            <View
+                android:id="@+id/foodAndBeveragesBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/giftCardsBar"
+                android:background="@drawable/bg" />
+
+            <ImageView
+                android:id="@+id/ivFoodAndBeverages"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/foodAndBeveragesBar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile_food_and_beverage" />
+
+            <TextView
+                android:id="@+id/tvFoodAndBeverages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/foodAndBeveragesBar"
+                android:layout_alignBottom="@id/foodAndBeveragesBar"
+                android:layout_toRightOf="@id/ivFoodAndBeverages"
+                android:gravity="center_vertical"
+                android:text="Food &amp; Beverages"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivRightArrow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/foodAndBeveragesBar"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="206dp"
+                android:src="@drawable/arrow_right" />
+
+
+            <View
+                android:id="@+id/listYourShowBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/foodAndBeveragesBar"
+                android:background="@drawable/bg" />
+
+            <ImageView
+                android:id="@+id/ivListYourShow"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/listYourShowBar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile_list_your_show" />
+
+            <TextView
+                android:id="@+id/tvListYourShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/listYourShowBar"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ivListYourShow"
+                android:text="List your Show"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvListYourShowDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvListYourShow"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/ivListYourShow"
+                android:text="Got an event? Partner with us" />
+
+            <ImageView
+                android:id="@+id/ivRightArrow9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/listYourShowBar"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="206dp"
+                android:src="@drawable/arrow_right" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_Share_RateUs_BookASmile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listYourShowBar"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="40dp"
+                    android:text="Share" />
+
+                <TextView
+                    android:id="@+id/tvRateUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="40dp"
+                    android:text="Rate Us" />
+
+                <TextView
+                    android:id="@+id/tvBookASmile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="40dp"
+                    android:text="book a smile" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout_Share_RateUs_BookASmile"
+                android:layout_alignBottom="@id/profileRelativeLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="200dp"
+                android:text="App Version: 9.2.0"
+                tools:ignore="NotSibling" />
+
+        </RelativeLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
