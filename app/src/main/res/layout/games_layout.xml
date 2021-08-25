@@ -19,12 +19,12 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/jawaharlal"/>
+                android:src="@drawable/clues"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jawaharlal Nehru\nPlanetarium"
+                android:text="Travelling clues\nOnline Games"
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
@@ -32,7 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jawaharlal Nehru.."
+                android:text="Multiple Venues"
                 android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
@@ -49,18 +49,18 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/clubnight"/>
+                android:src="@drawable/bgmi"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CLUB NIGHTS"
+                android:text="BGMI Tournament\nEvery Night"
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_marginStart="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="IndigoXP :Bengaluru"
+                android:text="Online(Play From... "
                 android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
@@ -77,18 +77,18 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/mystory"/>
+                android:src="@drawable/knight"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mystery Rooms-\nBangalore"
+                android:text="Knight Chess \nChampionship"
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_marginStart="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mystery Rooms.."
+                android:text="Online(Play From... "
                 android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
@@ -105,18 +105,18 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/sitdown"/>
+                android:src="@drawable/haunted"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Restaurant(Koraman..."
+                android:text="Online-Game\nThe Haunted"
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_marginStart="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sit Down Buffet \nSultans"
+                android:text="Online(Play From... "
                 android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
@@ -133,12 +133,12 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/wonderala"/>
+                android:src="@drawable/indianchess"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wonderala Amusement\nPark ..."
+                android:text="Indian Chess\nLeague 2021"
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
@@ -146,8 +146,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Park Bangalore..."
-                android:textSize="12dp"
+                android:text="Online(Play From... "
+                android:textSize="15dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>

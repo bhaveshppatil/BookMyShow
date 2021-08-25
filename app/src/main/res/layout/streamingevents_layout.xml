@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Comedy Shows"
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Education"
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
@@ -89,7 +89,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Stand up Comedy"
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
@@ -117,7 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Education"
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
@@ -147,7 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Comedy Shows"
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
