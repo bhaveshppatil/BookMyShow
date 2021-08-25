@@ -1,64 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@color/white">
+
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/streamingImage"
         android:layout_width="wrap_content"
         android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="10dp"
-        android:id="@+id/streamingImage"
+        android:src="@drawable/mic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearanceOverlay="@style/roundimageview"
-        android:src="@drawable/mic"/>
+        app:shapeAppearanceOverlay="@style/roundimageview" />
+
     <TextView
+        android:id="@+id/txtEventName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Event Name"
-        android:id="@+id/txtEventName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/streamingImage"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:text="Event Name"
         android:textColor="@color/black"
         android:textSize="15dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/streamingImage" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Event Type"
         android:id="@+id/txtEventType"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEventName"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="5dp"
-        android:textColor="@color/black"
-        android:textSize="10dp" />
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Where to Watch"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Event Type"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEventName" />
+
+    <TextView
         android:id="@+id/txtWhereToWatch"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEventType"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="5dp"
-        android:textColor="@color/black"
-        android:textSize="10dp" />
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Price"
-        android:id="@+id/txtPrice"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtWhereToWatch"
         android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
+        android:text="Where to Watch"
         android:textColor="@color/black"
-        android:textSize="10dp" />
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEventType" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWhereToWatch" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

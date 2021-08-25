@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".RegisterEvent.RegistrationFragment">
 
@@ -88,8 +89,8 @@
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
             android:text="I Agree to the Terms and Conditions"
             android:textSize="18sp" />
     </LinearLayout>
