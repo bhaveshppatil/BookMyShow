@@ -5,14 +5,24 @@
       <map>
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/bookmyshow_logo.xml" value="0.2703125" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/btnshape.xml" value="0.1" />
+        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/ic_baseline_thumb_up_24.xml" value="0.2703125" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_login_screen.xml" value="0.264" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_register_event.xml" value="0.264" />
+        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_select_date.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_select_language.xml" value="0.264" />
+        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/custom_tab.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/entertainment_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_buzz.xml" value="0.264" />
+        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_home.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_registration.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_select_date_time.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_select_ticket_quantuty.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/imageslider_first_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/imageslider_second_layout.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/select_ticket_quantity.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/streamingevents_layout.xml" value="0.25416666666666665" />
       </map>
     </option>
