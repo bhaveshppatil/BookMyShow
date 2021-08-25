@@ -7,7 +7,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.example.bookmyshow.Home.bBuzz.Network.models.Article;
+import com.example.bookmyshow.Home.bBuzz.Network.models.response.ArticleResponse;
 import com.example.bookmyshow.R;
+
+import java.util.ArrayList;
 
 public class BuzzViewHolder extends RecyclerView.ViewHolder {
 
@@ -25,9 +30,9 @@ public class BuzzViewHolder extends RecyclerView.ViewHolder {
         mTvBuzzTime = itemView.findViewById(R.id.tvBuzzTime);
     }
 
-    public void setData(BuzzModel buzzModel) {
-        mIvBuzzImage.setImageResource(buzzModel.getBuzzImageId());
-        mTvBuzzTitle.setText(buzzModel.getBuzzTitle());
-        mTvBuzzTime.setText(buzzModel.getBuzzTime());
+    public void setData(Article article) {
+        Glide.with(mIvBuzzImage).load(article.getUrlToImage()).into(mIvBuzzImage);
+        mTvBuzzTitle.setText(article.getTitle());
+        mTvBuzzTime.setText(article.getPublishedAt());
     }
 }

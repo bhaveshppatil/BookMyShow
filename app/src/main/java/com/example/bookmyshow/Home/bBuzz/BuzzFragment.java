@@ -12,14 +12,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.bookmyshow.Home.bBuzz.Network.models.Article;
+import com.example.bookmyshow.Home.bBuzz.Network.models.request.EverythingRequest;
+import com.example.bookmyshow.Home.bBuzz.Network.models.response.ArticleResponse;
 import com.example.bookmyshow.R;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class BuzzFragment extends Fragment {
 
     private RecyclerView hBuzzRecyclerView;
-    private ArrayList<BuzzModel> buzzList = new ArrayList<>();
+    private ArticleResponse articleResponse;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,24 +40,25 @@ public class BuzzFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         hBuzzRecyclerView = view.findViewById(R.id.buzzRecyclerView);
-        buildList();
-        setRecyclerView();
-    }
+        NewsApiClient newsApiClient = new NewsApiClient("265108157abf4886a7937bcb98778203");
+        newsApiClient.getEverything(
+                new EverythingRequest.Builder()
+                        .q("trump")
+                        .build(),
+                new NewsApiClient.ArticlesResponseCallback() {
+                    @Override
+                    public void onSuccess(ArticleResponse response) {
+                        BuzzAdapter buzzAdapter = new BuzzAdapter(response.getArticles());
+                        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+                        hBuzzRecyclerView.setLayoutManager(linearLayoutManager);
+                        hBuzzRecyclerView.setAdapter(buzzAdapter);
+                    }
 
-    private void setRecyclerView() {
-        BuzzAdapter buzzAdapter = new BuzzAdapter(buzzList);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        hBuzzRecyclerView.setLayoutManager(linearLayoutManager);
-        hBuzzRecyclerView.setAdapter(buzzAdapter);
+                    @Override
+                    public void onFailure(Throwable throwable) {
+                        System.out.println(throwable.getMessage());
+                    }
+                }
+        );
     }
-
-    private void buildList() {
-        for (int i = 0; i < 25; i++) {
-            BuzzModel buzzModel1 = new BuzzModel(R.drawable.kareena, "Kareena Kapoor's son Jeh gets a kiss from cousin Inaaya on his first Raksha Bandhan, see pic", "5 Hours ago");
-            buzzList.add(buzzModel1);
-            BuzzModel buzzModel2 = new BuzzModel(R.drawable.salman, "Trouble For CISF Officer Who Stopped Salman Khan at Mumbai Airport For Checking", "10 Hours ago");
-            buzzList.add(buzzModel2);
-        }
-    }
-
 }
