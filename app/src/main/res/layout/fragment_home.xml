@@ -77,15 +77,15 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="20dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/streamimage" />
+                android:src="@drawable/lead_in_v3_collection_202102040828" />
 
             <com.smarteist.autoimageslider.SliderView
                 android:id="@+id/image_slider_two"
                 android:layout_width="match_parent"
-                android:layout_height="460dp"
+                android:layout_height="380dp"
                 app:sliderAnimationDuration="200"
                 app:sliderAutoCycleDirection="right"
                 app:sliderAutoCycleEnabled="false"

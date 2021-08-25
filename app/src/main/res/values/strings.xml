@@ -6,4 +6,21 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="it_all_starts_here">It All Starts Here</string>
+
+    <string name="about">FrontRow Presents Daily Online Open Mic at 8 PM and 10 PM. Rest schedule is available on Front row Comedy Community Instagram Page.</string>
+    <string name="termsConditions">
+        1. Tickets once booked cannot be exchanged or refunded<br />
+
+        2. An Internet handling fee per ticket may be levied. Please check the total amount before payment<br />
+
+        3. Recording or uploading of this stream is not permitted. Strict action will be taken against those who break these guidelines.<br />
+
+        4. The time and date of the show may vary due to internet connectivity issues. In this case, the artist will share the revised date and/or timing at the earliest<br />
+
+        5. There may be interruptions in the stream due to internet connectivity issue. We suggest you to have good speed internet connectivity<br />
+
+        6. These terms and conditions are subject to change from time to time at the discretion of the organizer
+
+</string>
+
 </resources>
