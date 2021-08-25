@@ -1,9 +1,11 @@
 package com.example.bookmyshow.Home.aMyHome;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,8 +20,10 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
     SliderView sliderView, sliderView1;
+    private TextView seeAll;
     private ArrayList<Integer> list = new ArrayList<>();
     private ArrayList<imageSliderItem> items = new ArrayList<>();
+
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -27,14 +31,23 @@ public class HomeFragment extends Fragment {
         //setContentView(R.layout.activity_main);
         sliderView = view.findViewById(R.id.image_slider);
         sliderView1 = view.findViewById(R.id.image_slider_two);
+        seeAll=view.findViewById(R.id.txtSeeAll);
+        seeAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(),StreamingSeeAllActivity.class);
+                startActivity(intent);
+            }
+        });
         list.add(R.drawable.image1);
         list.add(R.drawable.image2);
         list.add(R.drawable.image3);
         setImges();
         setDataForSecondSlider();
         setSliderForSecond();
-
     }
+
+
 
     private void setSliderForSecond() {
         ImageSliderAdapter sliderAdapter = new ImageSliderAdapter(items);
@@ -63,5 +76,6 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
+
     }
 }
