@@ -1,4 +1,4 @@
-package com.example.bookmyshow.Home.bBuzz;
+package com.example.bookmyshow.Home.bBuzz.Network;
 
 import com.example.bookmyshow.Home.bBuzz.Network.APIClient;
 import com.example.bookmyshow.Home.bBuzz.Network.APIService;
@@ -45,7 +45,6 @@ public class NewsApiClient {
         void onFailure(Throwable throwable);
     }
 
-
     private Throwable errMsg(String str) {
         Throwable throwable = null;
         try {
@@ -58,8 +57,6 @@ public class NewsApiClient {
         if (throwable == null) {
             throwable = new Throwable("An error occured");
         }
-
-
         return throwable;
     }
 
@@ -69,16 +66,13 @@ public class NewsApiClient {
         return query;
     }
 
-
     //Get Sources
     public void getSources(SourcesRequest sourcesRequest, final SourcesCallback callback) {
         query = createQuery();
         query.put("category", sourcesRequest.getCategory());
         query.put("language", sourcesRequest.getLanguage());
         query.put("country", sourcesRequest.getCountry());
-
         query.values().removeAll(Collections.singleton(null));
-
 
         mAPIService.getSources(query)
                 .enqueue(new Callback<SourcesResponse>() {
@@ -102,9 +96,7 @@ public class NewsApiClient {
                 });
     }
 
-
     public void getTopHeadlines(TopHeadlinesRequest topHeadlinesRequest, final ArticlesResponseCallback callback) {
-
 
         query = createQuery();
         query.put("country", topHeadlinesRequest.getCountry());
@@ -114,11 +106,8 @@ public class NewsApiClient {
         query.put("q", topHeadlinesRequest.getQ());
         query.put("pageSize", topHeadlinesRequest.getPageSize());
         query.put("page", topHeadlinesRequest.getPage());
-
         query.values().removeAll(Collections.singleton(null));
         query.values().removeAll(Collections.singleton("null"));
-
-
         mAPIService.getTopHeadlines(query)
                 .enqueue(new Callback<ArticleResponse>() {
                     @Override
@@ -141,7 +130,6 @@ public class NewsApiClient {
                 });
     }
 
-
     public void getEverything(EverythingRequest everythingRequest, final ArticlesResponseCallback callback) {
         query = createQuery();
         query.put("q", everythingRequest.getQ());
@@ -153,10 +141,8 @@ public class NewsApiClient {
         query.put("sortBy", everythingRequest.getSortBy());
         query.put("pageSize", everythingRequest.getPageSize());
         query.put("page", everythingRequest.getPage());
-
         query.values().removeAll(Collections.singleton(null));
         query.values().removeAll(Collections.singleton("null"));
-
         mAPIService.getEverything(query)
                 .enqueue(new Callback<ArticleResponse>() {
                     @Override

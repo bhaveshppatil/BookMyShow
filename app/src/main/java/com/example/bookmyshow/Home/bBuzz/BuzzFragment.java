@@ -12,17 +12,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.bookmyshow.Home.bBuzz.Network.models.Article;
-import com.example.bookmyshow.Home.bBuzz.Network.models.request.EverythingRequest;
+import com.example.bookmyshow.Home.bBuzz.Network.NewsApiClient;
+import com.example.bookmyshow.Home.bBuzz.Network.models.request.TopHeadlinesRequest;
 import com.example.bookmyshow.Home.bBuzz.Network.models.response.ArticleResponse;
 import com.example.bookmyshow.R;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class BuzzFragment extends Fragment {
 
@@ -41,9 +34,12 @@ public class BuzzFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         hBuzzRecyclerView = view.findViewById(R.id.buzzRecyclerView);
         NewsApiClient newsApiClient = new NewsApiClient("265108157abf4886a7937bcb98778203");
-        newsApiClient.getEverything(
-                new EverythingRequest.Builder()
-                        .q("trump")
+        // /v2/top-headlines
+        newsApiClient.getTopHeadlines(
+                new TopHeadlinesRequest.Builder()
+                        .language("en")
+                        .country("in ")
+                        .category("entertainment")
                         .build(),
                 new NewsApiClient.ArticlesResponseCallback() {
                     @Override

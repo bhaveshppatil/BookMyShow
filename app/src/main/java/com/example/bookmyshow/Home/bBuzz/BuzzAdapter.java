@@ -1,6 +1,5 @@
 package com.example.bookmyshow.Home.bBuzz;
 
-import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,10 +8,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bookmyshow.Home.bBuzz.Network.models.Article;
-import com.example.bookmyshow.Home.bBuzz.Network.models.response.ArticleResponse;
 import com.example.bookmyshow.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class BuzzAdapter extends RecyclerView.Adapter<BuzzViewHolder> {

@@ -9,10 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.bookmyshow.Home.bBuzz.Network.models.Article;
-import com.example.bookmyshow.Home.bBuzz.Network.models.response.ArticleResponse;
 import com.example.bookmyshow.R;
-
-import java.util.ArrayList;
 
 public class BuzzViewHolder extends RecyclerView.ViewHolder {
 
