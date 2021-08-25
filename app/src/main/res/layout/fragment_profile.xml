@@ -493,7 +493,8 @@
                     android:id="@+id/tvShare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="50dp"
                     android:text="Share"
                     android:textColor="#808080" />
 
@@ -501,7 +502,11 @@
                     android:id="@+id/tvRateUs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="50dp"
                     android:text="Rate Us"
                     android:textColor="#808080" />
 
@@ -509,7 +514,7 @@
                     android:id="@+id/tvBookASmile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="40dp"
+                    android:layout_marginTop="50dp"
                     android:text="book a smile"
                     android:textColor="#808080" />
             </LinearLayout>
