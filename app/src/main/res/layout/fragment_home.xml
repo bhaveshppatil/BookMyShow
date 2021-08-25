@@ -77,7 +77,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="20dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/streamimage" />
@@ -85,7 +85,7 @@
             <com.smarteist.autoimageslider.SliderView
                 android:id="@+id/image_slider_two"
                 android:layout_width="match_parent"
-                android:layout_height="370dp"
+                android:layout_height="380dp"
                 app:sliderAnimationDuration="200"
                 app:sliderAutoCycleDirection="right"
                 app:sliderAutoCycleEnabled="false"

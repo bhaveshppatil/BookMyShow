@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "538754363910-g6v5f3airfm7duhafj3psi8r7qvoutvf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookmyshow",
+            "certificate_hash": "d7529b79e641baae401de98111ae29077957c97d"
+          }
+        },
+        {
           "client_id": "538754363910-qadegl4qll8l7k09l7ojlt0ruc2mopcb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

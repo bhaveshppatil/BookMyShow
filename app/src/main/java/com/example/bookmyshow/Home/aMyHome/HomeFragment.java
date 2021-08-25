@@ -1,17 +1,22 @@
 package com.example.bookmyshow.Home.aMyHome;
 
 import android.content.Intent;
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.bookmyshow.R;
+import com.example.bookmyshow.RegisterEvent.RegisterEvent;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
@@ -20,17 +25,30 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
     SliderView sliderView, sliderView1;
+    View layout;
+    LinearLayout linearLayout;
     private TextView seeAll;
     private ArrayList<Integer> list = new ArrayList<>();
     private ArrayList<imageSliderItem> items = new ArrayList<>();
 
 
+    @SuppressLint("ResourceType")
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //setContentView(R.layout.activity_main);
         sliderView = view.findViewById(R.id.image_slider);
         sliderView1 = view.findViewById(R.id.image_slider_two);
+        layout = view.findViewById(R.layout.streamingevents_layout);
+        linearLayout = view.findViewById(R.id.layoutFrontRow);
+
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), RegisterEvent.class);
+                startActivity(intent);
+            }
+        });
         seeAll=view.findViewById(R.id.txtSeeAll);
         seeAll.setOnClickListener(new View.OnClickListener() {
             @Override
