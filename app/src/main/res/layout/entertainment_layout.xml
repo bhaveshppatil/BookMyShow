@@ -13,11 +13,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
@@ -25,11 +25,11 @@
                 android:src="@drawable/workshop"/>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
@@ -37,11 +37,11 @@
                 android:src="@drawable/kidzone"/>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
@@ -49,11 +49,11 @@
                 android:src="@drawable/music"/>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
@@ -61,11 +61,11 @@
                 android:src="@drawable/upskill"/>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
@@ -73,11 +73,11 @@
                 android:src="@drawable/interactive"/>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
@@ -91,11 +91,11 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
@@ -103,11 +103,11 @@
                 android:src="@drawable/stayfit"/>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
@@ -115,11 +115,11 @@
                 android:src="@drawable/comedy"/>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
@@ -127,11 +127,11 @@
                 android:src="@drawable/esport"/>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
@@ -139,11 +139,11 @@
                 android:src="@drawable/food"/>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
@@ -151,11 +151,11 @@
                 android:src="@drawable/artandcraft"/>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             app:cardCornerRadius="10dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_height="150dp">
+            android:layout_height="120dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:scaleType="centerCrop"
