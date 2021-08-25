@@ -101,5 +101,32 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             layout="@layout/streamingevents_layout"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Outdoor Events"
+                android:textColor="#353935"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All >"
+                android:textColor="#FA5F55"
+                android:textSize="13dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="50dp"/>
+        </LinearLayout>
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/outdoor_event_layout"/>
+
     </LinearLayout>
 </ScrollView>
