@@ -33,12 +33,12 @@ public class BuzzFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         hBuzzRecyclerView = view.findViewById(R.id.buzzRecyclerView);
-        NewsApiClient newsApiClient = new NewsApiClient("265108157abf4886a7937bcb98778203");
+        NewsApiClient newsApiClient = new NewsApiClient("8e85a7edf08843158833434a0df50e20");
         // /v2/top-headlines
         newsApiClient.getTopHeadlines(
                 new TopHeadlinesRequest.Builder()
                         .language("en")
-                        .country("in ")
+                        .country("in")
                         .category("entertainment")
                         .build(),
                 new NewsApiClient.ArticlesResponseCallback() {
