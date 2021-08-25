@@ -494,21 +494,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="40dp"
-                    android:text="Share" />
+                    android:text="Share"
+                    android:textColor="#808080" />
 
                 <TextView
                     android:id="@+id/tvRateUs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="40dp"
-                    android:text="Rate Us" />
+                    android:text="Rate Us"
+                    android:textColor="#808080" />
 
                 <TextView
                     android:id="@+id/tvBookASmile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="40dp"
-                    android:text="book a smile" />
+                    android:text="book a smile"
+                    android:textColor="#808080" />
             </LinearLayout>
 
             <TextView
@@ -519,6 +522,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="200dp"
                 android:text="App Version: 9.2.0"
+                android:textColor="#808080"
                 tools:ignore="NotSibling" />
 
         </RelativeLayout>
