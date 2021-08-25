@@ -12,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class SelectLanguage extends AppCompatActivity {
+
     private Button btnStarted;
     private FirebaseAuth mAuth;
     private FirebaseAuth firebaseAuth;

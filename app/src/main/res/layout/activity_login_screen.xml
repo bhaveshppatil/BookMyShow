@@ -60,6 +60,7 @@
         android:layout_marginEnd="30dp"
         android:background="@drawable/btnshape"
         android:drawableEnd="@drawable/icons8_mail_50"
+        android:fontFamily="@font/averia_serif_libre"
         android:text="Continue With Email"
         android:textAllCaps="false"
         android:textColor="@color/black" />
