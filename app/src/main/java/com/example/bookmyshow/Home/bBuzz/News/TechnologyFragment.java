@@ -45,7 +45,7 @@ public class TechnologyFragment extends Fragment {
                 new NewsApiClient.ArticlesResponseCallback() {
                     @Override
                     public void onSuccess(ArticleResponse response) {
-                        BuzzAdapter buzzAdapter = new BuzzAdapter(response.getArticles());
+                        BuzzAdapter buzzAdapter = new BuzzAdapter(getContext(), response.getArticles());
                         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
                         hBuzzRecyclerView.setLayoutManager(linearLayoutManager);
                         hBuzzRecyclerView.setAdapter(buzzAdapter);

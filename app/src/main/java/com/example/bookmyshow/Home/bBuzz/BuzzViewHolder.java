@@ -1,5 +1,6 @@
 package com.example.bookmyshow.Home.bBuzz;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -8,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.bookmyshow.BuildConfig;
 import com.example.bookmyshow.Home.bBuzz.Network.models.Article;
 import com.example.bookmyshow.R;
 
