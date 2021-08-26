@@ -1,49 +1,95 @@
 package com.example.bookmyshow.RegisterEvent;
 
 import android.os.Bundle;
+import android.widget.FrameLayout;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.bookmyshow.R;
 import com.google.android.material.tabs.TabLayout;
-import com.google.android.material.tabs.TabLayoutMediator;
 
 
-public class SelectDate extends AppCompatActivity {
+public class SelectDate extends AppCompatActivity implements FragmentCommunication {
 
+    FragmentManager fragmentManager;
     private TabLayout tabLayout;
+    private FrameLayout frameLayout;
     private ViewPager2 viewPager2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_date);
-
-        tabLayout = findViewById(R.id.tabLayout);
-        viewPager2 = findViewById(R.id.viewPager);
-        setAdapter();
+        frameLayout = findViewById(R.id.fragment_container_view_tag);
+        launchDateTimeFrag();
     }
 
-    private void setAdapter() {
-        ViewPageAdapter viewPageAdapter = new ViewPageAdapter(getSupportFragmentManager(), getLifecycle());
-        viewPager2.setAdapter(viewPageAdapter);
-        new TabLayoutMediator(tabLayout, viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
-            @Override
-            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
-                switch (position) {
-                    case 0:
-                        tab.setText("Date & Time");
-                        break;
-                    case 1:
-                        tab.setText("Tickets");
-                        break;
-                    case 2:
-                        tab.setText("Registration");
-                        break;
-                }
-            }
-        }).attach();
+    private void launchDateTimeFrag() {
+        fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        SelectDateTime selectDateTime = new SelectDateTime();
+        fragmentTransaction.add(R.id.fragment_container_view_tag, selectDateTime, "selectDateTime").addToBackStack("addDate").commit();
+    }
+
+//    private void setAdapter() {
+//        ViewPageAdapter viewPageAdapter = new ViewPageAdapter(getSupportFragmentManager(), getLifecycle());
+//        viewPager2.setAdapter(viewPageAdapter);
+//        new TabLayoutMediator(tabLayout, viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
+//            @Override
+//            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+//                switch (position) {
+//                    case 0:
+//                        tab.setText("Date & Time");
+//                        break;
+//                    case 1:
+//                        tab.setText("Tickets");
+//                        break;
+//                    case 2:
+//                        tab.setText("Registration");
+//                        break;
+//                }
+//            }
+//        }).attach();
+//    }
+
+
+    @Override
+    public void launchSelectTicketFrag(Bundle bundle) {
+        fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        SelectTicketQuantity ticketQuantity = new SelectTicketQuantity();
+        ticketQuantity.setArguments(bundle);
+        fragmentTransaction.replace(R.id.fragment_container_view_tag, ticketQuantity, "ticketQuantity").addToBackStack("Quantity").commit();
+    }
+
+    @Override
+    public void launchContactDetails(Bundle bundle) {
+        fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        RegistrationFragment registrationFragment = new RegistrationFragment();
+        registrationFragment.setArguments(bundle);
+        fragmentTransaction.replace(R.id.fragment_container_view_tag, registrationFragment, "registrationFragment").addToBackStack("registration").commit();
+
+    }
+
+    @Override
+    public void launchRegistrationFrag(Bundle bundle) {
+        fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        TicketDetailsFragment ticketDetailsFragment = new TicketDetailsFragment();
+        ticketDetailsFragment.setArguments(bundle);
+        fragmentTransaction.replace(R.id.fragment_container_view_tag, ticketDetailsFragment, "ticketDetailsFragment").addToBackStack("ticketDetails").commit();
+    }
+
+    @Override
+    public void launchPaymentFrag(Bundle bundle) {
+        fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        PaymentPageFragment paymentPageFragment = new PaymentPageFragment();
+        paymentPageFragment.setArguments(bundle);
+        fragmentTransaction.replace(R.id.fragment_container_view_tag, paymentPageFragment, "paymentPageFragment").addToBackStack("paymentPage").commit();
     }
 }

@@ -1,5 +1,6 @@
 package com.example.bookmyshow.RegisterEvent;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +13,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import com.example.bookmyshow.R;
 
@@ -24,8 +24,7 @@ public class SelectTicketQuantity extends Fragment {
     private int addTicket = 1;
     private int removeTicket = 1;
     private int ticketPrice = 699;
-
-    private FragmentManager fragmentManager;
+    private FragmentCommunication communication;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,6 +41,7 @@ public class SelectTicketQuantity extends Fragment {
         tvQuantity = view.findViewById(R.id.tvQuantity);
         ivAddTicket = view.findViewById(R.id.ivAdd);
         ivRemoveTicket = view.findViewById(R.id.ivMinus);
+        btnProceed = view.findViewById(R.id.btnProceedTicket);
 
         ivAddTicket.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,5 +63,21 @@ public class SelectTicketQuantity extends Fragment {
                 Toast.makeText(getContext(), "Ticket removed", Toast.LENGTH_SHORT).show();
             }
         });
+
+        btnProceed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                if (communication != null) {
+                    communication.launchContactDetails(bundle);
+                }
+            }
+        });
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        communication = (FragmentCommunication) context;
     }
 }
