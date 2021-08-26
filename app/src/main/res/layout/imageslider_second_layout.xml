@@ -73,7 +73,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:background="#FF4433"
+        android:background="@drawable/circleforsecondsliderbutton"
         android:text="Buy or Rent"
         android:textAllCaps="false"
         android:textColor="@color/white"
