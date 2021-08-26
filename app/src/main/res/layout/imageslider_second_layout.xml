@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#36454F">
 
-
     <androidx.cardview.widget.CardView
-        android:layout_width="170dp"
+        android:id="@+id/card_view"
+        android:layout_width="150dp"
         android:layout_height="250dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
 
         <ImageView
             android:id="@+id/moiveImage"
@@ -33,7 +31,7 @@
         android:layout_marginTop="50dp"
         android:text="Movie Name"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/card_view"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,7 +44,7 @@
         android:layout_marginTop="10dp"
         android:text="movie Duration"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="13dp"
         app:layout_constraintStart_toEndOf="@+id/card_view"
         app:layout_constraintTop_toBottomOf="@+id/txtMovieName" />
 
@@ -55,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="movie Language"
         android:textColor="@color/white"
         android:textSize="13dp"
@@ -67,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="movie Description"
         android:textColor="@color/white"
         android:textSize="13dp"
@@ -89,7 +87,6 @@
         android:textStyle="bold"
         app:circularflow_radiusInDP="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_view"
-        tools:ignore="UnknownId" />
+        app:layout_constraintTop_toBottomOf="@+id/card_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
