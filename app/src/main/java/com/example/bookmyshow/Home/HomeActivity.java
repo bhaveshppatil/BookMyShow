@@ -2,8 +2,6 @@ package com.example.bookmyshow.Home;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.graphics.Color;
@@ -11,7 +9,7 @@ import android.graphics.PorterDuff;
 import android.os.Bundle;
 
 import com.example.bookmyshow.Home.bBuzz.BuzzFragment;
-import com.example.bookmyshow.Home.bBuzz.aMyHome.HomeFragment;
+import com.example.bookmyshow.Home.aMyHome.HomeFragment;
 import com.example.bookmyshow.Home.cProfile.ProfileFragment;
 import com.example.bookmyshow.R;
 import com.google.android.material.tabs.TabLayout;

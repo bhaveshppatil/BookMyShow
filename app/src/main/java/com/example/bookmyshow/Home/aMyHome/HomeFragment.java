@@ -1,7 +1,6 @@
-package com.example.bookmyshow.Home.bBuzz.aMyHome;
+package com.example.bookmyshow.Home.aMyHome;
 
 import android.content.Intent;
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
