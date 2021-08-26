@@ -1,4 +1,4 @@
-package com.example.bookmyshow.Home.aMyHome;
+package com.example.bookmyshow.Home.bBuzz.aMyHome;
 
 public class imageSliderItem {
     private int images;

@@ -35,7 +35,7 @@
             android:name=".RegisterEvent.RegisterEvent"
             android:exported="true" />
         <activity
-            android:name=".Home.aMyHome.StreamingSeeAllActivity"
+            android:name=".Home.bBuzz.aMyHome.StreamingSeeAllActivity"
             android:exported="true" />
         <activity
             android:name=".Home.HomeActivity"

@@ -11,7 +11,7 @@ import android.graphics.PorterDuff;
 import android.os.Bundle;
 
 import com.example.bookmyshow.Home.bBuzz.BuzzFragment;
-import com.example.bookmyshow.Home.aMyHome.HomeFragment;
+import com.example.bookmyshow.Home.bBuzz.aMyHome.HomeFragment;
 import com.example.bookmyshow.Home.cProfile.ProfileFragment;
 import com.example.bookmyshow.R;
 import com.google.android.material.tabs.TabLayout;
