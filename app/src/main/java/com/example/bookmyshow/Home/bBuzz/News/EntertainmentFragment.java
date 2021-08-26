@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.bookmyshow.Home.bBuzz.BuzzAdapter;
+import com.example.bookmyshow.Home.bBuzz.BuzzFragment;
+import com.example.bookmyshow.Home.bBuzz.BuzzViewHolder;
 import com.example.bookmyshow.Home.bBuzz.Network.NewsApiClient;
 import com.example.bookmyshow.Home.bBuzz.Network.models.request.TopHeadlinesRequest;
 import com.example.bookmyshow.Home.bBuzz.Network.models.response.ArticleResponse;
@@ -45,7 +47,7 @@ public class EntertainmentFragment extends Fragment {
                 new NewsApiClient.ArticlesResponseCallback() {
                     @Override
                     public void onSuccess(ArticleResponse response) {
-                        BuzzAdapter buzzAdapter = new BuzzAdapter(response.getArticles());
+                        BuzzAdapter buzzAdapter = new BuzzAdapter(getContext(), response.getArticles());
                         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
                         hBuzzRecyclerView.setLayoutManager(linearLayoutManager);
                         hBuzzRecyclerView.setAdapter(buzzAdapter);
