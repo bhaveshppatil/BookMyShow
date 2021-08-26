@@ -23,8 +23,7 @@ public class StreamingAdapter extends RecyclerView.Adapter<StreamingAdapter.Stra
     @Override
     public StramingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
          View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.streaming_seeall_item_layout,parent,false);
-
-        return new StramingViewHolder(view);
+         return new StramingViewHolder(view);
     }
 
     @Override

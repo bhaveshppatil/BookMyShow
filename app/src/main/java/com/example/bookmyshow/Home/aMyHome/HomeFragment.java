@@ -28,6 +28,11 @@ public class HomeFragment extends Fragment {
     View layout;
     LinearLayout linearLayout;
     private TextView seeAll;
+    private TextView seeAllStreaming;
+    private TextView seeAllOutdoorEvent;
+    private TextView seeAllPopular;
+    private TextView seeAllLaughter;
+    private TextView seeAllSport;
     private ArrayList<Integer> list = new ArrayList<>();
     private ArrayList<imageSliderItem> items = new ArrayList<>();
 
@@ -39,6 +44,33 @@ public class HomeFragment extends Fragment {
         //setContentView(R.layout.activity_main);
         sliderView = view.findViewById(R.id.image_slider);
         sliderView1 = view.findViewById(R.id.image_slider_two);
+        seeAllSport=view.findViewById(R.id.txtSeeAllSport);
+        seeAllStreaming=view.findViewById(R.id.txtSeeAllStreaming);
+        seeAllOutdoorEvent=view.findViewById(R.id.txtSeeAllOutdoor);
+        seeAllPopular=view.findViewById(R.id.txtSeeAllPopular);
+        seeAllLaughter=view.findViewById(R.id.txtSeeAllLaughter);
+        seeAllSport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(),SportActivity.class);
+                startActivity(intent);
+            }
+        });
+        seeAllLaughter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(),LaughterActivity.class);
+                startActivity(intent);
+            }
+        });
+        seeAllPopular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(),PopularActivity.class);
+                startActivity(intent);
+            }
+        });
+        seeAllStreaming.setOnClickListener(new View.OnClickListener() {
         layout = view.findViewById(R.layout.streamingevents_layout);
         linearLayout = view.findViewById(R.id.layoutFrontRow);
 
@@ -57,9 +89,17 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        seeAllOutdoorEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(),OutdoorEventsActivity.class);
+                startActivity(intent);
+            }
+        });
         list.add(R.drawable.image1);
         list.add(R.drawable.image2);
         list.add(R.drawable.image3);
+        list.add(R.drawable.kid);
         setImges();
         setDataForSecondSlider();
         setSliderForSecond();
@@ -76,8 +116,13 @@ public class HomeFragment extends Fragment {
     }
 
     private void setDataForSecondSlider() {
-        items.add(new imageSliderItem(R.drawable.magialnight, "On Magical Night", "1h 50m, Comedy,18+", "English, Hindi, French", "this is a greate moive of making"));
-        items.add(new imageSliderItem(R.drawable.beckyposter, "On Magical Night", "1h 50m, Comedy,18+", "English, Hindi, French", "this is a greate moive of making"));
+        items.add(new imageSliderItem(R.drawable.theassistant, "The Assistant", "1h 27m,Drama Thriller, 16+", "English", "Jane, a recent college graduate \nand aspiring film producer,...."));
+        items.add(new imageSliderItem(R.drawable.thebalkan, "The Balkan Line", "2h 10m, Action ,16+", "English, Hindi", "After the NATO bombing of\nYugoslavia in 1999 the \nYugoslav army..."));
+        items.add(new imageSliderItem(R.drawable.spacejam, "Space Jam:A New\nLegacy", "1h 55m, Animation", "English, Hindi, French", "Basketball superstar LeBron James teams\n up with the Looney Tunes "));
+        items.add(new imageSliderItem(R.drawable.oyemamu, "Oye Mamu!", "2h 5m, Comedy,18+", "Hindi", "Dream to become a VJ collide with\na museum trip a diamond..."));
+        items.add(new imageSliderItem(R.drawable.heistofcentury, "The Heist Of The\nCentury", "1h 54m, Crime,13+", "English, Spanish", "Inspired by a true story,a group\nof thieves join hands to..."));
+        items.add(new imageSliderItem(R.drawable.magialnight, "On Magical Night", "1h 26m, Comedy,18+", " French", "After 20 years of marriage,\nMaria decides to leave..."));
+        items.add(new imageSliderItem(R.drawable.beckyposter, "Becky", "1h 33m, Action,18+", "English", "A teenager weekend at a lake \nhouse with her father takes..."));
     }
 
     private void setImges() {
