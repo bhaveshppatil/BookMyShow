@@ -3,6 +3,6 @@
     <style name="roundimageview" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">12dp</item>
-        <item name="color">@color/white</item>
+        <item name="color"> @color/white</item>
     </style>
 </resources>
