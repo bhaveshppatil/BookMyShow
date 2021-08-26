@@ -42,11 +42,13 @@
             android:textSize="17sp" />
 
         <EditText
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="#C62222" />
+            android:backgroundTint="#C62222"
+            android:hint="Enter name" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,11 +62,13 @@
             android:textSize="17sp" />
 
         <EditText
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="#C62222"
+            android:hint="Enter email"
             android:inputType="textEmailAddress" />
 
         <TextView
@@ -79,11 +83,13 @@
             android:textSize="17sp" />
 
         <EditText
+            android:id="@+id/etContact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="#C62222"
+            android:hint="Enter Contact Number"
             android:inputType="number" />
 
         <CheckBox

@@ -26,6 +26,16 @@ public class SelectTicketQuantity extends Fragment {
     private int ticketPrice = 699;
     private FragmentCommunication communication;
 
+    private String date;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            date = getArguments().getString("date");
+        }
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -58,8 +68,9 @@ public class SelectTicketQuantity extends Fragment {
         ivRemoveTicket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                removeTicket = removeTicket - 1;
+                removeTicket = addTicket - 1;
                 int currentItem = Integer.parseInt(tvQuantity.getText().toString());
+                tvQuantity.setText(removeTicket + "");
                 Toast.makeText(getContext(), "Ticket removed", Toast.LENGTH_SHORT).show();
             }
         });
@@ -68,6 +79,12 @@ public class SelectTicketQuantity extends Fragment {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
+
+                date = getArguments().getString("date");
+                bundle.putString("date", date);
+                bundle.putString("quantity", String.valueOf(addTicket));
+                bundle.putString("ticketPrice", String.valueOf(ticketPrice * addTicket));
+
                 if (communication != null) {
                     communication.launchContactDetails(bundle);
                 }

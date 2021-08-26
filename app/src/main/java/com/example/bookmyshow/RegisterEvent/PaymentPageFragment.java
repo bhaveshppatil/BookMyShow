@@ -2,6 +2,7 @@ package com.example.bookmyshow.RegisterEvent;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.bookmyshow.Home.aMyHome.HomeFragment;
 import com.example.bookmyshow.R;
 
 
@@ -78,7 +80,6 @@ public class PaymentPageFragment extends Fragment implements View.OnClickListene
                 break;
 
             case R.id.btnPayAmount:
-
                 paymentSuccessLayout();
         }
     }

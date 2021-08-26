@@ -19,11 +19,15 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.bookmyshow.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Calendar;
 
 public class SelectDateTime extends Fragment {
 
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
     private int mYear, mMonth, mDay, mHour, mMinute;
     private Button btnDate, btnProceed;
     private EditText etDate;
@@ -73,8 +77,11 @@ public class SelectDateTime extends Fragment {
                             @Override
                             public void onDateSet(DatePicker view, int year,
                                                   int monthOfYear, int dayOfMonth) {
+
                                 layout.setVisibility(View.VISIBLE);
+
                                 etDate.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+
                                 crdTime1.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -88,6 +95,7 @@ public class SelectDateTime extends Fragment {
                                     public void onClick(View v) {
                                         crdTime2.setCardBackgroundColor(ContextCompat.getColor(crdTime2.getContext(), R.color.light_red));
                                         tvTime2.setTextColor(ContextCompat.getColor(tvTime2.getContext(), R.color.white));
+
                                     }
                                 });
 
@@ -104,33 +112,39 @@ public class SelectDateTime extends Fragment {
             }
         });
 
+/*
+        btnTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Get Current Time
+                final Calendar c = Calendar.getInstance();
+                mHour = c.get(Calendar.HOUR_OF_DAY);
+                mMinute = c.get(Calendar.MINUTE);
 
-//        btnTime.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // Get Current Time
-//                final Calendar c = Calendar.getInstance();
-//                mHour = c.get(Calendar.HOUR_OF_DAY);
-//                mMinute = c.get(Calendar.MINUTE);
-//
-//                // Launch Time Picker Dialog
-//                TimePickerDialog timePickerDialog = new TimePickerDialog(getContext(),
-//                        new TimePickerDialog.OnTimeSetListener() {
-//                            @Override
-//                            public void onTimeSet(TimePicker view, int hourOfDay,
-//                                                  int minute) {
-//
-//                                etTime.setText(hourOfDay + ":" + minute);
-//                            }
-//                        }, mHour, mMinute, false);
-//                timePickerDialog.show();
-//            }
-//        });
+                // Launch Time Picker Dialog
+                TimePickerDialog timePickerDialog = new TimePickerDialog(getContext(),
+                        new TimePickerDialog.OnTimeSetListener() {
+                            @Override
+                            public void onTimeSet(TimePicker view, int hourOfDay,
+                                                  int minute) {
+
+                                etTime.setText(hourOfDay + ":" + minute);
+                            }
+                        }, mHour, mMinute, false);
+                timePickerDialog.show();
+            }
+        });
+
+ */
 
         btnProceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
+
+                String date = etDate.getText().toString();
+                bundle.putString("date", date);
+
                 if (communication != null) {
                     communication.launchSelectTicketFrag(bundle);
                 }
