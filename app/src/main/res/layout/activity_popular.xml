@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Mumbai | 343 Events"
+            android:text="Delhi | 343 Events"
             android:textColor="@color/white"
             app:layout_constraintLeft_toLeftOf="@id/tvItAllStartsHere"
             app:layout_constraintTop_toBottomOf="@id/tvItAllStartsHere" />
