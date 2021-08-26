@@ -3,6 +3,7 @@ package com.example.bookmyshow.Home.cProfile;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,7 +14,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class UserDetailsActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    private TextView userName, userEmail, userPhoneNumber;
+    private EditText userName, userEmail, userMobileNumber;
     private ImageView userImage;
 
     @Override
@@ -22,7 +23,7 @@ public class UserDetailsActivity extends AppCompatActivity {
         FirebaseUser user = mAuth.getCurrentUser();
         userName.setText(user.getDisplayName());
         userEmail.setText(user.getEmail());
-        userPhoneNumber.setText(user.getPhoneNumber());
+        userMobileNumber.setText(user.getPhoneNumber());
         Glide.with(userImage).load(user.getPhotoUrl()).into(userImage);
     }
 
@@ -31,9 +32,9 @@ public class UserDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_details);
         mAuth = FirebaseAuth.getInstance();
-        userName = findViewById(R.id.tvUserName);
-        userEmail = findViewById(R.id.tvUserEmail);
-        userPhoneNumber = findViewById(R.id.tvUserPhoneNumber);
+        userName = findViewById(R.id.etUserName);
+        userEmail = findViewById(R.id.etUserEmail);
+        userMobileNumber = findViewById(R.id.etUserMobileNumber);
         userImage = findViewById(R.id.ivUserImage);
     }
 }
