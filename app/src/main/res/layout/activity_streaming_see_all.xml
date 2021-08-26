@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".Home.bBuzz.aMyHome.StreamingSeeAllActivity">
+    tools:context=".Home.aMyHome.StreamingSeeAllActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"

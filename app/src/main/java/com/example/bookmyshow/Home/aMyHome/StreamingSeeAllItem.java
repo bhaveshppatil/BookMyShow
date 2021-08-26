@@ -1,4 +1,4 @@
-package com.example.bookmyshow.Home.bBuzz.aMyHome;
+package com.example.bookmyshow.Home.aMyHome;
 
 public class StreamingSeeAllItem {
     private int eventImage;
