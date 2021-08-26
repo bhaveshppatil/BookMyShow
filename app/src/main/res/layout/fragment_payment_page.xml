@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterEvent.PaymentPageFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnPayAmount"
+        android:scrollIndicators="right">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/processing" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/concert_one"
+                android:text="Available Payment Options"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvTotalAMT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Total Payable Amount"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/cantora_one"
+                    android:gravity="end"
+                    android:text="₹ 1,398.70"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/light_red" />
+
+            <TextView
+                android:id="@+id/tvAmazonPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/cantora_one"
+                android:text="Amazon Pay"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                app:drawableStartCompat="@drawable/icons8_amazon_pay_32" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+
+                android:background="@color/light_red" />
+
+            <TextView
+                android:id="@+id/netBanking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/cantora_one"
+                android:text="Net Banking"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                app:drawableStartCompat="@drawable/ic_baseline_laptop_mac_24" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+
+                android:background="@color/light_red" />
+
+            <TextView
+                android:id="@+id/debitCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/cantora_one"
+                android:text="Debit/Credit Card"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                app:drawableStartCompat="@drawable/ic_baseline_payment_24" />
+
+            <LinearLayout
+                android:id="@+id/layoutCreditCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/light_red"
+                    android:hint="Card Number"
+                    android:inputType="number" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/light_red"
+                        android:hint="Expiry Date"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/light_red"
+                        android:hint="CVV"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/light_red"
+                    android:hint="Card Holder Name"
+                    android:inputType="number" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/concert_one"
+                    android:paddingStart="20dp"
+                    android:text="Quick Pay"
+                    android:textColor="@color/light_red"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/checkInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Save this card information to my BookMyShow account and make payment faster." />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/light_red" />
+
+            <TextView
+                android:id="@+id/upi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/cantora_one"
+                android:text="UPI"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                app:drawableStartCompat="@drawable/icons8_amazon_pay_32" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/light_red" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnPayAmount"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/light_red"
+        android:text="Pay ₹ 1,398.70"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

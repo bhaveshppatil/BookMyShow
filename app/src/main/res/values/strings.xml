@@ -32,4 +32,8 @@
 
 </string>
 
+    <string name="ticketTXT1">We know printed tickets have their own charm but you won\'t be needing those here.</string>
+    <string name="ticket2">This event will take place in an online/digital platform and a physical ticket is not required.</string>
+    <string name="spinner_title">Select State</string>
+
 </resources>

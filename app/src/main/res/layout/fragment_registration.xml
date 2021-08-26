@@ -96,12 +96,12 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/btnNextContact"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:backgroundTint="#C62222"
-        android:text="Submit"
+        android:backgroundTint="@color/light_red"
+        android:text="Next"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="22sp" />

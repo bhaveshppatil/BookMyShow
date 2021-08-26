@@ -60,10 +60,8 @@ dependencies {
     // Declare the dependency for the Firebase Authentication library
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-auth'
-    implementation 'com.facebook.android:facebook-login:[8.1)'
+    implementation "com.airbnb.android:lottie:3.4.0"
     implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
-
-
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     // This library is used by retrofit internally to convert json-pojo and pojo-json
     implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
