@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/BookMyShow/app/src/main/res/drawable/arrow_left.xml" value="0.1" />
         <entry key="..\:/BookMyShow/app/src/main/res/drawable/bg.xml" value="0.20277777777777778" />
+        <entry key="..\:/BookMyShow/app/src/main/res/drawable/myhome_horizontalscroll_musicicon.xml" value="0.20277777777777778" />
+        <entry key="..\:/BookMyShow/app/src/main/res/drawable/myhome_horizontalscroll_streamicon.xml" value="0.20277777777777778" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_home.xml" value="0.1094224924012158" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_laughter.xml" value="0.12092391304347826" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_login_screen.xml" value="0.1094224924012158" />
@@ -23,7 +25,7 @@
         <entry key="..\:/BookMyShow/app/src/main/res/layout/entertainment_layout.xml" value="0.1" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_buzz.xml" value="0.1094224924012158" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_first.xml" value="0.1094224924012158" />
-        <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_home.xml" value="0.1094224924012158" />
+        <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_home.xml" value="0.23076923076923078" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_registration.xml" value="0.1094224924012158" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_second.xml" value="0.1094224924012158" />
