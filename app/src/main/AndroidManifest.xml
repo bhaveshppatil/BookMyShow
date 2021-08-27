@@ -17,6 +17,12 @@
             android:name=".Home.cProfile.PurchaseHistoryActivity"
             android:exported="true" />
         <activity
+            android:name=".Home.cProfile.PurchaseHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Home.aMyHome.MovieRecycler.Movies"
+            android:exported="true" />
+        <activity
             android:name=".Home.aMyHome.SportActivity"
             android:exported="true" />
         <activity
