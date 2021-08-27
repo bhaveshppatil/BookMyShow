@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -12,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.bookmyshow.Home.aMyHome.MovieRecycler.Movies;
 import com.example.bookmyshow.R;
 import com.example.bookmyshow.RegisterEvent.RegisterEvent;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
@@ -30,6 +32,7 @@ public class HomeFragment extends Fragment {
     private TextView seeAllPopular;
     private TextView seeAllLaughter;
     private TextView seeAllSport;
+    private ImageView ivMovies;
     private ArrayList<Integer> list = new ArrayList<>();
     private ArrayList<imageSliderItem> items = new ArrayList<>();
 
@@ -45,6 +48,15 @@ public class HomeFragment extends Fragment {
         seeAllPopular = view.findViewById(R.id.txtSeeAllPopular);
         seeAllLaughter = view.findViewById(R.id.txtSeeAllLaughter);
         linearLayout = view.findViewById(R.id.layoutFrontRow);
+        ivMovies = view.findViewById(R.id.ivMovie);
+
+        ivMovies.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), Movies.class);
+                startActivity(intent);
+            }
+        });
 
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override

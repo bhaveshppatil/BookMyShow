@@ -62,7 +62,6 @@ public class LoginScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
 
-
         mAuth = FirebaseAuth.getInstance();
         FacebookSdk.sdkInitialize(getApplicationContext());
         callbackManager = CallbackManager.Factory.create();
@@ -95,6 +94,7 @@ public class LoginScreen extends AppCompatActivity {
         btnLoginWithFacebook = findViewById(R.id.btnFacebook);
         btnLoginWithEmail = findViewById(R.id.btnLoginWithEmail);
         btnLoginWithGoogle = findViewById(R.id.btnLoginWithGoogle);
+
         btnLoginWithGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -208,8 +208,10 @@ public class LoginScreen extends AppCompatActivity {
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(LoginScreen.this, "Login Successful", Toast.LENGTH_SHORT).show();
+
                             Intent intent = new Intent(LoginScreen.this, HomeActivity.class);
                             startActivity(intent);
+                            
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
