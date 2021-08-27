@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,10 +21,13 @@ public class BuzzAdapter extends RecyclerView.Adapter<BuzzViewHolder> {
     private Context context;
     private List<Article> buzzList;
     private ImageView buzzShare;
+    private RelativeLayout hBuzzItemLayoutRelativeLayout;
+    private OnItemClickListener onItemClickListener;
 
-    public BuzzAdapter(Context context, List<Article> bList) {
+    public BuzzAdapter(Context context, List<Article> bList, OnItemClickListener onItemClickListener) {
         this.buzzList = bList;
         this.context = context;
+        this.onItemClickListener = onItemClickListener;
     }
 
     @NonNull
@@ -31,7 +35,8 @@ public class BuzzAdapter extends RecyclerView.Adapter<BuzzViewHolder> {
     public BuzzViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.buzz_item_layout, parent, false);
         buzzShare = view.findViewById(R.id.ivBuzzShareIcon);
-        return new BuzzViewHolder(view);
+        hBuzzItemLayoutRelativeLayout = view.findViewById(R.id.buzzItemLayoutRelativeLayout);
+        return new BuzzViewHolder(view, onItemClickListener);
     }
 
     @Override
