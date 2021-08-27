@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:orientation="horizontal"
-            android:visibility="gone"
+            android:visibility="visible"
             android:weightSum="3">
 
             <androidx.cardview.widget.CardView
