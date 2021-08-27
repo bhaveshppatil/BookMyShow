@@ -1,9 +1,12 @@
 package com.example.bookmyshow.Home.aMyHome.MovieRecycler;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -15,10 +18,10 @@ import com.example.bookmyshow.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Movies extends AppCompatActivity implements View.OnClickListener {
+public class Movies extends AppCompatActivity implements View.OnClickListener, ClickListener {
 
     private Button btnEnglish, btnHindi, btnTelugu, btnJapanese, btnPunjabi;
-
+    private ClickListener clickListener;
     private RecyclerView recyclerView;
     private List<MoviesModel> moviesModelList = new ArrayList<>();
 
@@ -29,6 +32,7 @@ public class Movies extends AppCompatActivity implements View.OnClickListener {
         initViews();
         buildMoviesData();
         setRecyclerView();
+
     }
 
     private void initViews() {
@@ -38,6 +42,7 @@ public class Movies extends AppCompatActivity implements View.OnClickListener {
         btnPunjabi = findViewById(R.id.btnPunjabi);
         btnJapanese = findViewById(R.id.btnJapanese);
         btnTelugu = findViewById(R.id.btnTelugu);
+
 
         btnTelugu.setOnClickListener(this);
         btnEnglish.setOnClickListener(this);
@@ -71,7 +76,7 @@ public class Movies extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void setRecyclerView() {
-        MovieAdapter movieAdapter = new MovieAdapter(moviesModelList);
+        MovieAdapter movieAdapter = new MovieAdapter(moviesModelList, this);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
         recyclerView.setAdapter(movieAdapter);
         recyclerView.setLayoutManager(layoutManager);
@@ -104,6 +109,17 @@ public class Movies extends AppCompatActivity implements View.OnClickListener {
                 btnTelugu.setBackgroundColor(ContextCompat.getColor(btnTelugu.getContext(), R.color.light_red));
                 btnTelugu.setTextColor(Color.parseColor("#FFFFFF"));
                 break;
+        }
+    }
+
+    @Override
+    public void onItemClick(MoviesModel moviesModel, int position) {
+
+        if (position == 0) {
+            Intent intent = new Intent(Movies.this, BookMovieTicket.class);
+            startActivity(intent);
+        } else {
+            Toast.makeText(Movies.this, "Item Clicked" + position, Toast.LENGTH_SHORT).show();
         }
     }
 }

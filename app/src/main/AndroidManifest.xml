@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BookMyShow">
         <activity
+            android:name=".Home.aMyHome.MovieRecycler.BookMovieTicket"
+            android:exported="true" />
+        <activity
             android:name=".Home.aMyHome.MovieRecycler.Movies"
             android:exported="true" />
         <activity
