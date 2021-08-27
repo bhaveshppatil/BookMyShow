@@ -19,6 +19,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.bookmyshow.Home.aMyHome.HomeFragment;
+import com.example.bookmyshow.Home.cProfile.PurchaseHistoryActivity;
 import com.example.bookmyshow.R;
 
 
@@ -93,6 +94,8 @@ public class PaymentPageFragment extends Fragment implements View.OnClickListene
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
+                Intent intent = new Intent(getContext(), PurchaseHistoryActivity.class);
+                startActivity(intent);
             }
         });
         dialog.show();
