@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Home.cProfile.PurchaseHistoryActivity">
+
+    <ImageView
+        android:id="@+id/ivPurchaseImage"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPurchaseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Data"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ivPurchaseImage"
+        app:layout_constraintTop_toTopOf="@id/ivPurchaseImage" />
+
+    <TextView
+        android:id="@+id/tvPurchaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Date"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/tvPurchaseTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvPurchaseTitle" />
+
+    <TextView
+        android:id="@+id/tvPurchaseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Time"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/tvPurchaseTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvPurchaseDate" />
+
+    <TextView
+        android:id="@+id/tvPurchaseAmountPaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="AMOUNT PAID"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/tvPurchaseTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvPurchaseTime" />
+
+    <TextView
+        android:id="@+id/tvPurchasePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/tvPurchaseTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvPurchaseAmountPaid" />
+
+    <TextView
+        android:id="@+id/tvPurchaseTickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="TICKETS"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/tvPurchaseAmountPaid"
+        app:layout_constraintTop_toTopOf="@id/tvPurchaseAmountPaid" />
+
+    <TextView
+        android:id="@+id/tvPurchaseNoOfTickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="No of Tickets"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/tvPurchaseTickets"
+        app:layout_constraintTop_toBottomOf="@id/tvPurchaseAmountPaid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

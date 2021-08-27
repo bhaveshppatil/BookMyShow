@@ -1,19 +1,9 @@
-package com.example.bookmyshow.RegisterEvent;
+package com.example.bookmyshow.Home.cProfile;
 
-import java.io.Serializable;
-
-public class DataHelper implements Serializable {
+public class PurchaseDataHelper {
 
     String name, email, contact, eventName, date, time, ticketQuantity, price;
-    public DataHelper(String name, String email, String contact, String eventName, String date, String time, String ticketQuantity, String price) {
-        this.name = name;
-        this.email = email;
-        this.contact = contact;
-        this.eventName = eventName;
-        this.date = date;
-        this.time = time;
-        this.ticketQuantity = ticketQuantity;
-        this.price = price;
+    public PurchaseDataHelper(){
     }
 
     public String getName() {
