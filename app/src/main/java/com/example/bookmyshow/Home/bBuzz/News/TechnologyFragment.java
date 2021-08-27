@@ -38,7 +38,7 @@ public class TechnologyFragment extends Fragment implements OnItemClickListener 
         super.onViewCreated(view, savedInstanceState);
         hBuzzEntertainmentRecyclerView = view.findViewById(R.id.buzzTechnologyRecyclerView);
         hBuzzTechnologyWebView = view.findViewById(R.id.buzzTechnologyWebView);
-        NewsApiClient newsApiClient = new NewsApiClient("8e85a7edf08843158833434a0df50e20");
+        NewsApiClient newsApiClient = new NewsApiClient("265108157abf4886a7937bcb98778203");
         // /v2/top-headlines
         newsApiClient.getTopHeadlines(
                 new TopHeadlinesRequest.Builder()

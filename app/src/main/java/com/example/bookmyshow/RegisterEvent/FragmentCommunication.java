@@ -10,4 +10,5 @@ public interface FragmentCommunication {
     void launchRegistrationFrag(Bundle bundle);
 
     void launchPaymentFrag(Bundle bundle);
+
 }
