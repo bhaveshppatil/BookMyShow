@@ -2,20 +2,20 @@ package com.example.bookmyshow.Home.cProfile;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.bookmyshow.Home.HomeActivity;
-import com.example.bookmyshow.Home.aMyHome.HomeFragment;
 import com.example.bookmyshow.R;
+import com.example.bookmyshow.RegisterEvent.DataHelper;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -27,19 +27,42 @@ import com.google.firebase.database.ValueEventListener;
 
 public class PurchaseHistoryActivity extends AppCompatActivity {
 
-    private FirebaseAuth mAuth;
-
-
     private TextView purchaseTitle, purchaseDate, purchaseTime, purchasePrice, purchaseNoOfTickets;
     private ImageView purchaseImage;
-    private Button goToMyHome;
+    private Button goToMyHome, pBtnRemove;
+    private ConstraintLayout editCancelConstraintLayout;
+    private LinearLayout linearLayout;
+    private FirebaseUser user;
+    private FirebaseAuth mAuth;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase_history);
         initViews();
+
+
+        //editCancelConstraintLayout.setVisibility(View.GONE);
+
         setPurchaseHistoryDataFromFireBase();
+        editCancelConstraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (linearLayout.getVisibility() == View.GONE) {
+                    linearLayout.setVisibility(View.VISIBLE);
+                } else {
+                    linearLayout.setVisibility(View.GONE);
+                }
+            }
+        });
+
         goToMyHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,10 +72,31 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        pBtnRemove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setCancelPurchaseHistoryDataFromFireBase();
+            }
+        });
+    }
+
+    private void setCancelPurchaseHistoryDataFromFireBase() {
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference("UserData");
+        DataHelper dataHelper = new DataHelper("", "", "", "", "", "", "", "", "");
+        databaseReference.child(user.getDisplayName()).setValue(dataHelper);
+        editCancelConstraintLayout.setAlpha((float) 0.50);
+        linearLayout.setVisibility(View.GONE);
+
+    }
+
     private void setPurchaseHistoryDataFromFireBase() {
         //getting user name
         mAuth = FirebaseAuth.getInstance();
-        FirebaseUser user = mAuth.getCurrentUser();
+        user = mAuth.getCurrentUser();
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("UserData").child(user.getDisplayName());
@@ -86,6 +130,9 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
         purchaseNoOfTickets = findViewById(R.id.tvPurchaseNoOfTickets);
         purchaseImage = findViewById(R.id.ivPurchaseImage);
         goToMyHome = findViewById(R.id.btnGoToMyHome);
+        editCancelConstraintLayout = findViewById(R.id.purchaseHistoryEditCancelConstraintLayout);
+        linearLayout = findViewById(R.id.btnShowHide);
+        pBtnRemove = findViewById(R.id.btnCancel);
     }
 
 }
