@@ -12,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class UserDetailsActivity extends AppCompatActivity {
+
     private FirebaseAuth mAuth;
     private EditText userName, userEmail, userMobileNumber;
     private ImageView userImage;

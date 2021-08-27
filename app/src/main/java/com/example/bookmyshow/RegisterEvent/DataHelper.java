@@ -4,8 +4,9 @@ import java.io.Serializable;
 
 public class DataHelper implements Serializable {
 
-    String name, email, contact, eventName, date, time, ticketQuantity, price;
-    public DataHelper(String name, String email, String contact, String eventName, String date, String time, String ticketQuantity, String price) {
+    String name, email, contact, eventName, date, time, ticketQuantity, price, imageUrl;
+
+    public DataHelper(String name, String email, String contact, String eventName, String date, String time, String ticketQuantity, String price, String imageUrl) {
         this.name = name;
         this.email = email;
         this.contact = contact;
@@ -14,6 +15,7 @@ public class DataHelper implements Serializable {
         this.time = time;
         this.ticketQuantity = ticketQuantity;
         this.price = price;
+        this.imageUrl = imageUrl;
     }
 
     public String getName() {
@@ -78,5 +80,9 @@ public class DataHelper implements Serializable {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
     }
 }
