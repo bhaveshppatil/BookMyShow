@@ -16,10 +16,13 @@ import androidx.fragment.app.Fragment;
 import com.example.bookmyshow.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
 public class RegistrationFragment extends Fragment {
 
+    private FirebaseAuth mAuth;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
@@ -39,6 +42,7 @@ public class RegistrationFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        mAuth = FirebaseAuth.getInstance();
         if (getArguments() != null) {
 
             date = getArguments().getString("date");
@@ -51,6 +55,10 @@ public class RegistrationFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        FirebaseUser user = mAuth.getCurrentUser();
+        String userName = user.getDisplayName();
+
         btnNextContact = view.findViewById(R.id.btnNextContact);
 
         etEmail = view.findViewById(R.id.etEmail);
@@ -67,6 +75,7 @@ public class RegistrationFragment extends Fragment {
                 String name = etName.getText().toString();
                 String email = etEmail.getText().toString();
                 String contactNum = etContact.getText().toString();
+                String imageUrl = "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAyNiBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00313611-dhpqvasetj-portrait.jpg";
                 String eventName = "FrontRow Open Mics";
                 String time = "4:30 PM";
                 date = getArguments().getString("date");
@@ -74,10 +83,9 @@ public class RegistrationFragment extends Fragment {
                 price = getArguments().getString("ticketPrice");
 
                 if (name.length() >= 1 && email.matches(emailPattern) && contactNum.length() == 10) {
-                    DataHelper dataHelper = new DataHelper(name, email, contactNum, eventName, date, time, quantity, price);
-                    databaseReference.child(name).setValue(dataHelper);
+                    DataHelper dataHelper = new DataHelper(name, email, contactNum, eventName, date, time, quantity, price, imageUrl);
+                    databaseReference.child(userName).setValue(dataHelper);
                     communication.launchRegistrationFrag(bundle);
-
                 } else {
                     Toast.makeText(getContext(), "Please check information again", Toast.LENGTH_SHORT).show();
                 }

@@ -4,9 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.bookmyshow.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -16,10 +20,11 @@ import com.google.firebase.database.ValueEventListener;
 
 public class PurchaseHistoryActivity extends AppCompatActivity {
 
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference("UserData").child("murali");
+    private FirebaseAuth mAuth;
+
 
     private TextView purchaseTitle, purchaseDate, purchaseTime, purchasePrice, purchaseNoOfTickets;
+    private ImageView purchaseImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,18 +35,26 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
         purchaseTime = findViewById(R.id.tvPurchaseTime);
         purchasePrice = findViewById(R.id.tvPurchasePrice);
         purchaseNoOfTickets = findViewById(R.id.tvPurchaseNoOfTickets);
+        purchaseImage = findViewById(R.id.ivPurchaseImage);
+
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("UserData").child(user.getDisplayName());
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 GenericTypeIndicator<PurchaseDataHelper> genericTypeIndicator = new GenericTypeIndicator<PurchaseDataHelper>() {
                 };
-                PurchaseDataHelper dataHelper = snapshot.getValue(genericTypeIndicator);
-                purchaseTitle.setText(dataHelper.getEventName());
-                purchaseDate.setText(dataHelper.getDate());
-                purchaseTime.setText(dataHelper.getTime());
-                purchasePrice.setText("₹ "+dataHelper.getPrice());
-                purchaseNoOfTickets.setText(dataHelper.getTicketQuantity());
+                PurchaseDataHelper purchaseDataHelper = snapshot.getValue(genericTypeIndicator);
+                purchaseTitle.setText(purchaseDataHelper.getEventName());
+                purchaseDate.setText(purchaseDataHelper.getDate());
+                purchaseTime.setText(purchaseDataHelper.getTime());
+                purchasePrice.setText("₹ " + purchaseDataHelper.getPrice());
+                purchaseNoOfTickets.setText(purchaseDataHelper.getTicketQuantity());
+                Glide.with(purchaseImage).load(purchaseDataHelper.getImageUrl()).into(purchaseImage);
             }
 
             @Override

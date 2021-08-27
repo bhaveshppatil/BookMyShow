@@ -2,8 +2,9 @@ package com.example.bookmyshow.Home.cProfile;
 
 public class PurchaseDataHelper {
 
-    String name, email, contact, eventName, date, time, ticketQuantity, price;
-    public PurchaseDataHelper(){
+    String name, email, contact, eventName, date, time, ticketQuantity, price, imageUrl;
+
+    public PurchaseDataHelper() {
     }
 
     public String getName() {
@@ -68,5 +69,9 @@ public class PurchaseDataHelper {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
     }
 }
