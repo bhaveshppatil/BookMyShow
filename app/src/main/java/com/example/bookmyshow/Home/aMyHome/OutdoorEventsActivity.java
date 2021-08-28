@@ -7,38 +7,73 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bookmyshow.R;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.io.InputStream;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
 
 public class OutdoorEventsActivity extends AppCompatActivity {
-    private ArrayList<StreamingSeeAllItem> seeAllList=new ArrayList<>();
-    private RecyclerView recyclerViewOutdoor;
+    private List<EventsModel> eventsModels=new ArrayList<>();
+    private EventsAdapter adapter;
+    private RecyclerView recyclerView;
 
+    private Runnable runnable=new Runnable() {
+        @Override
+        public void run() {
+            readjson();
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_outdoor_events);
-        recyclerViewOutdoor=findViewById(R.id.recyclerViewOutdoor);
-        buildDataForStreaming();
-        setDataForStreaming();
-    }
-    private void setDataForStreaming() {
-        StreamingAdapter adapter=new StreamingAdapter(seeAllList);
+        recyclerView=findViewById(R.id.recyclerViewOutdoor);
+        adapter=new EventsAdapter(eventsModels);
         GridLayoutManager gridLayoutManager=new GridLayoutManager(this,2);
-        recyclerViewOutdoor.setLayoutManager(gridLayoutManager);
-        recyclerViewOutdoor.setAdapter(adapter);
+        startBackground();
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(gridLayoutManager);
     }
 
-    private void buildDataForStreaming() {
-        for (int i = 1; i < 5; i++) {
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.jawaharlal, "Jawaharlal Nehru", "Politics", "Book my show", "Rs. 299"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.clubnight, "That Comedy clud", "Stand up comedy", "Online Streaming", "Free"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.mystory, "Mystery Rooms-\nMumbai", "Escape Games", "Watch on Zoom", "Rs.700 onwards"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.sitdown, "Sit Down", "Restaurant", "Watch on Zoom", "Rs.480"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.wonderala, "Wonderala Event", "Fun Games", "Watch on BookMyShow", "Rs.690"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.fantastic, "Fantastic", "Fun", "Online Streaming", "Free"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.wow, "Wow Wednesday", "Vapour Pub", "NightLife", "Rs. 467"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.skandagiri, "Skandagiri \npoint", "Sunrise meeting point", "Trekking", "Rs.1288"));
+    private void startBackground(){
+        Thread thread=new Thread(runnable);
+        thread.start();
+    }
+
+    private void readjson() {
+        try {
+            InputStream inputStream=this.getAssets().open("outdoor.json");
+            int data=inputStream.read();
+
+            StringBuilder builder=new StringBuilder();
+
+            while(data!=-1){
+                char ch=(char) data;
+                builder.append(ch);
+                data=inputStream.read();
+            }
+            buildpojofromjson(builder.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+    }
+
+    private void buildpojofromjson(String json) {
+        Type type=new TypeToken<ResponseModel>(){}.getType();
+        ResponseModel responseModel=new Gson().fromJson(json,type);
+        eventsModels=responseModel.getEvents();
+        updateUi();
+    }
+
+    private void updateUi() {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                adapter.updateData(eventsModels);
+            }
+        });
     }
 }

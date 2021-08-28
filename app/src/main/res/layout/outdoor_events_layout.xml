@@ -18,8 +18,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/jawaharlal"/>
+                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/jawaharlal"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -48,8 +47,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/clubnight"/>
+                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/clubnight"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,8 +74,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/mystory"/>
+                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/mystory"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -104,8 +101,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/sitdown"/>
+                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/sitdown"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -133,8 +129,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/wonderala"
-                app:shapeAppearanceOverlay="@style/roundimageview"/>
-
+                app:shapeAppearanceOverlay="@style/RoundImage"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
