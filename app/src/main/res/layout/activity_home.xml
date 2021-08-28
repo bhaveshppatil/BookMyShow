@@ -2,11 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:fitsSystemWindows="true"
-    android:id="@+id/fragment_container"
     tools:context=".Home.HomeActivity">
 
     <androidx.viewpager.widget.ViewPager
@@ -20,7 +19,8 @@
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
-        android:background="@color/white"
+        android:background="#F5F5F5"
         app:tabGravity="fill"
         app:tabMode="fixed" />
+
 </RelativeLayout>

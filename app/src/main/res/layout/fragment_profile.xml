@@ -2,10 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/content_frame"
-    android:background="@color/white"
     tools:context=".Home.cProfile.ProfileFragment">
 
     <View
@@ -92,7 +91,8 @@
                 android:layout_below="@id/tvPurchaseHistory"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@id/ivPurchaseHistory"
-                android:text="View all your booking &amp; purchases" />
+                android:text="View all your booking &amp; purchases"
+                android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/ivRightArrow1"
@@ -142,7 +142,8 @@
                 android:layout_below="@id/tvStreamLibrary"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@id/ivStreamLibrary"
-                android:text="Rented, Purchased and Downloaded movies" />
+                android:text="Rented, Purchased and Downloaded movies"
+                android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/ivRightArrow2"
@@ -191,7 +192,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvHelpAndSupport"
                 android:layout_toRightOf="@id/ivHelpAndSupport"
-                android:text="View commonly asked queries and Chat" />
+                android:text="View commonly asked queries and Chat"
+                android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/ivRightArrow3"
@@ -241,7 +243,8 @@
                 android:layout_below="@id/tvAccountAndSetting"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@id/ivAccountAndSetting"
-                android:text="Location, Payments, Addresses &amp; More" />
+                android:text="Location, Payments, Addresses &amp; More"
+                android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/ivRightArrow4"
@@ -292,7 +295,8 @@
                 android:layout_below="@id/tvRewards"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@id/ivRewards"
-                android:text="View your rewards &amp; unlock new ones" />
+                android:text="View your rewards &amp; unlock new ones"
+                android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/ivRightArrow5"
@@ -470,7 +474,8 @@
                 android:layout_below="@id/tvListYourShow"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@id/ivListYourShow"
-                android:text="Got an event? Partner with us" />
+                android:text="Got an event? Partner with us"
+                android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/ivRightArrow9"
@@ -493,27 +498,28 @@
 
                 <TextView
                     android:id="@+id/tvShare"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="50dp"
+                    android:layout_weight="1"
                     android:text="Share"
                     android:textColor="#808080" />
 
                 <TextView
                     android:id="@+id/tvRateUs"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="50dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="50dp"
-                    android:text="Rate Us"
+                    android:layout_weight="1"
+                    android:text="   Rate Us"
                     android:textColor="#808080" />
 
                 <TextView
                     android:id="@+id/tvBookASmile"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="50dp"
                     android:layout_weight="1"

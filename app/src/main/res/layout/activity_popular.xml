@@ -41,8 +41,9 @@
             app:layout_constraintLeft_toLeftOf="@id/tvItAllStartsHere"
             app:layout_constraintTop_toBottomOf="@id/tvItAllStartsHere" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPopular"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/recyclerViewPopular"/>
+        android:layout_height="match_parent" />
 </LinearLayout>

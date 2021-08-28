@@ -47,7 +47,7 @@ public class LocationAddress {
                     } else {
                         message.what = 1;
                         Bundle bundle = new Bundle();
-                        result = "Error";
+                        result = "Location Error";
                         bundle.putString("address", result);
                         message.setData(bundle);
                     }

@@ -8,16 +8,17 @@
         android:id="@+id/streamingImage"
         android:layout_width="160dp"
         android:layout_height="277dp"
-        android:adjustViewBounds="true"
         android:layout_marginStart="15dp"
         android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:src="@drawable/mic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundImage"
         app:strokeColor="@color/white"
-        app:strokeWidth="12dp"
-        app:shapeAppearanceOverlay="@style/RoundImage" />
+        app:strokeWidth="12dp" />
+
     <TextView
         android:id="@+id/txtEventName"
         android:layout_width="wrap_content"

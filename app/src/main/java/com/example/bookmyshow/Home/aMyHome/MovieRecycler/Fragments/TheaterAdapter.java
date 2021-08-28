@@ -114,8 +114,3 @@ class DataViewHolder extends RecyclerView.ViewHolder {
         });
     }
 }
-
-
-
-
-

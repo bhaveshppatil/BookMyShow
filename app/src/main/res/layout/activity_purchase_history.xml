@@ -53,7 +53,7 @@
             android:layout_marginLeft="20dp"
             android:hint="Title"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintLeft_toRightOf="@id/ivPurchaseImage"
             app:layout_constraintTop_toTopOf="@id/ivPurchaseImage" />

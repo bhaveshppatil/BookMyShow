@@ -7,8 +7,8 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/crdTime3"
         android:layout_width="20dp"
-        android:background="@drawable/lanbtn"
-        android:layout_height="20dp">
+        android:layout_height="20dp"
+        android:background="@drawable/lanbtn">
 
         <TextView
             android:id="@+id/tvSeatNumber"
