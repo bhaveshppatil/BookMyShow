@@ -36,10 +36,11 @@
             app:layout_constraintTop_toTopOf="@id/vTopBarItAllStartsHere" />
 
         <TextView
+            android:id="@+id/tvLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Delhi >"
+            android:text="Select Location >"
             android:textColor="@color/white"
             app:layout_constraintLeft_toLeftOf="@id/tvItAllStartsHere"
             app:layout_constraintTop_toBottomOf="@id/tvItAllStartsHere" />

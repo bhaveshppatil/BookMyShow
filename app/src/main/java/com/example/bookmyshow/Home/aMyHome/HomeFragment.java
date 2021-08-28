@@ -1,7 +1,16 @@
 package com.example.bookmyshow.Home.aMyHome;
 
+import static com.facebook.FacebookSdk.getApplicationContext;
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +22,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.bookmyshow.Home.aMyHome.Location.AppLocationService;
+import com.example.bookmyshow.Home.aMyHome.Location.LocationAddress;
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.Movies;
 import com.example.bookmyshow.R;
 import com.example.bookmyshow.RegisterEvent.RegisterEvent;
@@ -32,9 +43,12 @@ public class HomeFragment extends Fragment {
     private TextView seeAllPopular;
     private TextView seeAllLaughter;
     private TextView seeAllSport;
+    private TextView hLocation;
     private ImageView ivMovies;
     private ArrayList<Integer> list = new ArrayList<>();
     private ArrayList<imageSliderItem> items = new ArrayList<>();
+
+    AppLocationService appLocationService;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -48,6 +62,36 @@ public class HomeFragment extends Fragment {
         seeAllLaughter = view.findViewById(R.id.txtSeeAllLaughter);
         linearLayout = view.findViewById(R.id.layoutFrontRow);
         ivMovies = view.findViewById(R.id.ivMovie);
+        hLocation = view.findViewById(R.id.tvLocation);
+        appLocationService = new AppLocationService();
+
+        hLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                /*Double la = Double.valueOf(appLocationService.getLatitude());
+                Double lo = Double.valueOf(appLocationService.getLongitude());
+                if (la != null && lo != null) {
+                    double latitude = la;
+                    double longitude = lo;
+                    LocationAddress locationAddress = new LocationAddress();
+                    locationAddress.getAddressFromLocation(latitude, longitude,
+                            getApplicationContext(), new GeocoderHandler());
+                } else {
+                    showSettingsAlert();
+                }*/
+
+                //you can hard-code the lat & long if you have issues with getting it
+                //remove the below if-condition and use the following couple of lines
+
+                double latitude = 21.2635883;
+                double longitude = 81.65488669999999;
+               LocationAddress locationAddress = new LocationAddress();
+                locationAddress.getAddressFromLocation(latitude, longitude,
+                        getApplicationContext(), new GeocoderHandler());
+
+            }
+        });
 
         ivMovies.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,6 +153,7 @@ public class HomeFragment extends Fragment {
         setDataForSecondSlider();
 
         setSliderForSecond();
+
     }
 
     private void setSliderForSecond() {
@@ -144,5 +189,43 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
 
+    }
+
+    public void showSettingsAlert() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(
+                getContext());
+        alertDialog.setTitle("SETTINGS");
+        alertDialog.setMessage("Enable Location Provider! Go to settings menu?");
+        alertDialog.setPositiveButton("Settings",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(
+                                Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                        getContext().startActivity(intent);
+                    }
+                });
+        alertDialog.setNegativeButton("Cancel",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+        alertDialog.show();
+    }
+
+    private class GeocoderHandler extends Handler {
+        @Override
+        public void handleMessage(Message message) {
+            String locationAddress;
+            switch (message.what) {
+                case 1:
+                    Bundle bundle = message.getData();
+                    locationAddress = bundle.getString("address");
+                    break;
+                default:
+                    locationAddress = null;
+            }
+            hLocation.setText(locationAddress);
+        }
     }
 }
