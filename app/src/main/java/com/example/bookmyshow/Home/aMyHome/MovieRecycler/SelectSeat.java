@@ -1,0 +1,80 @@
+package com.example.bookmyshow.Home.aMyHome.MovieRecycler;
+
+import android.os.Bundle;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.bookmyshow.Home.aMyHome.MovieRecycler.Fragments.SeatQuantityFragment;
+import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatBookingAdapter;
+import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatBookingModel;
+import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatClickListener;
+import com.example.bookmyshow.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SelectSeat extends AppCompatActivity implements SeatClickListener {
+    private RecyclerView recyclerView, normalRecyclerView;
+    private List<SeatBookingModel> seatBookingModels = new ArrayList<>();
+    private List<SeatBookingModel> seatBookingModelList = new ArrayList<>();
+    private SeatClickListener clickListener;
+    private Button btnPaymentMovie;
+    private FragmentManager fragmentManager;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_select_seat);
+
+        SeatQuantityFragment quantityFragment = new SeatQuantityFragment();
+        quantityFragment.show(getSupportFragmentManager(), "SelectSeat");
+
+        recyclerView = findViewById(R.id.seatRecyclerView);
+        btnPaymentMovie = findViewById(R.id.btnMoviePayment);
+        normalRecyclerView = findViewById(R.id.seatNormalRecyclerView);
+
+        buildData();
+        buildNormalSeatData();
+        setRecyclerView();
+        setNormalRecyclerView();
+
+    }
+
+    private void buildData() {
+
+        for (int i = 1; i <= 30; i++) {
+            seatBookingModels.add(new SeatBookingModel(i + ""));
+        }
+    }
+
+    private void buildNormalSeatData() {
+
+        for (int i = 1; i <= 15; i++) {
+            seatBookingModelList.add(new SeatBookingModel(i + ""));
+        }
+    }
+
+    private void setRecyclerView() {
+        SeatBookingAdapter seatBookingAdapter = new SeatBookingAdapter(seatBookingModels, clickListener);
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 5, RecyclerView.VERTICAL, false);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(seatBookingAdapter);
+    }
+
+    private void setNormalRecyclerView() {
+        SeatBookingAdapter seatBookingAdapter = new SeatBookingAdapter(seatBookingModelList, clickListener);
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 5, RecyclerView.VERTICAL, false);
+        normalRecyclerView.setLayoutManager(layoutManager);
+        normalRecyclerView.setAdapter(seatBookingAdapter);
+    }
+
+    @Override
+    public void OnItemClick(SeatBookingModel bookingModel, int position) {
+
+    }
+}

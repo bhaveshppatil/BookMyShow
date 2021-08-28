@@ -71,7 +71,6 @@ public class TicketDetailsFragment extends Fragment implements AdapterView.OnIte
                 if (communication != null) {
                     communication.launchPaymentFrag(bundle);
                 }
-
             }
         });
 

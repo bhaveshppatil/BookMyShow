@@ -1,68 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/bottom_sheet"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
     android:orientation="vertical"
-    app:behavior_hideable="true"
-    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+    tools:context=".Home.aMyHome.MovieRecycler.BookMovieTicket">
 
     <LinearLayout
+        android:id="@+id/layoutDateTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_vertical"
-        android:weightSum="3">
+        android:layout_above="@id/btnProceedDate"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="0dp"
+        <LinearLayout
+            android:id="@+id/layoutDate"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Order Details"
-            android:textColor="#444"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-        <TextView
-            android:layout_width="0dp"
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C62222"
+                android:hint="Update date here"
+                android:textColorHint="#C62222" />
+
+            <Button
+                android:id="@+id/btnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/btnshape"
+                android:text="Select date"
+                android:textAllCaps="false"
+                android:textColor="#C62222"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/layoutTime"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:weightSum="2">-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/etTime"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_margin="10dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:backgroundTint="#C62222"-->
+        <!--                android:hint="Update time here"-->
+        <!--                android:textColorHint="#C62222" />-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/btnTime"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center_vertical"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:background="@drawable/btnshape"-->
+        <!--                android:text="Select Time"-->
+        <!--                android:textAllCaps="false"-->
+        <!--                android:textColor="#C62222"-->
+        <!--                android:textSize="18sp" />-->
+        <!--        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/layoutSelectTime"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:text="₹435.00" />
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdTime1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvTime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="2:30 PM"
+                    android:textColor="@color/light_red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/light_red" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdTime2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvTime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="4:30 PM"
+                    android:textColor="@color/light_red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/light_red" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdTime3"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvTime3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="7:00 PM"
+                    android:textColor="@color/light_red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/light_red" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
     </LinearLayout>
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chicken Fried Rice 1x1" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Paneer Tikka 1x2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delivery Address"
-        android:textColor="#444"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Flat No 404, Skyline Apartments, Vizag - 500576" />
-
     <Button
+        android:id="@+id/btnProceedDate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:background="#000"
-        android:foreground="?attr/selectableItemBackground"
-        android:text="PROCEED PAYMENT"
-        android:textColor="#fff" />
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/light_red"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
 
-</LinearLayout>
+</RelativeLayout>

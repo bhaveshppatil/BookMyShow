@@ -76,4 +76,6 @@ dependencies {
     implementation 'com.borjabravo:readmoretextview:2.1.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.jakewharton:butterknife:8.8.1'
+
+
 }
