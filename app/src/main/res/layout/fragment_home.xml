@@ -59,7 +59,7 @@
             android:id="@+id/ivNotificationIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="25dp"
+            android:layout_margin="20dp"
             android:padding="5dp"
             android:src="@drawable/myhome_notifications_icon"
             app:layout_constraintBottom_toBottomOf="@id/vTopBarItAllStartsHere"
@@ -70,7 +70,7 @@
             android:id="@+id/ivSearchIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="25dp"
+            android:layout_margin="20dp"
             android:padding="5dp"
             android:src="@drawable/myhome_search_icon"
             app:layout_constraintBottom_toBottomOf="@id/vTopBarItAllStartsHere"
@@ -111,8 +111,8 @@
 
                         <ImageView
                             android:id="@+id/ivMovie"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="20dp"
                             android:src="@drawable/myhome_horizontalscroll_moviesicon" />
@@ -122,6 +122,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Movies"
+                            android:textSize="10dp"
                             android:textColor="@color/black" />
                     </LinearLayout>
 
@@ -133,8 +134,8 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
                             android:src="@drawable/myhome_horizontalscroll_streamicon" />
@@ -144,6 +145,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Stream"
+                            android:textSize="10dp"
                             android:textColor="@color/black" />
                     </LinearLayout>
 
@@ -155,8 +157,8 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
                             android:src="@drawable/myhome_horizontalscroll_musicicon" />
@@ -166,6 +168,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Events"
+                            android:textSize="10dp"
                             android:textColor="@color/black" />
                     </LinearLayout>
 
@@ -177,8 +180,8 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
                             android:src="@drawable/myhome_horizontalscroll_sportsicon" />
@@ -188,6 +191,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Sports"
+                            android:textSize="10dp"
                             android:textColor="@color/black" />
                     </LinearLayout>
 
@@ -199,8 +203,8 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
                             android:src="@drawable/myhome_horizontalscroll_playsicon" />
@@ -210,6 +214,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Plays"
+                            android:textSize="10dp"
                             android:textColor="@color/black" />
                     </LinearLayout>
 
@@ -222,8 +227,8 @@
 
                         <ImageView
                             android:id="@+id/hs1FootWear"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="15dp"
                             android:src="@drawable/myhome_horizontalscroll_activtiesicon" />
@@ -233,6 +238,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Activities"
+                            android:textSize="10dp"
                             android:textColor="@color/black" />
 
                     </LinearLayout>
@@ -244,9 +250,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp">
-
+                android:layout_height="match_parent">
                 <com.smarteist.autoimageslider.SliderView
                     android:id="@+id/image_slider"
                     android:layout_width="match_parent"
@@ -425,10 +429,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="20dp"
                     android:text="See All >"
                     android:textColor="#FA5F55"
-                    android:textSize="15dp"
+                    android:textSize="13dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -462,10 +466,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="20dp"
                     android:text="See All >"
                     android:textColor="#FA5F55"
-                    android:textSize="15dp"
+                    android:textSize="13dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -474,6 +478,43 @@
                 layout="@layout/popular_event_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Top Games and Sport Events"
+                    android:textColor="#353935"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtSeeAllSport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="See All >"
+                    android:textColor="#FA5F55"
+                    android:textSize="13dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include
+                layout="@layout/games_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
 
 
         </LinearLayout>
