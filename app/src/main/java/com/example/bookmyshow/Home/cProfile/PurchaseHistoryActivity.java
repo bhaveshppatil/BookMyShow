@@ -30,7 +30,7 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
 
     private TextView purchaseTitle, purchaseDate, purchaseTime, purchasePrice, purchaseNoOfTickets;
     private ImageView purchaseImage;
-    private Button goToMyHome, pBtnRemove;
+    private Button goToMyHome, pBtnRemove, pBtnEdit;
     private ConstraintLayout editCancelConstraintLayout;
     private LinearLayout linearLayout;
     private FirebaseUser user;
@@ -77,6 +77,9 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+
+                //cancel order
+
                 pBtnRemove.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -84,7 +87,16 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
                     }
                 });
             }
-        }, 2000);
+        }, 1000);
+
+        //edit order
+
+        pBtnEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     private void setCancelPurchaseHistoryDataFromFireBase() {
@@ -141,6 +153,7 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
         editCancelConstraintLayout = findViewById(R.id.purchaseHistoryEditCancelConstraintLayout);
         linearLayout = findViewById(R.id.btnShowHide);
         pBtnRemove = findViewById(R.id.btnCancel);
+        pBtnEdit = findViewById(R.id.btnEdit);
     }
 
 }
