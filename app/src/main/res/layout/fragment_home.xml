@@ -111,10 +111,10 @@
 
                         <ImageView
                             android:id="@+id/ivMovie"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="20dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="30dp"
                             android:src="@drawable/myhome_horizontalscroll_moviesicon" />
 
                         <TextView
@@ -133,10 +133,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
                             android:src="@drawable/myhome_horizontalscroll_streamicon" />
 
                         <TextView
@@ -155,10 +155,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
                             android:src="@drawable/myhome_horizontalscroll_musicicon" />
 
                         <TextView
@@ -177,10 +177,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
                             android:src="@drawable/myhome_horizontalscroll_sportsicon" />
 
                         <TextView
@@ -199,10 +199,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
                             android:src="@drawable/myhome_horizontalscroll_playsicon" />
 
                         <TextView
@@ -222,10 +222,10 @@
 
                         <ImageView
                             android:id="@+id/hs1FootWear"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="15dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="20dp"
                             android:src="@drawable/myhome_horizontalscroll_activtiesicon" />
 
                         <TextView

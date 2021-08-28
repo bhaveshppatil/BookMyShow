@@ -39,10 +39,9 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        //setContentView(R.layout.activity_main);
         sliderView = view.findViewById(R.id.image_slider);
         sliderView1 = view.findViewById(R.id.image_slider_two);
-        //seeAllSport = view.findViewById(R.id.txtSeeAllSport);
+        seeAllSport = view.findViewById(R.id.txtSeeAllSport);
         seeAllStreaming = view.findViewById(R.id.txtSeeAllStreaming);
         seeAllOutdoorEvent = view.findViewById(R.id.txtSeeAllOutdoor);
         seeAllPopular = view.findViewById(R.id.txtSeeAllPopular);
@@ -64,14 +63,14 @@ public class HomeFragment extends Fragment {
                 Intent intent = new Intent(getContext(), RegisterEvent.class);
                 startActivity(intent);
             }
-        });/*
+        });
         seeAllSport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), SportActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
         seeAllLaughter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
