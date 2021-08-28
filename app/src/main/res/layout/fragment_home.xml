@@ -145,7 +145,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Stream"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
                     </LinearLayout>
 
 
@@ -167,7 +168,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Events"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
                     </LinearLayout>
 
 
@@ -236,7 +238,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Activities"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
 
                     </LinearLayout>
 
@@ -247,7 +250,9 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
                 <com.smarteist.autoimageslider.SliderView
                     android:id="@+id/image_slider"
                     android:layout_width="match_parent"
