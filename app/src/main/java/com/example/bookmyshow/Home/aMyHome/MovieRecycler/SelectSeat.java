@@ -1,6 +1,8 @@
 package com.example.bookmyshow.Home.aMyHome.MovieRecycler;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,12 +15,14 @@ import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatBooking
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatBookingModel;
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatClickListener;
 import com.example.bookmyshow.R;
+import com.example.bookmyshow.RegisterEvent.EventsDetails;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SelectSeat extends AppCompatActivity implements SeatClickListener {
     private RecyclerView recyclerView, normalRecyclerView;
+
     private List<SeatBookingModel> seatBookingModels = new ArrayList<>();
     private List<SeatBookingModel> seatBookingModelList = new ArrayList<>();
     private SeatClickListener clickListener;
@@ -37,6 +41,14 @@ public class SelectSeat extends AppCompatActivity implements SeatClickListener {
         recyclerView = findViewById(R.id.seatRecyclerView);
         btnPaymentMovie = findViewById(R.id.btnMoviePayment);
         normalRecyclerView = findViewById(R.id.seatNormalRecyclerView);
+
+        btnPaymentMovie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SelectSeat.this, EventsDetails.class);
+                startActivity(intent);
+            }
+        });
 
         buildData();
         buildNormalSeatData();

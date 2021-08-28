@@ -1,70 +1,50 @@
 package com.example.bookmyshow.RegisterEvent;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bookmyshow.Home.cProfile.PurchaseHistoryActivity;
 import com.example.bookmyshow.R;
 
-public class PaymentPageFragment extends Fragment implements View.OnClickListener {
+public class PaymentPage extends AppCompatActivity implements View.OnClickListener {
 
     private TextView tvAmazonPay, tvNetBanking, tvUpi, tvCreditCard;
     private Button btnPayAmount, btnDone;
     private LinearLayout layout;
     private Dialog dialog;
 
-    private FragmentCommunication communication;
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_payment_page, container, false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_payment_page);
+        dialog = new Dialog(this);
+        initViews();
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        dialog = new Dialog(getContext());
-        initViews(view);
+    private void initViews() {
+        tvAmazonPay = findViewById(R.id.tvAmazonPay);
+        tvNetBanking = findViewById(R.id.netBanking);
+        tvUpi = findViewById(R.id.upi);
+        btnDone = findViewById(R.id.okButton);
+        tvCreditCard = findViewById(R.id.debitCard);
+        btnPayAmount = findViewById(R.id.btnPayAmount);
+        layout = findViewById(R.id.layoutCreditCard);
 
         tvAmazonPay.setOnClickListener(this);
         tvNetBanking.setOnClickListener(this);
         tvUpi.setOnClickListener(this);
         tvCreditCard.setOnClickListener(this);
         btnPayAmount.setOnClickListener(this);
-
-    }
-
-    private void initViews(View view) {
-        tvAmazonPay = view.findViewById(R.id.tvAmazonPay);
-        tvNetBanking = view.findViewById(R.id.netBanking);
-        tvUpi = view.findViewById(R.id.upi);
-        btnDone = view.findViewById(R.id.okButton);
-        tvCreditCard = view.findViewById(R.id.debitCard);
-        btnPayAmount = view.findViewById(R.id.btnPayAmount);
-        layout = view.findViewById(R.id.layoutCreditCard);
-    }
-
-    @Override
-    public void onAttach(@NonNull Context context) {
-        super.onAttach(context);
     }
 
     @Override
@@ -74,7 +54,7 @@ public class PaymentPageFragment extends Fragment implements View.OnClickListene
             case R.id.tvAmazonPay:
             case R.id.netBanking:
             case R.id.upi:
-                Toast.makeText(getContext(), "Currently Unavailable", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PaymentPage.this, "Currently Unavailable", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.debitCard:
@@ -96,11 +76,10 @@ public class PaymentPageFragment extends Fragment implements View.OnClickListene
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
-                Intent intent = new Intent(getContext(), PurchaseHistoryActivity.class);
+                Intent intent = new Intent(PaymentPage.this, PurchaseHistoryActivity.class);
                 startActivity(intent);
             }
         });
         dialog.show();
     }
-
 }

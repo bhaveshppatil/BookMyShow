@@ -52,23 +52,4 @@ public class SelectDate extends AppCompatActivity implements FragmentCommunicati
         fragmentTransaction.replace(R.id.fragment_container_view_tag, registrationFragment, "registrationFragment").addToBackStack("registration").commit();
 
     }
-
-    @Override
-    public void launchRegistrationFrag(Bundle bundle) {
-        fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        TicketDetailsFragment ticketDetailsFragment = new TicketDetailsFragment();
-        ticketDetailsFragment.setArguments(bundle);
-        fragmentTransaction.replace(R.id.fragment_container_view_tag, ticketDetailsFragment, "ticketDetailsFragment").addToBackStack("ticketDetails").commit();
-    }
-
-    @Override
-    public void launchPaymentFrag(Bundle bundle) {
-        fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        PaymentPageFragment paymentPageFragment = new PaymentPageFragment();
-        paymentPageFragment.setArguments(bundle);
-        fragmentTransaction.replace(R.id.fragment_container_view_tag, paymentPageFragment, "paymentPageFragment").addToBackStack("paymentPage").commit();
-    }
-
 }

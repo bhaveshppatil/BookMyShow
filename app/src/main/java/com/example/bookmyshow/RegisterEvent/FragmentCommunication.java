@@ -8,8 +8,4 @@ public interface FragmentCommunication {
 
     void launchContactDetails(Bundle bundle);
 
-    void launchRegistrationFrag(Bundle bundle);
-
-    void launchPaymentFrag(Bundle bundle);
-
 }

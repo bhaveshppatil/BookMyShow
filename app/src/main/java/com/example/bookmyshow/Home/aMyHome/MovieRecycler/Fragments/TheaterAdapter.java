@@ -106,6 +106,7 @@ class DataViewHolder extends RecyclerView.ViewHolder {
         tvTheaterLocation.setText(locationModel.getTheaterLocation());
         tvShowTime1.setText(locationModel.getTvShowTime1());
         tvShowTime2.setText(locationModel.getTvShowTime2());
+
         layoutMovieTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

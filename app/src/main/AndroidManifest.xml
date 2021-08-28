@@ -14,8 +14,13 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-
         android:theme="@style/Theme.BookMyShow">
+        <activity
+            android:name=".RegisterEvent.PaymentPage"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterEvent.EventsDetails"
+            android:exported="true" />
         <activity
             android:name=".Home.cProfile.PurchaseHistoryActivity"
             android:exported="true"
