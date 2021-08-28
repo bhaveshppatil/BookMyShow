@@ -10,12 +10,15 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.Fragments.SeatQuantityFragment;
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatBookingAdapter;
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatBookingModel;
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatClickListener;
 import com.example.bookmyshow.R;
 import com.example.bookmyshow.RegisterEvent.EventsDetails;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +31,7 @@ public class SelectSeat extends AppCompatActivity implements SeatClickListener {
     private SeatClickListener clickListener;
     private Button btnPaymentMovie;
     private FragmentManager fragmentManager;
-
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +90,5 @@ public class SelectSeat extends AppCompatActivity implements SeatClickListener {
 
     @Override
     public void OnItemClick(SeatBookingModel bookingModel, int position) {
-
     }
 }

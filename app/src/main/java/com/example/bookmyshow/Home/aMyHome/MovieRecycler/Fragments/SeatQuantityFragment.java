@@ -14,10 +14,14 @@ import androidx.annotation.Nullable;
 
 import com.example.bookmyshow.R;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SeatQuantityFragment extends BottomSheetDialogFragment implements View.OnClickListener {
-
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
     int click = 0;
+    int totalPrice = 220;
     private TableLayout tableLayout;
     private ImageView ivVehicle;
     private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btnSeatQuantity;
@@ -34,6 +38,8 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initViews(view);
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference("Ticket");
 
     }
 
@@ -69,7 +75,10 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+
             case R.id.seat1:
+                databaseReference.child("Total Price").setValue(totalPrice);
+                databaseReference.child("Seat Quantity").setValue(1);
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.bicycle);
                     btn1.setBackgroundColor(Color.parseColor("#C62222"));
@@ -81,6 +90,8 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
                 click++;
                 break;
             case R.id.seat2:
+                databaseReference.child("Total Price").setValue(totalPrice * 2);
+                databaseReference.child("Seat Quantity").setValue(2);
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.motorcycle);
                     btn2.setBackgroundColor(Color.parseColor("#C62222"));
@@ -92,6 +103,8 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
                 click++;
                 break;
             case R.id.seat3:
+                databaseReference.child("Total Price").setValue(totalPrice * 3);
+                databaseReference.child("Seat Quantity").setValue(3);
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.rickshaw);
                     btn3.setBackgroundColor(Color.parseColor("#C62222"));
@@ -104,6 +117,8 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
 
                 break;
             case R.id.seat4:
+                databaseReference.child("Total Price").setValue(totalPrice * 4);
+                databaseReference.child("Seat Quantity").setValue(4);
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.baby_car);
                     btn4.setBackgroundColor(Color.parseColor("#C62222"));
@@ -115,6 +130,8 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
                 click++;
                 break;
             case R.id.seat5:
+                databaseReference.child("Total Price").setValue(totalPrice * 5);
+                databaseReference.child("Seat Quantity").setValue(5);
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.bus);
                     btn5.setBackgroundColor(Color.parseColor("#C62222"));
@@ -127,6 +144,8 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
 
                 break;
             case R.id.seat6:
+                databaseReference.child("Total Price").setValue(totalPrice * 6);
+                databaseReference.child("Seat Quantity").setValue(6);
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.bus);
                     btn6.setBackgroundColor(Color.parseColor("#C62222"));
@@ -139,6 +158,9 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
 
                 break;
             case R.id.seat7:
+                databaseReference.child("Total Price").setValue(totalPrice * 7);
+                databaseReference.child("Seat Quantity").setValue(7);
+
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.sedan);
                     btn7.setBackgroundColor(Color.parseColor("#C62222"));
@@ -151,6 +173,8 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
 
                 break;
             case R.id.seat8:
+                databaseReference.child("Total Price").setValue(totalPrice * 8);
+                databaseReference.child("Seat Quantity").setValue(8);
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.bus);
                     btn8.setBackgroundColor(Color.parseColor("#C62222"));
@@ -164,6 +188,8 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
                 break;
             case R.id.seat9:
                 if (click % 2 == 0) {
+                    databaseReference.child("Total Price").setValue(totalPrice * 9);
+                    databaseReference.child("Seat Quantity").setValue(9);
                     ivVehicle.setImageResource(R.drawable.bus);
                     btn9.setBackgroundColor(Color.parseColor("#C62222"));
                     btn9.setTextColor(Color.parseColor("#FFFFFF"));
@@ -175,6 +201,8 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
 
                 break;
             case R.id.seat10:
+                databaseReference.child("Total Price").setValue(totalPrice * 10);
+                databaseReference.child("Seat Quantity").setValue(10);
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.bus);
                     btn10.setBackgroundColor(Color.parseColor("#C62222"));

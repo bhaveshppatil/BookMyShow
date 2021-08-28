@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -21,6 +22,7 @@ public class EventsDetails extends AppCompatActivity {
     private Button btnPayment;
     private FragmentManager fragmentManager;
     private FragmentCommunication communication;
+    private TextView tvEventPrice, tvAmount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

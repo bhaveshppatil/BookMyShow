@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bookmyshow.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -21,6 +23,8 @@ import java.util.List;
 
 public class SelectTimeLocation extends AppCompatActivity implements ClickListener {
 
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
     private List<TheaterLocationModel> theaterTimeModels = new ArrayList<>();
     private RecyclerView recyclerView;
     private int mYear, mMonth, mDay;
@@ -43,6 +47,9 @@ public class SelectTimeLocation extends AppCompatActivity implements ClickListen
             @Override
             public void onClick(View v) {
                 // Get Current Date
+                firebaseDatabase = FirebaseDatabase.getInstance();
+                databaseReference = firebaseDatabase.getReference("Ticket");
+
                 final Calendar c = Calendar.getInstance();
                 mYear = c.get(Calendar.YEAR);
                 mMonth = c.get(Calendar.MONTH);
@@ -56,6 +63,8 @@ public class SelectTimeLocation extends AppCompatActivity implements ClickListen
 
                                 etDate.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
                                 recyclerViewCard.setVisibility(View.VISIBLE);
+                                databaseReference.child("Ticket").setValue(etDate.getText().toString());
+
                             }
                         }, mYear, mMonth, mDay);
                 datePickerDialog.show();
@@ -93,7 +102,6 @@ public class SelectTimeLocation extends AppCompatActivity implements ClickListen
 
         TermsAndConditionFragment termsAndConditionFragment = new TermsAndConditionFragment();
         termsAndConditionFragment.show(getSupportFragmentManager(), "TermsAndCondition");
-
     }
 }
 

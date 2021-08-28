@@ -11,6 +11,8 @@ import androidx.fragment.app.FragmentManager;
 
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.Fragments.LanguageFragment;
 import com.example.bookmyshow.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class BookMovieTicket extends AppCompatActivity {
@@ -20,6 +22,9 @@ public class BookMovieTicket extends AppCompatActivity {
     private Button btnBookMovieTicket;
     private TextView text3, text4;
     FragmentManager fragmentManager;
+
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
 
 
     @Override
@@ -37,6 +42,11 @@ public class BookMovieTicket extends AppCompatActivity {
         btnBookMovieTicket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                firebaseDatabase = FirebaseDatabase.getInstance();
+                databaseReference = firebaseDatabase.getReference("Ticket");
+                databaseReference.child("Movie").setValue("Bell Bottom");
+
                 LanguageFragment languageFragment = new LanguageFragment();
                 languageFragment.show(getSupportFragmentManager(), "BottomSheet");
 
