@@ -16,14 +16,16 @@ import java.util.List;
 
 public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsViewHolder> {
     private List<EventsModel> modelList;
-    public EventsAdapter(List<EventsModel> modelList){
+    private EventClickListner listner;
+    public EventsAdapter(List<EventsModel> modelList,EventClickListner listner){
         this.modelList=modelList;
+        this.listner=listner;
     }
     @NonNull
     @Override
     public EventsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.streaming_seeall_item_layout,parent,false);
-        return new EventsViewHolder(view);
+        return new EventsViewHolder(view,listner);
     }
 
     @Override
@@ -48,9 +50,11 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsView
         TextView eventType;
         TextView whereToWatch;
         TextView price;
+        EventClickListner listner;
 
-        public EventsViewHolder(@NonNull View itemView) {
+        public EventsViewHolder(@NonNull View itemView,EventClickListner listner) {
             super(itemView);
+            this.listner=listner;
             eventImage=itemView.findViewById(R.id.streamingImage);
             eventName=itemView.findViewById(R.id.txtEventName);
             eventType=itemView.findViewById(R.id.txtEventType);
@@ -63,6 +67,12 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsView
             eventType.setText(model.getEventType());
             whereToWatch.setText(model.getWhereToWatch());
             price.setText(model.getPrice());
+            eventImage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    listner.click(model,getAdapterPosition());
+                }
+            });
         }
     }
 }

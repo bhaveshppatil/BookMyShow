@@ -1,5 +1,6 @@
 package com.example.bookmyshow.Home.aMyHome;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,11 +16,12 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StreamingSeeAllActivity extends AppCompatActivity {
+public class StreamingSeeAllActivity extends AppCompatActivity implements EventClickListner{
 
     private List<EventsModel> eventsModels=new ArrayList<>();
     private EventsAdapter adapter;
     private RecyclerView recyclerView;
+    EventClickListner listner;
 
     private Runnable runnable=new Runnable() {
         @Override
@@ -32,7 +34,7 @@ public class StreamingSeeAllActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_streaming_see_all);
         recyclerView=findViewById(R.id.recyclerView);
-        adapter=new EventsAdapter(eventsModels);
+        adapter=new EventsAdapter(eventsModels,this);
         GridLayoutManager gridLayoutManager=new GridLayoutManager(this,2);
         startBackground();
         recyclerView.setAdapter(adapter);
@@ -76,5 +78,17 @@ public class StreamingSeeAllActivity extends AppCompatActivity {
                 adapter.updateData(eventsModels);
             }
         });
+    }
+
+    @Override
+    public void click(EventsModel model, int position) {
+        String image=model.getImages();
+        String name=model.getEventName();
+        String watch=model.getWhereToWatch();
+        Intent intent=new Intent(StreamingSeeAllActivity.this,ShowItemsActivity.class);
+        intent.putExtra("Image",image);
+        intent.putExtra("EventName",name);
+        intent.putExtra("EventWhereToWatch",watch);
+        startActivity(intent);
     }
 }
