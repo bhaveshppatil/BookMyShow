@@ -63,33 +63,32 @@ public class HomeFragment extends Fragment {
         linearLayout = view.findViewById(R.id.layoutFrontRow);
         ivMovies = view.findViewById(R.id.ivMovie);
         hLocation = view.findViewById(R.id.tvLocation);
-        appLocationService = new AppLocationService(getContext());
+        appLocationService = new AppLocationService();
 
         hLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Location location = appLocationService
-                        .getLocation(LocationManager.GPS_PROVIDER);
 
-                //you can hard-code the lat & long if you have issues with getting it
-                //remove the below if-condition and use the following couple of lines
-                // double latitude = 21.2635883;
-                //double longitude = 81.65488669999999;
-
-
-               /* LocationAddress locationAddress = new LocationAddress();
-                locationAddress.getAddressFromLocation(latitude, longitude,
-                        getApplicationContext(), new GeocoderHandler());*/
-
-               if (location != null) {
-                    double latitude = location.getLatitude();
-                    double longitude = location.getLongitude();
+                /*Double la = Double.valueOf(appLocationService.getLatitude());
+                Double lo = Double.valueOf(appLocationService.getLongitude());
+                if (la != null && lo != null) {
+                    double latitude = la;
+                    double longitude = lo;
                     LocationAddress locationAddress = new LocationAddress();
                     locationAddress.getAddressFromLocation(latitude, longitude,
                             getApplicationContext(), new GeocoderHandler());
                 } else {
                     showSettingsAlert();
-                }
+                }*/
+
+                //you can hard-code the lat & long if you have issues with getting it
+                //remove the below if-condition and use the following couple of lines
+
+                double latitude = 21.2635883;
+                double longitude = 81.65488669999999;
+               LocationAddress locationAddress = new LocationAddress();
+                locationAddress.getAddressFromLocation(latitude, longitude,
+                        getApplicationContext(), new GeocoderHandler());
 
             }
         });
