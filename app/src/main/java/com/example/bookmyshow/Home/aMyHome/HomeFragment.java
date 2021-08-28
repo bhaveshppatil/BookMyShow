@@ -73,20 +73,24 @@ public class HomeFragment extends Fragment {
 
                 //you can hard-code the lat & long if you have issues with getting it
                 //remove the below if-condition and use the following couple of lines
-                //double latitude = 37.422005;
-                //double longitude = -122.084095
+                // double latitude = 21.2635883;
+                //double longitude = 81.65488669999999;
 
-                if (location != null) {
+
+               /* LocationAddress locationAddress = new LocationAddress();
+                locationAddress.getAddressFromLocation(latitude, longitude,
+                        getApplicationContext(), new GeocoderHandler());*/
+
+               if (location != null) {
                     double latitude = location.getLatitude();
                     double longitude = location.getLongitude();
                     LocationAddress locationAddress = new LocationAddress();
-                    /*locationAddress.getAddressFromLocation(latitude, longitude,
-                            getApplicationContext(), new GeocoderHandler());*/
-                    locationAddress.getAddressFromLocation(21.2635883, 81.65488669999999,
+                    locationAddress.getAddressFromLocation(latitude, longitude,
                             getApplicationContext(), new GeocoderHandler());
                 } else {
                     showSettingsAlert();
                 }
+
             }
         });
 
