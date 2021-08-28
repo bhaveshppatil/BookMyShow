@@ -1,0 +1,9 @@
+
+    <corners android:radius="8dp" />
+    <gradient
+        android:endColor="@android:color/transparent"
+        android:startColor="@android:color/transparent" />
+    <stroke
+        android:width="0.8dp"
+        android:color="#C62222" />
+</shape>

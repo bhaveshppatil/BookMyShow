@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.cProfile.PurchaseHistoryActivity">
+
+    <View
+        android:id="@+id/vTopBarPurchaseHistory"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#152238"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPurchaseTopText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Purchase History"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/vTopBarPurchaseHistory"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vTopBarPurchaseHistory" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/purchaseHistoryEditCancelConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg"
+        app:layout_constraintTop_toBottomOf="@id/vTopBarPurchaseHistory">
+
+        <ImageView
+            android:id="@+id/ivPurchaseImage"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPurchaseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="Title"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/ivPurchaseImage"
+            app:layout_constraintTop_toTopOf="@id/ivPurchaseImage" />
+
+        <TextView
+            android:id="@+id/tvPurchaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Date"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvPurchaseTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvPurchaseTitle" />
+
+        <TextView
+            android:id="@+id/tvPurchaseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Time"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvPurchaseTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvPurchaseDate" />
+
+        <TextView
+            android:id="@+id/tvPurchaseAmountPaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="AMOUNT PAID"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvPurchaseTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvPurchaseTime" />
+
+        <TextView
+            android:id="@+id/tvPurchasePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Price"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvPurchaseTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvPurchaseAmountPaid" />
+
+        <TextView
+            android:id="@+id/tvPurchaseTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="TICKETS"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/tvPurchaseAmountPaid"
+            app:layout_constraintTop_toTopOf="@id/tvPurchaseAmountPaid" />
+
+        <TextView
+            android:id="@+id/tvPurchaseNoOfTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="No of Tickets"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvPurchaseTickets"
+            app:layout_constraintTop_toBottomOf="@id/tvPurchaseAmountPaid" />
+
+        <LinearLayout
+            android:id="@+id/btnShowHide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@id/tvPurchaseNoOfTickets">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@color/light_red"
+                android:padding="10dp"
+                android:text="Edit Detail"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@color/light_red"
+                android:padding="10dp"
+                android:text="Cancel Event"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnGoToMyHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/light_red"
+        android:text="Go to My Home"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

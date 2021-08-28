@@ -1,6 +1,5 @@
 package com.example.bookmyshow.Home;
 
-
 import android.content.Context;
 
 import androidx.fragment.app.Fragment;

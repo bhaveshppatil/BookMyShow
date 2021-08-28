@@ -19,6 +19,7 @@ import com.example.bookmyshow.R;
 public class ProfileFragment extends Fragment {
 
     private View profileViewBar;
+    private View pPurchaseHistoryBar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,11 +41,19 @@ public class ProfileFragment extends Fragment {
 
     private void initViews(View view) {
         profileViewBar = view.findViewById(R.id.vTopBarProfile);
+        pPurchaseHistoryBar = view.findViewById(R.id.purchaseHistoryBar);
         profileViewBar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), UserDetailsActivity.class);
                 startActivity(intent);
+            }
+        });
+        pPurchaseHistoryBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(getContext(), PurchaseHistoryActivity.class);
+                startActivity(intent1);
             }
         });
     }

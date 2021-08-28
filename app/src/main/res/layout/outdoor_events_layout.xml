@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
                 app:shapeAppearanceOverlay="@style/roundimageview"
                 android:src="@drawable/jawaharlal"/>
 
@@ -33,12 +33,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Jawaharlal Nehru.."
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="7dp"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
                 app:shapeAppearanceOverlay="@style/roundimageview"
                 android:src="@drawable/clubnight"/>
             <TextView
@@ -61,12 +61,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="IndigoXP :Bengaluru"
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="7dp"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
                 app:shapeAppearanceOverlay="@style/roundimageview"
                 android:src="@drawable/mystory"/>
             <TextView
@@ -89,12 +89,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mystery Rooms.."
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="7dp"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
                 app:shapeAppearanceOverlay="@style/roundimageview"
                 android:src="@drawable/sitdown"/>
             <TextView
@@ -117,12 +117,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Restaurant(Koraman..."
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
@@ -131,14 +131,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/wonderala"/>
+                android:scaleType="fitXY"
+                android:src="@drawable/wonderala"
+                app:shapeAppearanceOverlay="@style/roundimageview"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wonderala Amusement\nPark ..."
+                android:text="Wonderala Park \nAmusement..."
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
@@ -147,7 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Park Bangalore..."
-                android:textSize="15dp"
+                android:textSize="12dp"
                 android:textColor="#353935"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>

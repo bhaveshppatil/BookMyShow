@@ -7,38 +7,74 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bookmyshow.R;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.io.InputStream;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
 
 public class StreamingSeeAllActivity extends AppCompatActivity {
-    private ArrayList<StreamingSeeAllItem> seeAllList=new ArrayList<>();
+
+    private List<EventsModel> eventsModels=new ArrayList<>();
+    private EventsAdapter adapter;
     private RecyclerView recyclerView;
 
+    private Runnable runnable=new Runnable() {
+        @Override
+        public void run() {
+            readjson();
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_streaming_see_all);
         recyclerView=findViewById(R.id.recyclerView);
-        buildDataForStreaming();
-        setDataForStreaming();
-    }
-    private void setDataForStreaming() {
-        StreamingAdapter adapter=new StreamingAdapter(seeAllList);
+        adapter=new EventsAdapter(eventsModels);
         GridLayoutManager gridLayoutManager=new GridLayoutManager(this,2);
-        recyclerView.setLayoutManager(gridLayoutManager);
+        startBackground();
         recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(gridLayoutManager);
     }
 
-    private void buildDataForStreaming() {
-        for (int i = 1; i < 5; i++) {
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.mic, "FrontRow Open Mics", "Comedy Shows", "Watch on Zoom", "Free"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.digitalmarketing, "Digital Marketing & Communication", "Education", "Online Streaming", "Free"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.vipulgoyal, "Vipul Goyal Live", "Stand up Comedy", "Watch on Zoom", "Rs.599 onwards"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.datascience, "Data Science", "Education", "Online Streaming", "Free"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.barkharitu, "Barkha Ritu", "Music", "Watch on BookMyShow", "Rs. 236"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.algebra, "Algebra", "Education", "Online Streaming", "Rs. 400"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.mic, "FrontRow Open Mics", "Comedy Shows", "Watch on Zoom", "Free"));
-            seeAllList.add(new StreamingSeeAllItem(R.drawable.vipulgoyal, "Vipul Goyal Live", "Stand up Comedy", "Watch on Zoom", "Free"));
+    private void startBackground(){
+        Thread thread=new Thread(runnable);
+        thread.start();
+    }
+
+    private void readjson() {
+        try {
+            InputStream inputStream=this.getAssets().open("random.json");
+            int data=inputStream.read();
+
+            StringBuilder builder=new StringBuilder();
+
+            while(data!=-1){
+                char ch=(char) data;
+                builder.append(ch);
+                data=inputStream.read();
+            }
+            buildpojofromjson(builder.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+    }
+
+    private void buildpojofromjson(String json) {
+        Type type=new TypeToken<ResponseModel>(){}.getType();
+        ResponseModel responseModel=new Gson().fromJson(json,type);
+        eventsModels=responseModel.getEvents();
+        updateUi();
+    }
+
+    private void updateUi() {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                adapter.updateData(eventsModels);
+            }
+        });
     }
 }

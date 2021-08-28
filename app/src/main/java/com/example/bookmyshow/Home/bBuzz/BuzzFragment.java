@@ -1,60 +1,86 @@
 package com.example.bookmyshow.Home.bBuzz;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.bookmyshow.Home.bBuzz.Network.NewsApiClient;
-import com.example.bookmyshow.Home.bBuzz.Network.models.request.TopHeadlinesRequest;
-import com.example.bookmyshow.Home.bBuzz.Network.models.response.ArticleResponse;
+import com.example.bookmyshow.Home.bBuzz.News.EntertainmentFragment;
+import com.example.bookmyshow.Home.bBuzz.News.SportsFragment;
+import com.example.bookmyshow.Home.bBuzz.News.TechnologyFragment;
 import com.example.bookmyshow.R;
+import com.google.android.material.tabs.TabLayout;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BuzzFragment extends Fragment {
 
-    private RecyclerView hBuzzRecyclerView;
-    private ArticleResponse articleResponse;
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_buzz, container, false);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setRetainInstance(true);
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        hBuzzRecyclerView = view.findViewById(R.id.buzzRecyclerView);
-        NewsApiClient newsApiClient = new NewsApiClient("8e85a7edf08843158833434a0df50e20");
-        // /v2/top-headlines
-        newsApiClient.getTopHeadlines(
-                new TopHeadlinesRequest.Builder()
-                        .language("en")
-                        .country("in")
-                        .category("entertainment")
-                        .build(),
-                new NewsApiClient.ArticlesResponseCallback() {
-                    @Override
-                    public void onSuccess(ArticleResponse response) {
-                        BuzzAdapter buzzAdapter = new BuzzAdapter(response.getArticles());
-                        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-                        hBuzzRecyclerView.setLayoutManager(linearLayoutManager);
-                        hBuzzRecyclerView.setAdapter(buzzAdapter);
-                    }
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-                    @Override
-                    public void onFailure(Throwable throwable) {
-                        System.out.println(throwable.getMessage());
-                    }
-                }
-        );
+        View view = inflater.inflate(R.layout.fragment_buzz, container, false);
+        ViewPager viewPager = (ViewPager) view.findViewById(R.id.buzzViewpager);
+        setupViewPager(viewPager);
+        TabLayout tabs = (TabLayout) view.findViewById(R.id.buzzTabs);
+        tabs.setupWithViewPager(viewPager);
+
+        //colour change
+        tabs.setSelectedTabIndicatorColor(Color.parseColor("#808080"));
+        tabs.setSelectedTabIndicatorHeight((int) (3 * getResources().getDisplayMetrics().density));
+        tabs.setTabTextColors(Color.parseColor("#808080"), Color.parseColor("#FF0000"));
+
+
+        return view;
+    }
+
+    private void setupViewPager(ViewPager viewPager) {
+        Adapter adapter = new Adapter(getChildFragmentManager());
+        adapter.addFragment(new EntertainmentFragment(), "Entertainment");
+        adapter.addFragment(new SportsFragment(), "Sports");
+        adapter.addFragment(new TechnologyFragment(), "Technology");
+        viewPager.setAdapter(adapter);
+    }
+
+    static class Adapter extends FragmentPagerAdapter {
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
+
+        public Adapter(FragmentManager manager) {
+            super(manager);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return mFragmentList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return mFragmentList.size();
+        }
+
+        public void addFragment(Fragment fragment, String title) {
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return mFragmentTitleList.get(position);
+        }
     }
 }

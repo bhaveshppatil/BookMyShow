@@ -5,24 +5,18 @@
     android:layout_height="match_parent"
     android:background="#36454F">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_view"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/moiveImage"
         android:layout_width="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
         android:layout_height="250dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        app:cardCornerRadius="20dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="false"
+        android:src="@drawable/beckyposter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/moiveImage"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/beckyposter" />
-    </androidx.cardview.widget.CardView>
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundimageview"/>
     <TextView
         android:id="@+id/txtMovieName"
         android:layout_width="wrap_content"
@@ -31,9 +25,9 @@
         android:layout_marginTop="50dp"
         android:text="Movie Name"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/card_view"
+        app:layout_constraintStart_toEndOf="@+id/moiveImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -41,11 +35,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="movie Duration"
         android:textColor="@color/white"
         android:textSize="13dp"
-        app:layout_constraintStart_toEndOf="@+id/card_view"
+        app:layout_constraintStart_toEndOf="@+id/moiveImage"
         app:layout_constraintTop_toBottomOf="@+id/txtMovieName" />
 
     <TextView
@@ -53,11 +47,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="movie Language"
         android:textColor="@color/white"
         android:textSize="13dp"
-        app:layout_constraintStart_toEndOf="@+id/card_view"
+        app:layout_constraintStart_toEndOf="@+id/moiveImage"
         app:layout_constraintTop_toBottomOf="@+id/txtmovieDuration" />
 
     <TextView
@@ -69,7 +63,7 @@
         android:text="movie Description"
         android:textColor="@color/white"
         android:textSize="13dp"
-        app:layout_constraintStart_toEndOf="@+id/card_view"
+        app:layout_constraintStart_toEndOf="@+id/moiveImage"
         app:layout_constraintTop_toBottomOf="@+id/txtmovieLanguage" />
 
     <Button
@@ -78,8 +72,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="#FF4433"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circleforsecondsliderbutton"
         android:text="Buy or Rent"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -87,6 +81,6 @@
         android:textStyle="bold"
         app:circularflow_radiusInDP="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_view" />
+        app:layout_constraintTop_toBottomOf="@+id/moiveImage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

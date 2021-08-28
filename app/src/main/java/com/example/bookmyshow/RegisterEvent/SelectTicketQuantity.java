@@ -1,5 +1,6 @@
 package com.example.bookmyshow.RegisterEvent;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,20 +13,28 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import com.example.bookmyshow.R;
 
 public class SelectTicketQuantity extends Fragment {
 
+    int realPrice;
     private ImageView ivAddTicket, ivRemoveTicket;
     private TextView tvTicketPrice, tvQuantity;
     private Button btnProceed;
     private int addTicket = 1;
     private int removeTicket = 1;
     private int ticketPrice = 699;
+    private FragmentCommunication communication;
+    private String date;
 
-    private FragmentManager fragmentManager;
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            date = getArguments().getString("date");
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,6 +51,7 @@ public class SelectTicketQuantity extends Fragment {
         tvQuantity = view.findViewById(R.id.tvQuantity);
         ivAddTicket = view.findViewById(R.id.ivAdd);
         ivRemoveTicket = view.findViewById(R.id.ivMinus);
+        btnProceed = view.findViewById(R.id.btnProceedTicket);
 
         ivAddTicket.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,17 +61,47 @@ public class SelectTicketQuantity extends Fragment {
                 }
                 addTicket = addTicket + 1;
                 tvQuantity.setText(addTicket + "");
-                tvTicketPrice.setText("₹ " + ticketPrice * addTicket);
+                realPrice = ticketPrice * addTicket;
+                tvTicketPrice.setText("₹ " + realPrice);
             }
         });
 
         ivRemoveTicket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                removeTicket = removeTicket - 1;
-                int currentItem = Integer.parseInt(tvQuantity.getText().toString());
-                Toast.makeText(getContext(), "Ticket removed", Toast.LENGTH_SHORT).show();
+                removeTicket = addTicket - 1;
+                tvQuantity.setText(removeTicket + "");
+                tvTicketPrice.setText("₹ " + (realPrice - ticketPrice));
+
+                if (realPrice == 699 && addTicket == 1) {
+                    Toast.makeText(getContext(), "You can't remove ticket", Toast.LENGTH_SHORT).show();
+                } else {
+                    addTicket--;
+                    realPrice = realPrice - ticketPrice;
+                }
             }
         });
+
+        btnProceed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+
+                date = getArguments().getString("date");
+                bundle.putString("date", date);
+                bundle.putString("quantity", String.valueOf(addTicket));
+                bundle.putString("ticketPrice", String.valueOf(ticketPrice * addTicket));
+
+                if (communication != null) {
+                    communication.launchContactDetails(bundle);
+                }
+            }
+        });
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        communication = (FragmentCommunication) context;
     }
 }

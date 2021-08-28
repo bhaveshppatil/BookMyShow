@@ -12,7 +12,7 @@
 
         <LinearLayout
             android:id="@+id/layoutFrontRow"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
@@ -24,7 +24,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/mic"
-                app:shapeAppearanceOverlay="@style/roundimageview" />
+                app:shapeAppearanceOverlay="@style/roundimageview"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
             android:layout_marginTop="20dp"
@@ -77,7 +77,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
             android:layout_marginTop="20dp"
@@ -95,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Vipul Goyal \nLive"
+                android:text="Vipul Goyal Live"
                 android:textColor="@color/black"
                 android:textSize="15dp" />
 
@@ -109,7 +109,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
             android:layout_marginTop="20dp"
@@ -141,7 +141,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
@@ -152,7 +152,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:src="@drawable/algebra"
+                android:src="@drawable/standupcomedy"
                 app:shapeAppearanceOverlay="@style/roundimageview" />
 
             <TextView

@@ -10,6 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/btnProceedTicket"
+        android:gravity="center"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -72,11 +74,11 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnProceedDate"
+        android:id="@+id/btnProceedTicket"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:backgroundTint="#C62222"
+        android:backgroundTint="@color/light_red"
         android:text="Next"
         android:textAllCaps="false"
         android:textColor="@color/white"
