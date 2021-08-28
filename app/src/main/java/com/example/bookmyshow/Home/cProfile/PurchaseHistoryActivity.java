@@ -6,6 +6,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -50,22 +51,17 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_purchase_history);
         initViews();
         setPurchaseHistoryDataFromFireBase();
-        /*if (title == null) {
-            editCancelConstraintLayout.setVisibility(View.GONE);
-        } else {
-
-            editCancelConstraintLayout.setVisibility(View.VISIBLE);*/
-            editCancelConstraintLayout.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (linearLayout.getVisibility() == View.GONE) {
-                        linearLayout.setVisibility(View.VISIBLE);
-                    } else {
-                        linearLayout.setVisibility(View.GONE);
-                    }
+        editCancelConstraintLayout.setVisibility(View.GONE);
+        editCancelConstraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (linearLayout.getVisibility() == View.GONE) {
+                    linearLayout.setVisibility(View.VISIBLE);
+                } else {
+                    linearLayout.setVisibility(View.GONE);
                 }
-            });
-       // }
+            }
+        });
         goToMyHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,12 +74,17 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        pBtnRemove.setOnClickListener(new View.OnClickListener() {
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
-                setCancelPurchaseHistoryDataFromFireBase();
+            public void run() {
+                pBtnRemove.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        setCancelPurchaseHistoryDataFromFireBase();
+                    }
+                });
             }
-        });
+        }, 2000);
     }
 
     private void setCancelPurchaseHistoryDataFromFireBase() {
@@ -109,13 +110,17 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
                 GenericTypeIndicator<PurchaseDataHelper> genericTypeIndicator = new GenericTypeIndicator<PurchaseDataHelper>() {
                 };
                 PurchaseDataHelper purchaseDataHelper = snapshot.getValue(genericTypeIndicator);
-                title = purchaseDataHelper.getEventName();
                 purchaseTitle.setText(purchaseDataHelper.getEventName());
                 purchaseDate.setText(purchaseDataHelper.getDate());
                 purchaseTime.setText(purchaseDataHelper.getTime());
                 purchasePrice.setText("₹ " + purchaseDataHelper.getPrice());
                 purchaseNoOfTickets.setText(purchaseDataHelper.getTicketQuantity());
                 Glide.with(purchaseImage).load(purchaseDataHelper.getImageUrl()).into(purchaseImage);
+                title = purchaseTitle.getText().toString();
+                if (title == "")
+                    editCancelConstraintLayout.setVisibility(View.GONE);
+                else
+                    editCancelConstraintLayout.setVisibility(View.VISIBLE);
             }
 
             @Override
