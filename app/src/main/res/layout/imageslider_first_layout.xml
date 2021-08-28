@@ -5,13 +5,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="180dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:adjustViewBounds="true"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        app:shapeAppearanceOverlay="@style/RoundImage"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="RoundImage">
-        <item name="cornerSize">2%</item>
+        <item name="cornerSize">5%</item>
+        <item name="color">@color/white</item>
     </style>
 </resources>

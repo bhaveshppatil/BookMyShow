@@ -149,7 +149,7 @@ public class HomeFragment extends Fragment {
         items.add(new imageSliderItem(R.drawable.oyemamu, "Oye Mamu!", "2h 5m, Comedy,18+", "Hindi", "Dream to become a VJ collide \nwith a museum trip a \ndiamond..."));
         items.add(new imageSliderItem(R.drawable.heistofcentury, "The Heist Of \nThe Century", "1h 54m, Crime,13+", "English, Spanish", "Inspired by a true story,a group\nof thieves join hands to..."));
         items.add(new imageSliderItem(R.drawable.magialnight, "On Magical\nNight", "1h 26m, Comedy,18+", " French", "After 20 years of marriage,\nMaria decides to leave..."));
-        items.add(new imageSliderItem(R.drawable.beckyposter, "Becky", "1h 33m, Action,18+", "English", "A teenager weekend at a lake \nhouse with her father takes..."));
+        items.add(new imageSliderItem(R.drawable.beckyposter, "Becky", "1h 33m, Action,18+", "English", "A teenager weekend at a \nlake house with her father \ntakes..."));
     }
 
     private void setImges() {

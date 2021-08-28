@@ -8,37 +8,39 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/layoutFrontRow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:src="@drawable/mic"
-                app:shapeAppearanceOverlay="@style/RoundImage"/>
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/mic"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
-                android:text="FrontRow Open \nMics"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="Front Row Open \nMics"
                 android:textColor="@color/black"
                 android:textSize="15dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="5dp"
                 android:text="Comedy Shows"
                 android:textColor="#353935"
                 android:textSize="12dp" />
@@ -47,22 +49,24 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
             android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
                 android:src="@drawable/digitalmarketing"
                 app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
                 android:text="Digital Marketing \nCommunication"
                 android:textColor="@color/black"
                 android:textSize="15dp" />
@@ -70,7 +74,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="5dp"
                 android:text="Education"
                 android:textColor="#353935"
                 android:textSize="12dp" />
@@ -79,22 +83,24 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
             android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
                 android:src="@drawable/vipulgoyal"
                 app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
                 android:text="Vipul Goyal Live"
                 android:textColor="@color/black"
                 android:textSize="15dp" />
@@ -102,7 +108,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="5dp"
                 android:text="Stand up Comedy"
                 android:textColor="#353935"
                 android:textSize="12dp" />
@@ -111,22 +117,24 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
             android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
                 android:src="@drawable/datascience"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
                 app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
                 android:text="Digital Marketing \nCommunication"
                 android:textColor="@color/black"
                 android:textSize="15dp" />
@@ -134,7 +142,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="5dp"
                 android:text="Education"
                 android:textColor="#353935"
                 android:textSize="12dp" />
@@ -143,31 +151,32 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
                 android:src="@drawable/standupcomedy"
                 app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
-                android:text="FrontRow Open \nMics"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="Front Row Open \nMics"
                 android:textColor="@color/black"
                 android:textSize="15dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="5dp"
                 android:text="Comedy Shows"
                 android:textColor="#353935"
                 android:textSize="12dp" />

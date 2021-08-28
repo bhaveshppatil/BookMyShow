@@ -6,18 +6,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:orientation="horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
                 app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/celebfie"/>
 
@@ -27,109 +29,120 @@
                 android:text="Celebfie- Cruise\nwith the stars"
                 android:textSize="15dp"
                 android:textColor="@color/black"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ballard Estate,\nGreen Gate"
                 android:textSize="12dp"
                 android:textColor="#353935"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="7dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/kaadiwild"/>
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/kaadiwild"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Kaafi Wild Hai- \nA Comedy"
                 android:textSize="15dp"
+                android:layout_marginTop="2dp"
                 android:textColor="@color/black"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Vapour Pub and  \nBrewery"
                 android:textSize="12dp"
                 android:textColor="#353935"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="7dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/firstlanguage"/>
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/firstlanguage"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="First Language"
                 android:textSize="15dp"
                 android:textColor="@color/black"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Go Native HSR \n:Bengaluru"
                 android:textSize="12dp"
                 android:textColor="#353935"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="7dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/saaz"/>
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/saaz"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Saaz34: A Musical \nEvening"
                 android:textSize="15dp"
+                android:layout_marginTop="2dp"
                 android:textColor="@color/black"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lahe Lahe,4th floor\nBengluru"
                 android:textSize="12dp"
                 android:textColor="#353935"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/introverthell"/>
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/introverthell"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -137,15 +150,15 @@
                 android:text="Introvert Hell  "
                 android:textSize="15dp"
                 android:textColor="@color/black"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tea Trails"
                 android:textSize="12dp"
                 android:textColor="#353935"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
 
     </LinearLayout>

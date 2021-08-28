@@ -6,18 +6,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:orientation="horizontal">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
                 app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/clues"/>
 
@@ -27,27 +29,28 @@
                 android:text="Travelling clues\nOnline Games"
                 android:textSize="15dp"
                 android:textColor="@color/black"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Multiple Venues"
                 android:textSize="12dp"
                 android:textColor="#353935"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="7dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
                 app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/bgmi"/>
             <TextView
@@ -56,26 +59,28 @@
                 android:text="BGMI Tournament\nEvery Night"
                 android:textSize="15dp"
                 android:textColor="@color/black"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Online(Play From... "
                 android:textSize="12dp"
                 android:textColor="#353935"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="7dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
                 app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/knight"/>
             <TextView
@@ -83,27 +88,29 @@
                 android:layout_height="wrap_content"
                 android:text="Knight Chess \nChampionship"
                 android:textSize="15dp"
+                android:layout_marginTop="2dp"
                 android:textColor="@color/black"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Online(Play From... "
                 android:textSize="12dp"
                 android:textColor="#353935"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="7dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
                 app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/haunted"/>
             <TextView
@@ -112,26 +119,28 @@
                 android:text="Online-Game\nThe Haunted"
                 android:textSize="15dp"
                 android:textColor="@color/black"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Online(Play From... "
                 android:textSize="12dp"
                 android:textColor="#353935"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_width="140dp"
+                android:layout_height="220dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
+                app:strokeColor="@color/white"
+                app:strokeWidth="10dp"
                 app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/indianchess"/>
 
@@ -141,15 +150,15 @@
                 android:text="Indian Chess\nLeague 2021"
                 android:textSize="15dp"
                 android:textColor="@color/black"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Online(Play From... "
                 android:textSize="15dp"
                 android:textColor="#353935"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
 
     </LinearLayout>
