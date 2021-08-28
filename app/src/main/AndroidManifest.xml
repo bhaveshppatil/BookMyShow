@@ -17,9 +17,6 @@
             android:name=".Home.cProfile.PurchaseHistoryActivity"
             android:exported="true" />
         <activity
-            android:name=".Home.cProfile.PurchaseHistoryActivity"
-            android:exported="true" />
-        <activity
             android:name=".Home.aMyHome.MovieRecycler.BookMovieTicket"
             android:exported="true" />
         <activity
