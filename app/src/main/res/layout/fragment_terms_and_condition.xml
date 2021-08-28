@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Home.aMyHome.MovieRecycler.Fragments.TermsAndConditionFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/basic"
+                android:text="1. Ticket is compulsory for children of 3 years &amp; above.\n
+\n2. Person below the age of 18 years cannot be admitted for movies certified `A`.\n
+\n3. Items like laptops, cameras, knives, lighter, match box , cigarettes, firearms and all types of inflammable objects are strictly prohibited.\n
+\n4. Items like carry-bags eatables , helmets , handbags are not allowed inside the theatres and are strictly prohibited. Kindly deposit at the baggage counter of mall/cinema.\n
+\n5. For 3D movies, ticket price includes charges towards usage of 3D glasses.\n
+\n6. Seat Layout Page for PVR Cinemas is for representational purpose only and actual seat layout might vary.\n
+\n9. For safety purposes, wearing mask is mandatory.\n"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnAcceptTerms"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#C62222"
+                android:text="Accept All"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
