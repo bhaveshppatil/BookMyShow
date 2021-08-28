@@ -18,7 +18,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
+                app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/dongri"/>
 
             <TextView
@@ -48,7 +48,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
+                app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/gauravkapoor"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
+                app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/tharlebox"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -104,7 +104,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
+                app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/standupcomedy"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -132,7 +132,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
+                app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/introverthell"/>
 
             <TextView

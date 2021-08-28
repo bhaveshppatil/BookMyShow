@@ -24,7 +24,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/mic"
-                app:shapeAppearanceOverlay="@style/roundimageview"/>
+                app:shapeAppearanceOverlay="@style/RoundImage"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/digitalmarketing"
-                app:shapeAppearanceOverlay="@style/roundimageview" />
+                app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -89,7 +89,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/vipulgoyal"
-                app:shapeAppearanceOverlay="@style/roundimageview" />
+                app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -121,7 +121,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/datascience"
-                app:shapeAppearanceOverlay="@style/roundimageview" />
+                app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -153,7 +153,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/standupcomedy"
-                app:shapeAppearanceOverlay="@style/roundimageview" />
+                app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"

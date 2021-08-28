@@ -18,7 +18,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
+                app:shapeAppearanceOverlay="@style/RoundImage"
                 android:src="@drawable/celebfie"/>
 
             <TextView
@@ -48,8 +48,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/kaadiwild"/>
+                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/kaadiwild"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,8 +75,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/firstlanguage"/>
+                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/firstlanguage"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -104,8 +102,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/saaz"/>
+                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/saaz"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -132,8 +129,7 @@
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                app:shapeAppearanceOverlay="@style/roundimageview"
-                android:src="@drawable/introverthell"/>
+                app:shapeAppearanceOverlay="@style/RoundImage"                android:src="@drawable/introverthell"/>
 
             <TextView
                 android:layout_width="wrap_content"

@@ -11,12 +11,11 @@
         android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
         android:layout_height="250dp"
-        android:scaleType="fitXY"
         android:adjustViewBounds="false"
         android:src="@drawable/beckyposter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearanceOverlay="@style/roundimageview"/>
+        app:shapeAppearanceOverlay="@style/RoundImage"/>
     <TextView
         android:id="@+id/txtMovieName"
         android:layout_width="wrap_content"

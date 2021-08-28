@@ -42,11 +42,11 @@ public class HomeFragment extends Fragment {
         //setContentView(R.layout.activity_main);
         sliderView = view.findViewById(R.id.image_slider);
         sliderView1 = view.findViewById(R.id.image_slider_two);
-        //seeAllSport = view.findViewById(R.id.txtSeeAllSport);
+        seeAllSport = view.findViewById(R.id.txtSeeAllSport);
         seeAllStreaming = view.findViewById(R.id.txtSeeAllStreaming);
         seeAllOutdoorEvent = view.findViewById(R.id.txtSeeAllOutdoor);
         seeAllPopular = view.findViewById(R.id.txtSeeAllPopular);
-        seeAllLaughter = view.findViewById(R.id.txtSeeAllLaughter);
+        //seeAllLaughter = view.findViewById(R.id.txtSeeAllLaughter);
         linearLayout = view.findViewById(R.id.layoutFrontRow);
         ivMovies = view.findViewById(R.id.ivMovie);
 
@@ -64,21 +64,21 @@ public class HomeFragment extends Fragment {
                 Intent intent = new Intent(getContext(), RegisterEvent.class);
                 startActivity(intent);
             }
-        });/*
+        });
         seeAllSport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), SportActivity.class);
                 startActivity(intent);
             }
-        });*/
-        seeAllLaughter.setOnClickListener(new View.OnClickListener() {
+        });
+       /* seeAllLaughter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), LaughterActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
         seeAllPopular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
