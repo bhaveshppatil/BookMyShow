@@ -239,7 +239,7 @@
             android:layout_marginBottom="16dp"
             android:drawablePadding="20dp"
             android:padding="10dp"
-            android:text="$50"
+            android:text="Rs.699.00"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
