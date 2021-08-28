@@ -34,12 +34,14 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
     private LinearLayout linearLayout;
     private FirebaseUser user;
     private FirebaseAuth mAuth;
+    private String title;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
     @Override
     protected void onStart() {
         super.onStart();
+
     }
 
     @Override
@@ -47,22 +49,23 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase_history);
         initViews();
-
-
-        //editCancelConstraintLayout.setVisibility(View.GONE);
-
         setPurchaseHistoryDataFromFireBase();
-        editCancelConstraintLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (linearLayout.getVisibility() == View.GONE) {
-                    linearLayout.setVisibility(View.VISIBLE);
-                } else {
-                    linearLayout.setVisibility(View.GONE);
-                }
-            }
-        });
+        /*if (title == null) {
+            editCancelConstraintLayout.setVisibility(View.GONE);
+        } else {
 
+            editCancelConstraintLayout.setVisibility(View.VISIBLE);*/
+            editCancelConstraintLayout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (linearLayout.getVisibility() == View.GONE) {
+                        linearLayout.setVisibility(View.VISIBLE);
+                    } else {
+                        linearLayout.setVisibility(View.GONE);
+                    }
+                }
+            });
+       // }
         goToMyHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,7 +93,6 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
         databaseReference.child(user.getDisplayName()).setValue(dataHelper);
         editCancelConstraintLayout.setAlpha((float) 0.50);
         linearLayout.setVisibility(View.GONE);
-
     }
 
     private void setPurchaseHistoryDataFromFireBase() {
@@ -107,6 +109,7 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
                 GenericTypeIndicator<PurchaseDataHelper> genericTypeIndicator = new GenericTypeIndicator<PurchaseDataHelper>() {
                 };
                 PurchaseDataHelper purchaseDataHelper = snapshot.getValue(genericTypeIndicator);
+                title = purchaseDataHelper.getEventName();
                 purchaseTitle.setText(purchaseDataHelper.getEventName());
                 purchaseDate.setText(purchaseDataHelper.getDate());
                 purchaseTime.setText(purchaseDataHelper.getTime());
