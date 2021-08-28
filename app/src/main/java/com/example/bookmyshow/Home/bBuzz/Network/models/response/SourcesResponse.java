@@ -5,6 +5,7 @@ import com.example.bookmyshow.Home.bBuzz.Network.models.Source;
 import java.util.List;
 
 public class SourcesResponse {
+
     private String status;
     private List<Source> sources;
 
@@ -23,4 +24,5 @@ public class SourcesResponse {
     public void setSources(List<Source> sources) {
         this.sources = sources;
     }
+
 }

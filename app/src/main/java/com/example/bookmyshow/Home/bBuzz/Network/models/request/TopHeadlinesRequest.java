@@ -1,6 +1,7 @@
 package com.example.bookmyshow.Home.bBuzz.Network.models.request;
 
 public class TopHeadlinesRequest {
+
     private String category, sources, q, pageSize, page, country, language;
 
     private TopHeadlinesRequest(Builder builder) {
@@ -91,4 +92,5 @@ public class TopHeadlinesRequest {
             return new TopHeadlinesRequest(this);
         }
     }
+
 }

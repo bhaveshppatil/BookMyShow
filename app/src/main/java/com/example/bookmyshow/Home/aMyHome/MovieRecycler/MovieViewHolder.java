@@ -43,4 +43,5 @@ public class MovieViewHolder extends RecyclerView.ViewHolder {
             }
         });
     }
+
 }

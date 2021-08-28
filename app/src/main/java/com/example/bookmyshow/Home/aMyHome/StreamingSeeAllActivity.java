@@ -17,44 +17,45 @@ import java.util.List;
 
 public class StreamingSeeAllActivity extends AppCompatActivity {
 
-    private List<EventsModel> eventsModels=new ArrayList<>();
+    private List<EventsModel> eventsModels = new ArrayList<>();
     private EventsAdapter adapter;
     private RecyclerView recyclerView;
 
-    private Runnable runnable=new Runnable() {
+    private Runnable runnable = new Runnable() {
         @Override
         public void run() {
             readjson();
         }
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_streaming_see_all);
-        recyclerView=findViewById(R.id.recyclerView);
-        adapter=new EventsAdapter(eventsModels);
-        GridLayoutManager gridLayoutManager=new GridLayoutManager(this,2);
+        recyclerView = findViewById(R.id.recyclerView);
+        adapter = new EventsAdapter(eventsModels);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         startBackground();
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(gridLayoutManager);
     }
 
-    private void startBackground(){
-        Thread thread=new Thread(runnable);
+    private void startBackground() {
+        Thread thread = new Thread(runnable);
         thread.start();
     }
 
     private void readjson() {
         try {
-            InputStream inputStream=this.getAssets().open("random.json");
-            int data=inputStream.read();
+            InputStream inputStream = this.getAssets().open("random.json");
+            int data = inputStream.read();
 
-            StringBuilder builder=new StringBuilder();
+            StringBuilder builder = new StringBuilder();
 
-            while(data!=-1){
-                char ch=(char) data;
+            while (data != -1) {
+                char ch = (char) data;
                 builder.append(ch);
-                data=inputStream.read();
+                data = inputStream.read();
             }
             buildpojofromjson(builder.toString());
         } catch (Exception e) {
@@ -63,9 +64,10 @@ public class StreamingSeeAllActivity extends AppCompatActivity {
     }
 
     private void buildpojofromjson(String json) {
-        Type type=new TypeToken<ResponseModel>(){}.getType();
-        ResponseModel responseModel=new Gson().fromJson(json,type);
-        eventsModels=responseModel.getEvents();
+        Type type = new TypeToken<ResponseModel>() {
+        }.getType();
+        ResponseModel responseModel = new Gson().fromJson(json, type);
+        eventsModels = responseModel.getEvents();
         updateUi();
     }
 
@@ -77,4 +79,5 @@ public class StreamingSeeAllActivity extends AppCompatActivity {
             }
         });
     }
+
 }

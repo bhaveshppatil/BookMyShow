@@ -34,28 +34,6 @@ public class SelectDate extends AppCompatActivity implements FragmentCommunicati
         fragmentTransaction.add(R.id.fragment_container_view_tag, selectDateTime, "selectDateTime").addToBackStack("addDate").commit();
     }
 
-//    private void setAdapter() {
-//        ViewPageAdapter viewPageAdapter = new ViewPageAdapter(getSupportFragmentManager(), getLifecycle());
-//        viewPager2.setAdapter(viewPageAdapter);
-//        new TabLayoutMediator(tabLayout, viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
-//            @Override
-//            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
-//                switch (position) {
-//                    case 0:
-//                        tab.setText("Date & Time");
-//                        break;
-//                    case 1:
-//                        tab.setText("Tickets");
-//                        break;
-//                    case 2:
-//                        tab.setText("Registration");
-//                        break;
-//                }
-//            }
-//        }).attach();
-//    }
-
-
     @Override
     public void launchSelectTicketFrag(Bundle bundle) {
         fragmentManager = getSupportFragmentManager();
@@ -92,4 +70,5 @@ public class SelectDate extends AppCompatActivity implements FragmentCommunicati
         paymentPageFragment.setArguments(bundle);
         fragmentTransaction.replace(R.id.fragment_container_view_tag, paymentPageFragment, "paymentPageFragment").addToBackStack("paymentPage").commit();
     }
+
 }

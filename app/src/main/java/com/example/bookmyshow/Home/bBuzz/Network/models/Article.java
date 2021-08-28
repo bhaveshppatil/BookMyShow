@@ -1,6 +1,7 @@
 package com.example.bookmyshow.Home.bBuzz.Network.models;
 
 public class Article {
+
     private Source source;
     private String author;
     private String title;
@@ -64,4 +65,5 @@ public class Article {
     public void setPublishedAt(String publishedAt) {
         this.publishedAt = publishedAt;
     }
+
 }

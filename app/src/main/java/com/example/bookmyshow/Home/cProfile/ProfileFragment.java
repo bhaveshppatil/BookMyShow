@@ -7,8 +7,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,8 +16,7 @@ import com.example.bookmyshow.R;
 
 public class ProfileFragment extends Fragment {
 
-    private View profileViewBar;
-    private View pPurchaseHistoryBar;
+    private View profileViewBar, pPurchaseHistoryBar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -57,4 +54,5 @@ public class ProfileFragment extends Fragment {
             }
         });
     }
+
 }

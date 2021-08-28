@@ -82,5 +82,7 @@ public class BuzzFragment extends Fragment {
         public CharSequence getPageTitle(int position) {
             return mFragmentTitleList.get(position);
         }
+
     }
+
 }

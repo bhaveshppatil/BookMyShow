@@ -69,4 +69,5 @@ public class TechnologyFragment extends Fragment implements OnItemClickListener 
         hBuzzTechnologyWebView.setVisibility(View.VISIBLE);
         hBuzzTechnologyWebView.loadUrl(hBuzzTechnologyArticleResponse.getArticles().get(position).getUrl());
     }
+
 }

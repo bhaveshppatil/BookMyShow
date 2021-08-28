@@ -2,10 +2,7 @@ package com.example.bookmyshow.Home.aMyHome;
 
 public class imageSliderItem {
     private int images;
-    private String movieName;
-    private String movieDuration;
-    private String movieLanguage;
-    private String movieDescription;
+    private String movieName, movieDuration, movieLanguage, movieDescription;
 
     public imageSliderItem(int images, String movieName, String movieDuration, String movieLanguage, String movieDescription) {
         this.images = images;
@@ -34,4 +31,5 @@ public class imageSliderItem {
     public String getMovieDescription() {
         return movieDescription;
     }
+
 }

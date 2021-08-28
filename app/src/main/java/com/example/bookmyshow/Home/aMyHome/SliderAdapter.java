@@ -11,14 +11,16 @@ import com.smarteist.autoimageslider.SliderViewAdapter;
 import java.util.ArrayList;
 
 public class SliderAdapter extends SliderViewAdapter<SliderAdapter.Holder> {
+
     private ArrayList<Integer> imageList;
-    public SliderAdapter(ArrayList<Integer> imageList){
-        this.imageList=imageList;
+
+    public SliderAdapter(ArrayList<Integer> imageList) {
+        this.imageList = imageList;
     }
 
     @Override
     public Holder onCreateViewHolder(ViewGroup parent) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.imageslider_first_layout,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.imageslider_first_layout, parent, false);
         return new Holder(view);
     }
 
@@ -32,12 +34,13 @@ public class SliderAdapter extends SliderViewAdapter<SliderAdapter.Holder> {
         return imageList.size();
     }
 
-    public class Holder extends SliderViewAdapter.ViewHolder{
+    public class Holder extends SliderViewAdapter.ViewHolder {
         ImageView imageView;
 
         public Holder(View itemView) {
             super(itemView);
-            imageView=itemView.findViewById(R.id.image_view);
+            imageView = itemView.findViewById(R.id.image_view);
         }
     }
+
 }

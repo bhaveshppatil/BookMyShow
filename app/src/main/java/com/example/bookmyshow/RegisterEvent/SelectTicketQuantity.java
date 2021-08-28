@@ -18,13 +18,10 @@ import com.example.bookmyshow.R;
 
 public class SelectTicketQuantity extends Fragment {
 
-    int realPrice;
     private ImageView ivAddTicket, ivRemoveTicket;
     private TextView tvTicketPrice, tvQuantity;
     private Button btnProceed;
-    private int addTicket = 1;
-    private int removeTicket = 1;
-    private int ticketPrice = 699;
+    private int addTicket = 1, removeTicket = 1, ticketPrice = 699, realPrice;
     private FragmentCommunication communication;
     private String date;
 
@@ -47,11 +44,7 @@ public class SelectTicketQuantity extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        tvTicketPrice = view.findViewById(R.id.tvPrice);
-        tvQuantity = view.findViewById(R.id.tvQuantity);
-        ivAddTicket = view.findViewById(R.id.ivAdd);
-        ivRemoveTicket = view.findViewById(R.id.ivMinus);
-        btnProceed = view.findViewById(R.id.btnProceedTicket);
+        initViews(view);
 
         ivAddTicket.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,9 +92,18 @@ public class SelectTicketQuantity extends Fragment {
         });
     }
 
+    private void initViews(View view) {
+        tvTicketPrice = view.findViewById(R.id.tvPrice);
+        tvQuantity = view.findViewById(R.id.tvQuantity);
+        ivAddTicket = view.findViewById(R.id.ivAdd);
+        ivRemoveTicket = view.findViewById(R.id.ivMinus);
+        btnProceed = view.findViewById(R.id.btnProceedTicket);
+    }
+
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         communication = (FragmentCommunication) context;
     }
+
 }

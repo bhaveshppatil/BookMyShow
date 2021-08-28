@@ -5,8 +5,6 @@ import static com.facebook.FacebookSdk.getApplicationContext;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.location.Location;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -22,7 +20,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.bookmyshow.Home.aMyHome.Location.AppLocationService;
 import com.example.bookmyshow.Home.aMyHome.Location.LocationAddress;
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.Movies;
 import com.example.bookmyshow.R;
@@ -35,58 +32,26 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
     SliderView sliderView, sliderView1;
-    View layout;
     LinearLayout linearLayout;
-    private TextView seeAll;
-    private TextView seeAllStreaming;
-    private TextView seeAllOutdoorEvent;
-    private TextView seeAllPopular;
-    private TextView seeAllLaughter;
-    private TextView seeAllSport;
-    private TextView hLocation;
+    private TextView seeAllStreaming, seeAllOutdoorEvent, seeAllPopular, seeAllLaughter, seeAllSport, hLocation;
     private ImageView ivMovies;
     private ArrayList<Integer> list = new ArrayList<>();
     private ArrayList<imageSliderItem> items = new ArrayList<>();
 
-    AppLocationService appLocationService;
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        sliderView = view.findViewById(R.id.image_slider);
-        sliderView1 = view.findViewById(R.id.image_slider_two);
-        seeAllSport = view.findViewById(R.id.txtSeeAllSport);
-        seeAllStreaming = view.findViewById(R.id.txtSeeAllStreaming);
-        seeAllOutdoorEvent = view.findViewById(R.id.txtSeeAllOutdoor);
-        seeAllPopular = view.findViewById(R.id.txtSeeAllPopular);
-        seeAllLaughter = view.findViewById(R.id.txtSeeAllLaughter);
-        linearLayout = view.findViewById(R.id.layoutFrontRow);
-        ivMovies = view.findViewById(R.id.ivMovie);
-        hLocation = view.findViewById(R.id.tvLocation);
-        appLocationService = new AppLocationService();
+        initViews(view);
 
         hLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                /*Double la = Double.valueOf(appLocationService.getLatitude());
-                Double lo = Double.valueOf(appLocationService.getLongitude());
-                if (la != null && lo != null) {
-                    double latitude = la;
-                    double longitude = lo;
-                    LocationAddress locationAddress = new LocationAddress();
-                    locationAddress.getAddressFromLocation(latitude, longitude,
-                            getApplicationContext(), new GeocoderHandler());
-                } else {
-                    showSettingsAlert();
-                }*/
-
-                //you can hard-code the lat & long if you have issues with getting it
-                //remove the below if-condition and use the following couple of lines
-
+                // set latitude and longitude
                 double latitude = 21.2635883;
                 double longitude = 81.65488669999999;
-               LocationAddress locationAddress = new LocationAddress();
+
+                LocationAddress locationAddress = new LocationAddress();
                 locationAddress.getAddressFromLocation(latitude, longitude,
                         getApplicationContext(), new GeocoderHandler());
 
@@ -154,6 +119,19 @@ public class HomeFragment extends Fragment {
 
         setSliderForSecond();
 
+    }
+
+    private void initViews(View view) {
+        sliderView = view.findViewById(R.id.image_slider);
+        sliderView1 = view.findViewById(R.id.image_slider_two);
+        seeAllSport = view.findViewById(R.id.txtSeeAllSport);
+        seeAllStreaming = view.findViewById(R.id.txtSeeAllStreaming);
+        seeAllOutdoorEvent = view.findViewById(R.id.txtSeeAllOutdoor);
+        seeAllPopular = view.findViewById(R.id.txtSeeAllPopular);
+        seeAllLaughter = view.findViewById(R.id.txtSeeAllLaughter);
+        linearLayout = view.findViewById(R.id.layoutFrontRow);
+        ivMovies = view.findViewById(R.id.ivMovie);
+        hLocation = view.findViewById(R.id.tvLocation);
     }
 
     private void setSliderForSecond() {
@@ -228,4 +206,5 @@ public class HomeFragment extends Fragment {
             hLocation.setText(locationAddress);
         }
     }
+
 }

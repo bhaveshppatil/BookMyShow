@@ -1,11 +1,9 @@
 package com.example.bookmyshow.Home.aMyHome;
 
 public class StreamingSeeAllItem {
+
     private int eventImage;
-    private String eventName;
-    private String eventType;
-    private String eventWhereToWatch;
-    private String eventPrice;
+    private String eventName, eventType, eventWhereToWatch, eventPrice;
 
     public StreamingSeeAllItem(int eventImage, String eventName, String eventType, String eventWhereToWatch, String eventPrice) {
         this.eventImage = eventImage;
@@ -34,4 +32,5 @@ public class StreamingSeeAllItem {
     public String getEventPrice() {
         return eventPrice;
     }
+
 }

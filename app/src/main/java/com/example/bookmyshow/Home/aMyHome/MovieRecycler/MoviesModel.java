@@ -33,4 +33,5 @@ public class MoviesModel {
     public void setThumbID(int thumbID) {
         this.thumbID = thumbID;
     }
+
 }

@@ -85,4 +85,5 @@ public class DataHelper implements Serializable {
     public String getImageUrl() {
         return imageUrl;
     }
+
 }

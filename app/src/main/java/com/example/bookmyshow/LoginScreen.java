@@ -211,7 +211,7 @@ public class LoginScreen extends AppCompatActivity {
 
                             Intent intent = new Intent(LoginScreen.this, HomeActivity.class);
                             startActivity(intent);
-                            
+
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
@@ -225,4 +225,5 @@ public class LoginScreen extends AppCompatActivity {
             Log.d(TAG, "Fetch Data");
         }
     }
+
 }

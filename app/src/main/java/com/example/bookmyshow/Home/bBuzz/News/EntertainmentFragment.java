@@ -69,4 +69,5 @@ public class EntertainmentFragment extends Fragment implements OnItemClickListen
         hBuzzEntertainmentWebView.setVisibility(View.VISIBLE);
         hBuzzEntertainmentWebView.loadUrl(hBuzzEntertainmentArticleResponse.getArticles().get(position).getUrl());
     }
+
 }

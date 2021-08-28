@@ -30,4 +30,5 @@ public class ViewPageAdapter extends FragmentStateAdapter {
     public int getItemCount() {
         return 3;
     }
+
 }

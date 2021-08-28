@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +20,6 @@ import java.util.List;
 public class Movies extends AppCompatActivity implements View.OnClickListener, ClickListener {
 
     private Button btnEnglish, btnHindi, btnTelugu, btnJapanese, btnPunjabi;
-    private ClickListener clickListener;
     private RecyclerView recyclerView;
     private List<MoviesModel> moviesModelList = new ArrayList<>();
 
@@ -122,4 +120,5 @@ public class Movies extends AppCompatActivity implements View.OnClickListener, C
             Toast.makeText(Movies.this, "Item Clicked" + position, Toast.LENGTH_SHORT).show();
         }
     }
+
 }

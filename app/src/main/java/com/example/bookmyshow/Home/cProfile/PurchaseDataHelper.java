@@ -74,4 +74,5 @@ public class PurchaseDataHelper {
     public String getImageUrl() {
         return imageUrl;
     }
+
 }

@@ -69,4 +69,5 @@ public class SportsFragment extends Fragment implements OnItemClickListener {
         hBuzzSportsWebView.setVisibility(View.VISIBLE);
         hBuzzSportsWebView.loadUrl(hBuzzSportsArticleResponse.getArticles().get(position).getUrl());
     }
+
 }

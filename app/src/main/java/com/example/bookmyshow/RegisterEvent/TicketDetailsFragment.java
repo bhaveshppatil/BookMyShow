@@ -92,4 +92,5 @@ public class TicketDetailsFragment extends Fragment implements AdapterView.OnIte
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
 }

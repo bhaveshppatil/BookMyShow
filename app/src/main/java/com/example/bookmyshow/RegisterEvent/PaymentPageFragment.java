@@ -18,10 +18,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.bookmyshow.Home.aMyHome.HomeFragment;
 import com.example.bookmyshow.Home.cProfile.PurchaseHistoryActivity;
 import com.example.bookmyshow.R;
-
 
 public class PaymentPageFragment extends Fragment implements View.OnClickListener {
 
@@ -44,13 +42,7 @@ public class PaymentPageFragment extends Fragment implements View.OnClickListene
         super.onViewCreated(view, savedInstanceState);
 
         dialog = new Dialog(getContext());
-        tvAmazonPay = view.findViewById(R.id.tvAmazonPay);
-        tvNetBanking = view.findViewById(R.id.netBanking);
-        tvUpi = view.findViewById(R.id.upi);
-        btnDone = view.findViewById(R.id.okButton);
-        tvCreditCard = view.findViewById(R.id.debitCard);
-        btnPayAmount = view.findViewById(R.id.btnPayAmount);
-        layout = view.findViewById(R.id.layoutCreditCard);
+        initViews(view);
 
         tvAmazonPay.setOnClickListener(this);
         tvNetBanking.setOnClickListener(this);
@@ -58,6 +50,16 @@ public class PaymentPageFragment extends Fragment implements View.OnClickListene
         tvCreditCard.setOnClickListener(this);
         btnPayAmount.setOnClickListener(this);
 
+    }
+
+    private void initViews(View view) {
+        tvAmazonPay = view.findViewById(R.id.tvAmazonPay);
+        tvNetBanking = view.findViewById(R.id.netBanking);
+        tvUpi = view.findViewById(R.id.upi);
+        btnDone = view.findViewById(R.id.okButton);
+        tvCreditCard = view.findViewById(R.id.debitCard);
+        btnPayAmount = view.findViewById(R.id.btnPayAmount);
+        layout = view.findViewById(R.id.layoutCreditCard);
     }
 
     @Override
@@ -100,4 +102,5 @@ public class PaymentPageFragment extends Fragment implements View.OnClickListene
         });
         dialog.show();
     }
+
 }

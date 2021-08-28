@@ -32,9 +32,14 @@ public class UserDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_details);
         mAuth = FirebaseAuth.getInstance();
+        initViews();
+    }
+
+    private void initViews() {
         userName = findViewById(R.id.etUserName);
         userEmail = findViewById(R.id.etUserEmail);
         userMobileNumber = findViewById(R.id.etUserMobileNumber);
         userImage = findViewById(R.id.ivUserImage);
     }
+
 }

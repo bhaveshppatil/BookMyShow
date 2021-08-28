@@ -31,6 +31,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="#C62222"
                 android:hint="Update date here"
+                android:textColor="@color/black"
                 android:textColorHint="#C62222" />
 
             <Button
@@ -118,7 +119,8 @@
                 android:id="@+id/crdTime2"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@drawable/bg">
 
                 <TextView
                     android:id="@+id/tvTime2"

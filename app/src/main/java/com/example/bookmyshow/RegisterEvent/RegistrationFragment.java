@@ -59,11 +59,7 @@ public class RegistrationFragment extends Fragment {
         FirebaseUser user = mAuth.getCurrentUser();
         String userName = user.getDisplayName();
 
-        btnNextContact = view.findViewById(R.id.btnNextContact);
-
-        etEmail = view.findViewById(R.id.etEmail);
-        etContact = view.findViewById(R.id.etContact);
-        etName = view.findViewById(R.id.etName);
+        initViews(view);
 
         btnNextContact.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,9 +89,17 @@ public class RegistrationFragment extends Fragment {
         });
     }
 
+    private void initViews(View view) {
+        btnNextContact = view.findViewById(R.id.btnNextContact);
+        etEmail = view.findViewById(R.id.etEmail);
+        etContact = view.findViewById(R.id.etContact);
+        etName = view.findViewById(R.id.etName);
+    }
+
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         communication = (FragmentCommunication) context;
     }
+
 }

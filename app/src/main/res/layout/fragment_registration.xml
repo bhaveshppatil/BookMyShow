@@ -48,7 +48,9 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="#C62222"
-            android:hint="Enter name" />
+            android:hint="Enter name"
+            android:textColor="@color/black"
+            android:textColorHint="#808080" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -69,7 +71,9 @@
             android:layout_marginEnd="30dp"
             android:backgroundTint="#C62222"
             android:hint="Enter email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="#808080" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -90,7 +94,9 @@
             android:layout_marginEnd="30dp"
             android:backgroundTint="#C62222"
             android:hint="Enter Contact Number"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="#808080" />
 
         <CheckBox
             android:layout_width="match_parent"

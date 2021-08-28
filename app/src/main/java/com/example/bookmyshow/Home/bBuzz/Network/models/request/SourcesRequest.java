@@ -1,6 +1,7 @@
 package com.example.bookmyshow.Home.bBuzz.Network.models.request;
 
 public class SourcesRequest {
+
     private String category, language, country;
 
     private SourcesRequest(Builder builder) {
@@ -50,4 +51,5 @@ public class SourcesRequest {
             return new SourcesRequest(this);
         }
     }
+
 }

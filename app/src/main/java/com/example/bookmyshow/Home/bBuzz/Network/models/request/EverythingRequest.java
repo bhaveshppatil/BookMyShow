@@ -1,6 +1,7 @@
 package com.example.bookmyshow.Home.bBuzz.Network.models.request;
 
 public class EverythingRequest {
+
     private String q, sources, domains, from, to, language, sortBy, pageSize, page;
 
     private EverythingRequest(Builder builder) {

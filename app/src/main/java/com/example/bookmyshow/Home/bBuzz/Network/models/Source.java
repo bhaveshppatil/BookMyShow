@@ -1,6 +1,7 @@
 package com.example.bookmyshow.Home.bBuzz.Network.models;
 
 public class Source {
+
     private String id;
     private String name;
     private String description;
@@ -64,4 +65,5 @@ public class Source {
     public void setCountry(String country) {
         this.country = country;
     }
+
 }

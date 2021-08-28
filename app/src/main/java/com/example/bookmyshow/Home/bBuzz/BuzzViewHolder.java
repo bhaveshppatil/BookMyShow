@@ -43,4 +43,5 @@ public class BuzzViewHolder extends RecyclerView.ViewHolder {
         mTvBuzzTitle.setText(article.getTitle());
         mTvBuzzTime.setText(article.getPublishedAt());
     }
+
 }

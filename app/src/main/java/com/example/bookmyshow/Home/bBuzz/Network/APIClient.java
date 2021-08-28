@@ -4,6 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class APIClient {
+
     private static Retrofit mRetrofit = null;
 
     private static Retrofit getRetrofit() {
@@ -13,7 +14,6 @@ public class APIClient {
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
-
         return mRetrofit;
     }
 

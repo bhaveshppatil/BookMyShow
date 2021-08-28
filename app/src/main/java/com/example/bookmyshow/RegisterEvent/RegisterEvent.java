@@ -12,25 +12,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bookmyshow.R;
 
-
 public class RegisterEvent extends AppCompatActivity {
 
     private Button btnRegister, btnInterested;
     private TextView tvLike, tvShowTerms;
     private ImageView ivTermsArrow;
-    private int countLike = 21;
-    private int termsCount = 0;
+    private int countLike = 21, termsCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_event);
-
-        btnInterested = findViewById(R.id.btnInterested);
-        btnRegister = findViewById(R.id.btnRegister);
-        tvLike = findViewById(R.id.tvLike);
-        tvShowTerms = findViewById(R.id.tvShowTerms);
-        ivTermsArrow = findViewById(R.id.ivTermsConditions);
+        initViews();
 
         tvLike.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,10 +60,19 @@ public class RegisterEvent extends AppCompatActivity {
                 termsCount = termsCount + 1;
                 if (termsCount % 2 == 0) {
                     tvShowTerms.setVisibility(View.GONE);
-                }else {
+                } else {
                     tvShowTerms.setVisibility(View.VISIBLE);
                 }
             }
         });
     }
+
+    private void initViews() {
+        btnInterested = findViewById(R.id.btnInterested);
+        btnRegister = findViewById(R.id.btnRegister);
+        tvLike = findViewById(R.id.tvLike);
+        tvShowTerms = findViewById(R.id.tvShowTerms);
+        ivTermsArrow = findViewById(R.id.ivTermsConditions);
+    }
+
 }

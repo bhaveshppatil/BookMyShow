@@ -19,15 +19,11 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.bookmyshow.R;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Calendar;
 
 public class SelectDateTime extends Fragment {
 
-    FirebaseDatabase firebaseDatabase;
-    DatabaseReference databaseReference;
     private int mYear, mMonth, mDay, mHour, mMinute;
     private Button btnDate, btnProceed;
     private EditText etDate;
@@ -48,19 +44,7 @@ public class SelectDateTime extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        btnDate = view.findViewById(R.id.btnDate);
-        etDate = view.findViewById(R.id.etDate);
-
-        crdTime1 = view.findViewById(R.id.crdTime1);
-        crdTime2 = view.findViewById(R.id.crdTime2);
-        crdTime3 = view.findViewById(R.id.crdTime3);
-
-        tvTime1 = view.findViewById(R.id.tvTime1);
-        tvTime2 = view.findViewById(R.id.tvTime2);
-        tvTime3 = view.findViewById(R.id.tvTime3);
-
-        btnProceed = view.findViewById(R.id.btnProceedDate);
-        layout = view.findViewById(R.id.layoutSelectTime);
+        initViews(view);
 
         btnDate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,31 +96,6 @@ public class SelectDateTime extends Fragment {
             }
         });
 
-/*
-        btnTime.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Get Current Time
-                final Calendar c = Calendar.getInstance();
-                mHour = c.get(Calendar.HOUR_OF_DAY);
-                mMinute = c.get(Calendar.MINUTE);
-
-                // Launch Time Picker Dialog
-                TimePickerDialog timePickerDialog = new TimePickerDialog(getContext(),
-                        new TimePickerDialog.OnTimeSetListener() {
-                            @Override
-                            public void onTimeSet(TimePicker view, int hourOfDay,
-                                                  int minute) {
-
-                                etTime.setText(hourOfDay + ":" + minute);
-                            }
-                        }, mHour, mMinute, false);
-                timePickerDialog.show();
-            }
-        });
-
- */
-
         btnProceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -152,9 +111,26 @@ public class SelectDateTime extends Fragment {
         });
     }
 
+    private void initViews(View view) {
+        btnDate = view.findViewById(R.id.btnDate);
+        etDate = view.findViewById(R.id.etDate);
+
+        crdTime1 = view.findViewById(R.id.crdTime1);
+        crdTime2 = view.findViewById(R.id.crdTime2);
+        crdTime3 = view.findViewById(R.id.crdTime3);
+
+        tvTime1 = view.findViewById(R.id.tvTime1);
+        tvTime2 = view.findViewById(R.id.tvTime2);
+        tvTime3 = view.findViewById(R.id.tvTime3);
+
+        btnProceed = view.findViewById(R.id.btnProceedDate);
+        layout = view.findViewById(R.id.layoutSelectTime);
+    }
+
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         communication = (FragmentCommunication) context;
     }
+
 }

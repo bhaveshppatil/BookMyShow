@@ -19,4 +19,5 @@ public interface APIService {
 
     @GET("/v2/everything")
     Call<ArticleResponse> getEverything(@QueryMap Map<String, String> query);
+
 }

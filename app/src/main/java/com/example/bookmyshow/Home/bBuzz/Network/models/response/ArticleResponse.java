@@ -5,6 +5,7 @@ import com.example.bookmyshow.Home.bBuzz.Network.models.Article;
 import java.util.List;
 
 public class ArticleResponse {
+
     private String status;
     private int totalResults;
     private List<Article> articles;
@@ -32,4 +33,5 @@ public class ArticleResponse {
     public void setArticles(List<Article> articles) {
         this.articles = articles;
     }
+
 }

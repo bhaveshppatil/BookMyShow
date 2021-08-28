@@ -61,4 +61,5 @@ public class BuzzAdapter extends RecyclerView.Adapter<BuzzViewHolder> {
     public int getItemCount() {
         return buzzList.size();
     }
+
 }

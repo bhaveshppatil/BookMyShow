@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".Home.aMyHome.MovieRecycler.Movies">
 
@@ -61,8 +62,8 @@
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
-                    android:scrollbarThumbVertical="@android:color/black"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:scrollbarThumbVertical="@android:color/black">
 
 
                     <LinearLayout
@@ -157,7 +158,8 @@
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp" />
+                android:layout_margin="10dp"
+                android:background="@color/white" />
 
         </LinearLayout>
 
