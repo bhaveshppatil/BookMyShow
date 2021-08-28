@@ -20,10 +20,10 @@
         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_register_event.xml" value="0.1094224924012158" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_select_date.xml" value="0.1094224924012158" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_select_language.xml" value="0.1094224924012158" />
-        <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_sport.xml" value="0.1094224924012158" />
+        <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_sport.xml" value="0.1" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_streaming_see_all.xml" value="0.1094224924012158" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_user_details.xml" value="0.15" />
-        <entry key="..\:/BookMyShow/app/src/main/res/layout/buzz_item_layout.xml" value="0.21" />
+        <entry key="..\:/BookMyShow/app/src/main/res/layout/buzz_item_layout.xml" value="0.233502538071066" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/content_streaming_see_all.xml" value="0.1" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/custom_tab.xml" value="0.1" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/entertainment_layout.xml" value="0.1" />
@@ -45,9 +45,9 @@
         <entry key="..\:/BookMyShow/app/src/main/res/layout/imageslider_first_layout.xml" value="0.1094224924012158" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/imageslider_second_layout.xml" value="0.25" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/laughter_layout.xml" value="0.1094224924012158" />
+        <entry key="..\:/BookMyShow/app/src/main/res/layout/movie_item_layout.xml" value="0.1" />
         <entry key="..\:/BookMyShow/app/src/main/res/layout/payment_success.xml" value="0.18297101449275363" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/drawable/circleforsecondsliderbutton.xml" value="0.13518518518518519" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_book_movie_ticket.xml" value="0.1" />
+        <entry key="..\:/BookMyShow/app/src/main/res/layout/streaming_seeall_item_layout.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_laughter.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_login_screen.xml" value="0.18" />
@@ -58,16 +58,16 @@
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_streaming_see_all.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_streaming_see_all2.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/content_streaming_see_all.xml" value="0.1" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/entertainment_layout.xml" value="0.12834224598930483" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/entertainment_layout.xml" value="0.16" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/games_layout.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_first_layout.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_second_layout.xml" value="0.18" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/laughter_layout.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/outdoor_event_layout.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/outdoor_events_layout.xml" value="0.1" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/popular_event_layout.xml" value="0.22" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streaming_seeall_item_layout.xml" value="0.21" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/popular_event_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streaming_seeall_item_layout.xml" value="0.14" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streamingevents_layout.xml" value="0.1" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/bookmyshow_logo.xml" value="0.2703125" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/btnshape.xml" value="0.1" />

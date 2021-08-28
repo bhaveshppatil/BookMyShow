@@ -2,11 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:id="@+id/homeContainer"
     tools:context=".Home.aMyHome.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -96,7 +96,7 @@
                 android:id="@+id/HorizontlScrollViewTop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:scrollbars="none"
                 tools:ignore="SpeakableTextPresentCheck">
 
@@ -112,10 +112,10 @@
 
                         <ImageView
                             android:id="@+id/ivMovie"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_marginStart="20dp"
-                            android:layout_marginEnd="30dp"
+                            android:layout_marginEnd="20dp"
                             android:src="@drawable/myhome_horizontalscroll_moviesicon" />
 
                         <TextView
@@ -123,7 +123,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Movies"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
                     </LinearLayout>
 
 
@@ -134,10 +135,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginRight="30dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
                             android:src="@drawable/myhome_horizontalscroll_streamicon" />
 
                         <TextView
@@ -145,7 +146,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Stream"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
                     </LinearLayout>
 
 
@@ -156,10 +158,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginRight="30dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
                             android:src="@drawable/myhome_horizontalscroll_musicicon" />
 
                         <TextView
@@ -167,7 +169,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Events"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
                     </LinearLayout>
 
 
@@ -178,10 +181,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginRight="30dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
                             android:src="@drawable/myhome_horizontalscroll_sportsicon" />
 
                         <TextView
@@ -189,7 +192,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Sports"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
                     </LinearLayout>
 
 
@@ -200,10 +204,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginRight="30dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
                             android:src="@drawable/myhome_horizontalscroll_playsicon" />
 
                         <TextView
@@ -211,7 +215,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Plays"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
                     </LinearLayout>
 
 
@@ -223,9 +228,9 @@
 
                         <ImageView
                             android:id="@+id/hs1FootWear"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="30dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
                             android:src="@drawable/myhome_horizontalscroll_activtiesicon" />
 
@@ -234,7 +239,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Activities"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
 
                     </LinearLayout>
 
@@ -291,12 +297,13 @@
                 app:sliderIndicatorUnselectedColor="#808080"
                 app:sliderScrollTimeInSec="5"
                 app:sliderStartAutoCycle="true" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/vaccinate"
+                android:layout_margin="20dp"
                 android:layout_marginTop="30dp"
-                android:layout_margin="20dp"/>
+                android:src="@drawable/vaccinate" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -311,21 +318,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:textSize="13dp"
-                android:text="Step out or stay in,interesting experience for everyone." />
+                android:text="Step out or stay in,interesting experience for everyone."
+                android:textSize="13dp" />
 
             <include
                 android:id="@+id/layoutEntertainment"
                 layout="@layout/entertainment_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/start"
-                android:background="#E0E0E0"
+                android:layout_margin="20dp"
                 android:layout_marginTop="50dp"
-                android:layout_margin="20dp"/>
+                android:background="#E0E0E0"
+                android:src="@drawable/start" />
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -473,6 +481,43 @@
 
             <include
                 layout="@layout/popular_event_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Top Games and Sport Events"
+                    android:textColor="#353935"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtSeeAllSport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="See All >"
+                    android:textColor="#FA5F55"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include
+                layout="@layout/games_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 

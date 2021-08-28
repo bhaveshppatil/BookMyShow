@@ -4,21 +4,21 @@
     android:id="@+id/buzzItemLayoutRelativeLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:background="@color/white">
+    android:background="@drawable/bg">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvBuzzImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_margin="10dp"
-        app:cardCornerRadius="8dp">
+        app:cardCornerRadius="10dp">
 
         <ImageView
             android:id="@+id/ivBuzzImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:scaleType="centerCrop" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/movies"/>
     </androidx.cardview.widget.CardView>
 
     <ImageView
@@ -54,7 +54,8 @@
         android:layout_alignBottom="@id/cvBuzzImage"
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@id/cvBuzzImage"
-        android:text="1 Day ago" />
+        android:hint="1 Day ago"
+        android:textSize="10sp" />
 
     <ImageView
         android:id="@+id/ivBuzzShareIcon"

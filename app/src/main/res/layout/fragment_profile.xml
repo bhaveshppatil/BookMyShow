@@ -488,13 +488,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/listYourShowBar"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="3">
 
                 <TextView
                     android:id="@+id/tvShare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="60dp"
+                    android:layout_weight="1"
                     android:layout_marginTop="50dp"
                     android:text="Share"
                     android:textColor="#808080" />
@@ -504,9 +505,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="80dp"
                     android:layout_marginTop="50dp"
-                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
                     android:layout_marginBottom="50dp"
                     android:text="Rate Us"
                     android:textColor="#808080" />
@@ -516,6 +516,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="50dp"
+                    android:layout_weight="1"
                     android:text="book a smile"
                     android:textColor="#808080" />
             </LinearLayout>

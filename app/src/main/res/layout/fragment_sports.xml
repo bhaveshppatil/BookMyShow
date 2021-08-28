@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     tools:context=".Home.bBuzz.News.SportsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/buzzSportsRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp" />
+        android:layout_height="match_parent" />
 
     <WebView
         android:id="@+id/buzzSportsWebView"
