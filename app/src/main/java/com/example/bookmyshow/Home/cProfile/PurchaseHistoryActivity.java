@@ -50,8 +50,8 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase_history);
         initViews();
-        setPurchaseHistoryDataFromFireBase();
         editCancelConstraintLayout.setVisibility(View.GONE);
+        setPurchaseHistoryDataFromFireBase();
         editCancelConstraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,7 +87,7 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
                     }
                 });
             }
-        }, 1000);
+        }, 5000);
 
         //edit order
 
@@ -128,10 +128,11 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
                 purchasePrice.setText("₹ " + purchaseDataHelper.getPrice());
                 purchaseNoOfTickets.setText(purchaseDataHelper.getTicketQuantity());
                 Glide.with(purchaseImage).load(purchaseDataHelper.getImageUrl()).into(purchaseImage);
-                title = purchaseTitle.getText().toString();
-                if (title == "")
-                    editCancelConstraintLayout.setVisibility(View.GONE);
-                else
+                title = purchaseDataHelper.getEventName();
+                if (title.length() == 0) {
+                    if (editCancelConstraintLayout.getVisibility() == View.VISIBLE)
+                        editCancelConstraintLayout.setVisibility(View.GONE);
+                } else
                     editCancelConstraintLayout.setVisibility(View.VISIBLE);
             }
 
