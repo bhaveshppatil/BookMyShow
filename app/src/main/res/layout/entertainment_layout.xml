@@ -11,185 +11,153 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
             android:orientation="horizontal">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/workshop"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                 />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/kidzone"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/workshop"
-                    app:shapeAppearanceOverlay="@style/RoundImage"
-                    />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/music"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/kidzone" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/upskill"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp"/>
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/music" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/interactive"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/upskill" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/threater"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp"/>
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/interactive" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/threater" />
-            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/stayfit"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/comedy"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp"/>
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/stayfit" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/esport"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/comedy" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/food"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/esport" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/artandcraft"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/food" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/artandcraft" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/adventure" />
-            </androidx.cardview.widget.CardView>
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/adventure"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
         </LinearLayout>
     </LinearLayout>
 

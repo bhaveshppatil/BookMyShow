@@ -42,11 +42,11 @@ public class HomeFragment extends Fragment {
         //setContentView(R.layout.activity_main);
         sliderView = view.findViewById(R.id.image_slider);
         sliderView1 = view.findViewById(R.id.image_slider_two);
-        seeAllSport = view.findViewById(R.id.txtSeeAllSport);
+       // seeAllSport = view.findViewById(R.id.txtSeeAllSport);
         seeAllStreaming = view.findViewById(R.id.txtSeeAllStreaming);
         seeAllOutdoorEvent = view.findViewById(R.id.txtSeeAllOutdoor);
         seeAllPopular = view.findViewById(R.id.txtSeeAllPopular);
-        //seeAllLaughter = view.findViewById(R.id.txtSeeAllLaughter);
+        seeAllLaughter = view.findViewById(R.id.txtSeeAllLaughter);
         linearLayout = view.findViewById(R.id.layoutFrontRow);
         ivMovies = view.findViewById(R.id.ivMovie);
 
@@ -65,14 +65,14 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        seeAllSport.setOnClickListener(new View.OnClickListener() {
+       /* seeAllSport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), SportActivity.class);
                 startActivity(intent);
             }
         });
-       /* seeAllLaughter.setOnClickListener(new View.OnClickListener() {
+        seeAllLaughter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), LaughterActivity.class);
@@ -121,13 +121,13 @@ public class HomeFragment extends Fragment {
     }
 
     private void setDataForSecondSlider() {
-        items.add(new imageSliderItem(R.drawable.theassistant, "The Assistant", "1h 27m,Drama Thriller, 16+", "English", "Jane, a recent college graduate \nand aspiring film producer,...."));
-        items.add(new imageSliderItem(R.drawable.thebalkan, "The Balkan Line", "2h 10m, Action ,16+", "English, Hindi", "After the NATO bombing of\nYugoslavia in 1999 the \nYugoslav army..."));
-        items.add(new imageSliderItem(R.drawable.spacejam, "Space Jam:A \nNew Legacy", "1h 55m, Animation", "English, Hindi, French", "Basketball superstar LeBron \nJames teams up with \nthe Looney Tunes "));
-        items.add(new imageSliderItem(R.drawable.oyemamu, "Oye Mamu!", "2h 5m, Comedy,18+", "Hindi", "Dream to become a VJ collide \nwith a museum trip a \ndiamond..."));
-        items.add(new imageSliderItem(R.drawable.heistofcentury, "The Heist Of \nThe Century", "1h 54m, Crime,13+", "English, Spanish", "Inspired by a true story,a group\nof thieves join hands to..."));
+        items.add(new imageSliderItem(R.drawable.theassistant, "The Assistant", "1h 27m,Drama Thriller, 16+", "English", "Jane, recent college graduate \nand aspiring film producer,\nlands her dream job as a\njunior...."));
+        items.add(new imageSliderItem(R.drawable.thebalkan, "The Balkan\nLine", "2h 10m, Action ,16+", "English, Hindi", "After the NATO bombing of\nYugoslavia in 1999 the \nYugoslav army..."));
+        items.add(new imageSliderItem(R.drawable.spacejam, "Space Jam:A \nNew Legacy", "1h 55m, Animation", "English, Hindi, French", "Basketball superstar LeBron\nJames teams up with \nthe Looney Tunes..."));
+        items.add(new imageSliderItem(R.drawable.oyemamu, "Oye Mamu!", "2h 5m, Comedy,18+", "Hindi", "Dream to become VJ collide \nwith a museum trip a \ndiamond..."));
+        items.add(new imageSliderItem(R.drawable.heistofcentury, "The Heist Of \nThe Century", "1h 54m, Crime,13+", "English, Spanish", "Inspired by a true story,a \ngroup of thieves join \nhands to..."));
         items.add(new imageSliderItem(R.drawable.magialnight, "On Magical\nNight", "1h 26m, Comedy,18+", " French", "After 20 years of marriage,\nMaria decides to leave..."));
-        items.add(new imageSliderItem(R.drawable.beckyposter, "Becky", "1h 33m, Action,18+", "English", "A teenager weekend at a lake \nhouse with her father takes..."));
+        items.add(new imageSliderItem(R.drawable.beckyposter, "Becky", "1h 33m, Action,18+", "English", "A teenager weekend at a \nlake house with her father \ntakes..."));
     }
 
     private void setImges() {
