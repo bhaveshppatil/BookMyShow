@@ -59,7 +59,7 @@
             android:id="@+id/ivNotificationIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="25dp"
+            android:layout_margin="20dp"
             android:padding="5dp"
             android:src="@drawable/myhome_notifications_icon"
             app:layout_constraintBottom_toBottomOf="@id/vTopBarItAllStartsHere"
@@ -70,7 +70,7 @@
             android:id="@+id/ivSearchIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="25dp"
+            android:layout_margin="20dp"
             android:padding="5dp"
             android:src="@drawable/myhome_search_icon"
             app:layout_constraintBottom_toBottomOf="@id/vTopBarItAllStartsHere"
@@ -145,8 +145,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Stream"
-                            android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textColor="@color/black" />
                     </LinearLayout>
 
 
@@ -168,8 +167,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Events"
-                            android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textColor="@color/black" />
                     </LinearLayout>
 
 
@@ -238,8 +236,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Activities"
-                            android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textColor="@color/black" />
 
                     </LinearLayout>
 
@@ -250,9 +247,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp">
-
+                android:layout_height="match_parent">
                 <com.smarteist.autoimageslider.SliderView
                     android:id="@+id/image_slider"
                     android:layout_width="match_parent"
@@ -433,10 +428,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="20dp"
                     android:text="See All >"
                     android:textColor="#FA5F55"
-                    android:textSize="15dp"
+                    android:textSize="13dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -470,10 +465,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="20dp"
                     android:text="See All >"
                     android:textColor="#FA5F55"
-                    android:textSize="15dp"
+                    android:textSize="13dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -507,10 +502,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="20dp"
                     android:text="See All >"
                     android:textColor="#FA5F55"
-                    android:textSize="15dp"
+                    android:textSize="13dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
