@@ -78,6 +78,10 @@
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/select_ticket_quantity.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/streamingevents_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/drawable/btnshape.xml" value="0.2703125" />
+        <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/drawable/dashes.xml" value="0.26927083333333335" />
+        <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/drawable/lanbtn.xml" value="0.2703125" />
+        <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_book_movie_ticket.xml" value="0.264" />
+        <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_login_screen.xml" value="0.264" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_register_event.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_select_date.xml" value="0.1" />
@@ -93,7 +97,9 @@
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_ticket_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/outdoor_event_layout.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/payment_success.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/select_lang_format.xml" value="0.253125" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/select_ticket_quantity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/select_time_location.xml" value="0.253125" />
       </map>
     </option>
   </component>

@@ -14,6 +14,7 @@ public class MovieViewHolder extends RecyclerView.ViewHolder {
 
     private TextView tvTitle, tvLanguages;
     private ImageView ivThumbnail;
+    private ClickListener clickListener;
     private CardView cardView;
 
     public MovieViewHolder(@NonNull View itemView) {
@@ -29,10 +30,17 @@ public class MovieViewHolder extends RecyclerView.ViewHolder {
 
     }
 
-    public void setData(MoviesModel moviesModel) {
+    public void setData(MoviesModel moviesModel, ClickListener clickListener) {
         tvTitle.setText(moviesModel.getMovieTitle());
         tvLanguages.setText(moviesModel.getLanguages());
         ivThumbnail.setImageResource(moviesModel.getThumbID());
         cardView.setRadius(7.8f);
+
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickListener.onItemClick(moviesModel, getAdapterPosition());
+            }
+        });
     }
 }
