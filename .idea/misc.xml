@@ -67,18 +67,27 @@
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_outdoor_events.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_popular.xml" value="0.1" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_show_items.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_sport.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_streaming_see_all.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_streaming_see_all2.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/content_streaming_see_all.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/entertainment_layout.xml" value="0.16" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/entertainment_layout.xml" value="0.12834224598930483" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/games_layout.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_first_layout.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_second_layout.xml" value="0.18" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/laughter_layout.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/outdoor_event_layout.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/outdoor_events_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/popular_event_layout.xml" value="0.22" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/select_lang_format.xml" value="0.1" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/select_time_location.xml" value="0.1" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streaming_seeall_item_layout.xml" value="0.21" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/popular_event_layout.xml" value="0.1" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streaming_seeall_item_layout.xml" value="0.14" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streamingevents_layout.xml" value="0.1" />
@@ -123,7 +132,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
