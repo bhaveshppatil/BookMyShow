@@ -234,7 +234,36 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
 
             }
         });
+/*
+        FirebaseDatabase database1 = FirebaseDatabase.getInstance();
+        DatabaseReference myRef2 = database1.getReference("Ticket");
+        mTitle = String.valueOf(myRef2.child("Movie").get());
+        movieTitle.setText((CharSequence) myRef2.child("Movie"));
+        moviePrice.setText((CharSequence) myRef2.child("Total Price"));
+        movieNoOfTickets.setText((CharSequence) myRef2.child("Seat Quantity"));
+        movieDate.setText((CharSequence) myRef2.child("Ticket"));
+        if (mTitle.length() == 0) {
+            if (movieEditCancelConstraintLayout.getVisibility() == View.VISIBLE)
+                movieEditCancelConstraintLayout.setVisibility(View.GONE);
+        } else
+            movieEditCancelConstraintLayout.setVisibility(View.VISIBLE);
+*/
     }
+
+    /*private void setMovieHistory() {
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("Ticket");
+        mTitle = String.valueOf(myRef.child("Movie"));
+        movieTitle.setText((CharSequence) myRef.child("Movie"));
+        moviePrice.setText((CharSequence) myRef.child("Total Price"));
+        movieNoOfTickets.setText((CharSequence) myRef.child("Seat Quantity"));
+        movieDate.setText((CharSequence) myRef.child("Ticket"));
+        if (mTitle.length() == 0) {
+            if (movieEditCancelConstraintLayout.getVisibility() == View.VISIBLE)
+                movieEditCancelConstraintLayout.setVisibility(View.GONE);
+        } else
+            movieEditCancelConstraintLayout.setVisibility(View.VISIBLE);
+    }*/
 
     private void initViews() {
         purchaseTitle = findViewById(R.id.tvPurchaseTitle);

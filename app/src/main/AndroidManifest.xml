@@ -15,6 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BookMyShow">
+
+        <activity
+            android:name=".Home.aMyHome.ShowItemsActivity"
+            android:exported="true" />
         <activity
             android:name=".RegisterEvent.PaymentPage"
             android:exported="true" />

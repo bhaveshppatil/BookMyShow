@@ -38,7 +38,7 @@ public class SportsFragment extends Fragment implements OnItemClickListener {
         super.onViewCreated(view, savedInstanceState);
         hBuzzSportsRecyclerView = view.findViewById(R.id.buzzSportsRecyclerView);
         hBuzzSportsWebView = view.findViewById(R.id.buzzSportsWebView);
-        NewsApiClient newsApiClient = new NewsApiClient("4475c07e77544a7983e6cca27868997f");
+        NewsApiClient newsApiClient = new NewsApiClient("187bbe8bdd6a41ca92244c9b0042425d");
         // /v2/top-headlines
         newsApiClient.getTopHeadlines(
                 new TopHeadlinesRequest.Builder()
