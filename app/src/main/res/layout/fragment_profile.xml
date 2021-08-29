@@ -18,28 +18,51 @@
 
     <TextView
         android:id="@+id/tvProfile"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:drawableRight="@drawable/profile_top_bar_icon"
         android:text="Hey!"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/vTopBarProfile"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@id/vTopBarProfile" />
 
     <TextView
+        android:id="@+id/tvProfileFragmentEditProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
         android:text="Edit Profile >"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@id/tvProfile"
-        app:layout_constraintLeft_toLeftOf="@id/tvProfile" />
+        app:layout_constraintLeft_toLeftOf="@id/tvProfile"
+        app:layout_constraintTop_toBottomOf="@id/tvProfile" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:elevation="12dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/vTopBarProfile"
+        app:layout_constraintRight_toRightOf="@id/vTopBarProfile"
+        app:layout_constraintTop_toTopOf="@id/vTopBarProfile">
+
+        <ImageView
+            android:id="@+id/ivProfileTopImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_top_bar_icon" />
+
+    </androidx.cardview.widget.CardView>
 
     <ScrollView
         android:layout_width="match_parent"
