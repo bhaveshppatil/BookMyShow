@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-database:20.0.1@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/886019732f0c38206e76501e12fa455c/transformed/jetified-firebase-database-20.0.1/res" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/7b400ea217a8bf9c711ec34916c87208/transformed/jetified-firebase-database-20.0.1/res" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/7b400ea217a8bf9c711ec34916c87208/transformed/jetified-firebase-database-20.0.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/7b400ea217a8bf9c711ec34916c87208/transformed/jetified-firebase-database-20.0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/com.google.firebase/firebase-database/20.0.1/43270ff55815b41cbc4729416863211321d170f2/firebase-database-20.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/com.google.firebase/firebase-database/20.0.1/cf7b2fa1d7e2ce2aee9998e86b22f6d96bb9d13e/firebase-database-20.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

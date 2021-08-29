@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_technology.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_technology.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_first.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_first.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_registration.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_registration.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_register_event.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_register_event.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\entertainment_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\entertainment_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_payment_page.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_payment_page.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sport.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_sport.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_laughter.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_laughter.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_sports.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_sports.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_select_date.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_select_date.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_select_language.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_select_language.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_terms_and_condition.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_terms_and_condition.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\games_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\games_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_entertainment.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_entertainment.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_buzz.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_buzz.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\buzz_item_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\buzz_item_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\streamingevents_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\streamingevents_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\imageslider_first_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\imageslider_first_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\select_time_location.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\select_time_location.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_profile.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_ticket_details.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_ticket_details.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\movie_item_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\movie_item_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\imageslider_second_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\imageslider_second_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_select_time_location.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_select_time_location.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_popular.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_popular.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_second.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_screen.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_login_screen.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\streaming_seeall_item_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\streaming_seeall_item_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_tab.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\custom_tab.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_language.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_language.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\laughter_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\laughter_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\availble_seat_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\availble_seat_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_events_details.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_events_details.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_select_ticket_quantuty.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_select_ticket_quantuty.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_outdoor_events.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_outdoor_events.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_user_details.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_user_details.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_show_items.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_show_items.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_purchase_history.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_purchase_history.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_select_date_time.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_select_date_time.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\popular_event_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\popular_event_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_book_movie_ticket.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_book_movie_ticket.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\outdoor_events_layout.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\outdoor_events_layout.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_payment_page.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_payment_page.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\payment_success.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\payment_success.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_select_seat.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_select_seat.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_streaming_see_all.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_streaming_see_all.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_streaming_see_all.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\content_streaming_see_all.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\select_lang_format.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\select_lang_format.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_movies.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\activity_movies.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_seat_quantity.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\fragment_seat_quantity.xml"
+    },
+    {
+        "merged": "E:\\BookMyShow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\select_time_theater.xml",
+        "source": "E:\\BookMyShow\\app\\src\\main\\res\\layout\\select_time_theater.xml"
+    }
+]

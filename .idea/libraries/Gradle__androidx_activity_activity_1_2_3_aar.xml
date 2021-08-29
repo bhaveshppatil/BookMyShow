@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.activity:activity:1.2.3@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/5eacab1b28c6d42e8a51d829550b2e4c/transformed/jetified-activity-1.2.3/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/390ffd4be4f975d012a1534baea81f0d/transformed/jetified-activity-1.2.3/res" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/5eacab1b28c6d42e8a51d829550b2e4c/transformed/jetified-activity-1.2.3/res" />
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/5eacab1b28c6d42e8a51d829550b2e4c/transformed/jetified-activity-1.2.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/5eacab1b28c6d42e8a51d829550b2e4c/transformed/jetified-activity-1.2.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/androidx.activity/activity/1.2.3/90a39fdeb6c8aa134518e9fc089fd2625a0329b0/activity-1.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

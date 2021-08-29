@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-appcheck-interop:16.0.0-beta02@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/49d8d9913070358f6159759f8b3795e0/transformed/jetified-firebase-appcheck-interop-16.0.0-beta02/res" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/b4d46fc1bd62c40061ed95432479019b/transformed/jetified-firebase-appcheck-interop-16.0.0-beta02/res" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/b4d46fc1bd62c40061ed95432479019b/transformed/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/b4d46fc1bd62c40061ed95432479019b/transformed/jetified-firebase-appcheck-interop-16.0.0-beta02/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/com.google.firebase/firebase-appcheck-interop/16.0.0-beta02/7f3387a8931f360ef964123f9fae6ac0281ab0b5/firebase-appcheck-interop-16.0.0-beta02-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/com.google.firebase/firebase-appcheck-interop/16.0.0-beta02/e5411d4ba6311ddb19ecec28e05c400c99a8d9bf/firebase-appcheck-interop-16.0.0-beta02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

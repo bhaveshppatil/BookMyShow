@@ -1,0 +1,173 @@
+Index: app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.bookmyshow.Home.bBuzz;\r\n\r\nimport android.view.LayoutInflater;\r\nimport android.view.View;\r\nimport android.view.ViewGroup;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport com.example.bookmyshow.Home.bBuzz.Network.models.Article;\r\nimport com.example.bookmyshow.R;\r\n\r\nimport java.util.List;\r\n\r\npublic class BuzzAdapter extends RecyclerView.Adapter<BuzzViewHolder> {\r\n\r\n    private List<Article> buzzList;\r\n\r\n    public BuzzAdapter(List<Article> bList) {\r\n        this.buzzList = bList;\r\n    }\r\n\r\n    @NonNull\r\n    @Override\r\n    public BuzzViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {\r\n        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.buzz_item_layout, parent, false);\r\n        return new BuzzViewHolder(view);\r\n    }\r\n\r\n    @Override\r\n    public void onBindViewHolder(@NonNull BuzzViewHolder holder, int position) {\r\n        holder.setData(buzzList.get(position));\r\n    }\r\n\r\n    @Override\r\n    public int getItemCount() {\r\n        return buzzList.size();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzAdapter.java b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzAdapter.java
+--- a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzAdapter.java	(revision 531d68e83d31253bce3ea816257f5262a67404a8)
++++ b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzAdapter.java	(date 1629988315162)
+@@ -1,8 +1,11 @@
+ package com.example.bookmyshow.Home.bBuzz;
+ 
++import android.content.Context;
++import android.content.Intent;
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
++import android.widget.ImageView;
+ 
+ import androidx.annotation.NonNull;
+ import androidx.recyclerview.widget.RecyclerView;
+@@ -14,22 +17,39 @@
+ 
+ public class BuzzAdapter extends RecyclerView.Adapter<BuzzViewHolder> {
+ 
++    private Context context;
+     private List<Article> buzzList;
++    private ImageView buzzShare;
+ 
+-    public BuzzAdapter(List<Article> bList) {
++    public BuzzAdapter(Context context, List<Article> bList) {
+         this.buzzList = bList;
++        this.context = context;
+     }
+ 
+     @NonNull
+     @Override
+     public BuzzViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.buzz_item_layout, parent, false);
++        buzzShare = view.findViewById(R.id.ivBuzzShareIcon);
+         return new BuzzViewHolder(view);
+     }
+ 
+     @Override
+     public void onBindViewHolder(@NonNull BuzzViewHolder holder, int position) {
+         holder.setData(buzzList.get(position));
++        String tittle = buzzList.get(position).getTitle();
++        String url = buzzList.get(position).getUrl();
++        buzzShare.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View v) {
++                Intent intent = new Intent(Intent.ACTION_SEND);
++                intent.putExtra(Intent.EXTRA_TEXT,
++                        tittle +
++                                " -\n\n" + url + "\n\n" + "~ via BookMyShow Buzz \uD83D\uDCE3");
++                intent.setType("text/plain");
++                context.startActivity(Intent.createChooser(intent, "Send To"));
++            }
++        });
+     }
+ 
+     @Override
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/drawable/arrow_left.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/drawable/bg.xml\" value=\"0.20277777777777778\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/drawable/myhome_horizontalscroll_musicicon.xml\" value=\"0.20277777777777778\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/drawable/myhome_horizontalscroll_streamicon.xml\" value=\"0.20277777777777778\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_home.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_laughter.xml\" value=\"0.12092391304347826\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_login_screen.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_main.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_outdoor_events.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_popular.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_register_event.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_select_date.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_select_language.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_sport.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_streaming_see_all.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_user_details.xml\" value=\"0.15\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/buzz_item_layout.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/content_streaming_see_all.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/custom_tab.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/entertainment_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_buzz.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_entertainment.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_first.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_home.xml\" value=\"0.22\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_profile.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_registration.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_second.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_select_date_time.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_select_ticket_quantuty.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_sports.xml\" value=\"0.11458333333333333\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_technology.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_user_details.xml\" value=\"0.12092391304347826\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/games_layout.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/imageslider_first_layout.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/imageslider_second_layout.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/laughter_layout.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_home.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_login_screen.xml\" value=\"0.18\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_main.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_streaming_see_all.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_streaming_see_all2.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/content_streaming_see_all.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/entertainment_layout.xml\" value=\"0.16\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_home.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_first_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_second_layout.xml\" value=\"0.18\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/outdoor_event_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/outdoor_events_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streaming_seeall_item_layout.xml\" value=\"0.14\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streamingevents_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/bookmyshow_logo.xml\" value=\"0.2703125\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/btnshape.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/ic_baseline_thumb_up_24.xml\" value=\"0.2703125\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_home.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_login_screen.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_main.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_register_event.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_select_date.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_select_language.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/custom_tab.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/entertainment_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_buzz.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_home.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_profile.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_registration.xml\" value=\"0.24010416666666667\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_select_date_time.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_select_ticket_quantuty.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/imageslider_first_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/imageslider_second_layout.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/select_ticket_quantity.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/streamingevents_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/drawable/btnshape.xml\" value=\"0.2703125\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_main.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_register_event.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_select_date.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_user_details.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/custom_tab.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/entertainment_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_payment_page.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_profile.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_registration.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_second.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_select_date_time.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_select_ticket_quantuty.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_ticket_details.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/outdoor_event_layout.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/payment_success.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/select_ticket_quantity.xml\" value=\"0.25416666666666665\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_X\" project-jdk-name=\"11\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 531d68e83d31253bce3ea816257f5262a67404a8)
++++ b/.idea/misc.xml	(date 1629988315125)
+@@ -19,7 +19,7 @@
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_sport.xml" value="0.1094224924012158" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_streaming_see_all.xml" value="0.1094224924012158" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_user_details.xml" value="0.15" />
+-        <entry key="..\:/BookMyShow/app/src/main/res/layout/buzz_item_layout.xml" value="0.1094224924012158" />
++        <entry key="..\:/BookMyShow/app/src/main/res/layout/buzz_item_layout.xml" value="0.21" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/content_streaming_see_all.xml" value="0.1" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/custom_tab.xml" value="0.1" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/entertainment_layout.xml" value="0.1" />
+Index: app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzViewHolder.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.bookmyshow.Home.bBuzz;\r\n\r\nimport android.view.View;\r\nimport android.widget.ImageView;\r\nimport android.widget.TextView;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport com.bumptech.glide.Glide;\r\nimport com.example.bookmyshow.Home.bBuzz.Network.models.Article;\r\nimport com.example.bookmyshow.R;\r\n\r\npublic class BuzzViewHolder extends RecyclerView.ViewHolder {\r\n\r\n    private ImageView mIvBuzzImage;\r\n    private TextView mTvBuzzTitle, mTvBuzzTime;\r\n\r\n    public BuzzViewHolder(@NonNull View itemView) {\r\n        super(itemView);\r\n        initViews(itemView);\r\n    }\r\n\r\n    private void initViews(View itemView) {\r\n        mIvBuzzImage = itemView.findViewById(R.id.ivBuzzImage);\r\n        mTvBuzzTitle = itemView.findViewById(R.id.tvBuzzTitle);\r\n        mTvBuzzTime = itemView.findViewById(R.id.tvBuzzTime);\r\n    }\r\n\r\n    public void setData(Article article) {\r\n        Glide.with(mIvBuzzImage).load(article.getUrlToImage()).into(mIvBuzzImage);\r\n        mTvBuzzTitle.setText(article.getTitle());\r\n        mTvBuzzTime.setText(article.getPublishedAt());\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzViewHolder.java b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzViewHolder.java
+--- a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzViewHolder.java	(revision 531d68e83d31253bce3ea816257f5262a67404a8)
++++ b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzViewHolder.java	(date 1629988315137)
+@@ -1,5 +1,6 @@
+ package com.example.bookmyshow.Home.bBuzz;
+ 
++import android.content.Intent;
+ import android.view.View;
+ import android.widget.ImageView;
+ import android.widget.TextView;
+@@ -8,6 +9,7 @@
+ import androidx.recyclerview.widget.RecyclerView;
+ 
+ import com.bumptech.glide.Glide;
++import com.example.bookmyshow.BuildConfig;
+ import com.example.bookmyshow.Home.bBuzz.Network.models.Article;
+ import com.example.bookmyshow.R;
+ 
+Index: app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/EntertainmentFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.bookmyshow.Home.bBuzz.News;\r\n\r\nimport android.os.Bundle;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.annotation.Nullable;\r\nimport androidx.fragment.app.Fragment;\r\nimport androidx.recyclerview.widget.LinearLayoutManager;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport android.view.LayoutInflater;\r\nimport android.view.View;\r\nimport android.view.ViewGroup;\r\n\r\nimport com.example.bookmyshow.Home.bBuzz.BuzzAdapter;\r\nimport com.example.bookmyshow.Home.bBuzz.Network.NewsApiClient;\r\nimport com.example.bookmyshow.Home.bBuzz.Network.models.request.TopHeadlinesRequest;\r\nimport com.example.bookmyshow.Home.bBuzz.Network.models.response.ArticleResponse;\r\nimport com.example.bookmyshow.R;\r\n\r\npublic class EntertainmentFragment extends Fragment {\r\n\r\n    private RecyclerView hBuzzRecyclerView;\r\n    private ArticleResponse articleResponse;\r\n\r\n    @Override\r\n    public View onCreateView(LayoutInflater inflater, ViewGroup container,\r\n                             Bundle savedInstanceState) {\r\n        // Inflate the layout for this fragment\r\n        return inflater.inflate(R.layout.fragment_entertainment, container, false);\r\n    }\r\n\r\n    @Override\r\n    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {\r\n        super.onViewCreated(view, savedInstanceState);\r\n        hBuzzRecyclerView = view.findViewById(R.id.buzzEntertainmentRecyclerView);\r\n        NewsApiClient newsApiClient = new NewsApiClient(\"8e85a7edf08843158833434a0df50e20\");\r\n        // /v2/top-headlines\r\n        newsApiClient.getTopHeadlines(\r\n                new TopHeadlinesRequest.Builder()\r\n                        .language(\"en\")\r\n                        .country(\"in\")\r\n                        .category(\"entertainment\")\r\n                        .build(),\r\n                new NewsApiClient.ArticlesResponseCallback() {\r\n                    @Override\r\n                    public void onSuccess(ArticleResponse response) {\r\n                        BuzzAdapter buzzAdapter = new BuzzAdapter(response.getArticles());\r\n                        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());\r\n                        hBuzzRecyclerView.setLayoutManager(linearLayoutManager);\r\n                        hBuzzRecyclerView.setAdapter(buzzAdapter);\r\n                    }\r\n\r\n                    @Override\r\n                    public void onFailure(Throwable throwable) {\r\n                        System.out.println(throwable.getMessage());\r\n                    }\r\n                }\r\n        );\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/EntertainmentFragment.java b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/EntertainmentFragment.java
+--- a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/EntertainmentFragment.java	(revision 531d68e83d31253bce3ea816257f5262a67404a8)
++++ b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/EntertainmentFragment.java	(date 1629988315147)
+@@ -13,6 +13,8 @@
+ import android.view.ViewGroup;
+ 
+ import com.example.bookmyshow.Home.bBuzz.BuzzAdapter;
++import com.example.bookmyshow.Home.bBuzz.BuzzFragment;
++import com.example.bookmyshow.Home.bBuzz.BuzzViewHolder;
+ import com.example.bookmyshow.Home.bBuzz.Network.NewsApiClient;
+ import com.example.bookmyshow.Home.bBuzz.Network.models.request.TopHeadlinesRequest;
+ import com.example.bookmyshow.Home.bBuzz.Network.models.response.ArticleResponse;
+@@ -45,7 +47,7 @@
+                 new NewsApiClient.ArticlesResponseCallback() {
+                     @Override
+                     public void onSuccess(ArticleResponse response) {
+-                        BuzzAdapter buzzAdapter = new BuzzAdapter(response.getArticles());
++                        BuzzAdapter buzzAdapter = new BuzzAdapter(getContext(), response.getArticles());
+                         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+                         hBuzzRecyclerView.setLayoutManager(linearLayoutManager);
+                         hBuzzRecyclerView.setAdapter(buzzAdapter);
+Index: app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/SportsFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.bookmyshow.Home.bBuzz.News;\r\n\r\nimport android.os.Bundle;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.annotation.Nullable;\r\nimport androidx.fragment.app.Fragment;\r\nimport androidx.recyclerview.widget.LinearLayoutManager;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport android.view.LayoutInflater;\r\nimport android.view.View;\r\nimport android.view.ViewGroup;\r\n\r\nimport com.example.bookmyshow.Home.bBuzz.BuzzAdapter;\r\nimport com.example.bookmyshow.Home.bBuzz.Network.NewsApiClient;\r\nimport com.example.bookmyshow.Home.bBuzz.Network.models.request.TopHeadlinesRequest;\r\nimport com.example.bookmyshow.Home.bBuzz.Network.models.response.ArticleResponse;\r\nimport com.example.bookmyshow.R;\r\n\r\npublic class SportsFragment extends Fragment {\r\n\r\n    private RecyclerView hBuzzRecyclerView;\r\n    private ArticleResponse articleResponse;\r\n\r\n    @Override\r\n    public View onCreateView(LayoutInflater inflater, ViewGroup container,\r\n                             Bundle savedInstanceState) {\r\n        // Inflate the layout for this fragment\r\n        return inflater.inflate(R.layout.fragment_sports, container, false);\r\n    }\r\n\r\n    @Override\r\n    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {\r\n        super.onViewCreated(view, savedInstanceState);\r\n        hBuzzRecyclerView = view.findViewById(R.id.buzzSportsRecyclerView);\r\n        NewsApiClient newsApiClient = new NewsApiClient(\"8e85a7edf08843158833434a0df50e20\");\r\n        // /v2/top-headlines\r\n        newsApiClient.getTopHeadlines(\r\n                new TopHeadlinesRequest.Builder()\r\n                        .language(\"en\")\r\n                        .country(\"in\")\r\n                        .category(\"sports\")\r\n                        .build(),\r\n                new NewsApiClient.ArticlesResponseCallback() {\r\n                    @Override\r\n                    public void onSuccess(ArticleResponse response) {\r\n                        BuzzAdapter buzzAdapter = new BuzzAdapter(response.getArticles());\r\n                        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());\r\n                        hBuzzRecyclerView.setLayoutManager(linearLayoutManager);\r\n                        hBuzzRecyclerView.setAdapter(buzzAdapter);\r\n                    }\r\n\r\n                    @Override\r\n                    public void onFailure(Throwable throwable) {\r\n                        System.out.println(throwable.getMessage());\r\n                    }\r\n                }\r\n        );\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/SportsFragment.java b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/SportsFragment.java
+--- a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/SportsFragment.java	(revision 531d68e83d31253bce3ea816257f5262a67404a8)
++++ b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/SportsFragment.java	(date 1629988315173)
+@@ -45,7 +45,7 @@
+                 new NewsApiClient.ArticlesResponseCallback() {
+                     @Override
+                     public void onSuccess(ArticleResponse response) {
+-                        BuzzAdapter buzzAdapter = new BuzzAdapter(response.getArticles());
++                        BuzzAdapter buzzAdapter = new BuzzAdapter(getContext(), response.getArticles());
+                         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+                         hBuzzRecyclerView.setLayoutManager(linearLayoutManager);
+                         hBuzzRecyclerView.setAdapter(buzzAdapter);
+Index: app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/TechnologyFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.bookmyshow.Home.bBuzz.News;\r\n\r\nimport android.os.Bundle;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.annotation.Nullable;\r\nimport androidx.fragment.app.Fragment;\r\nimport androidx.recyclerview.widget.LinearLayoutManager;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport android.view.LayoutInflater;\r\nimport android.view.View;\r\nimport android.view.ViewGroup;\r\n\r\nimport com.example.bookmyshow.Home.bBuzz.BuzzAdapter;\r\nimport com.example.bookmyshow.Home.bBuzz.Network.NewsApiClient;\r\nimport com.example.bookmyshow.Home.bBuzz.Network.models.request.TopHeadlinesRequest;\r\nimport com.example.bookmyshow.Home.bBuzz.Network.models.response.ArticleResponse;\r\nimport com.example.bookmyshow.R;\r\n\r\npublic class TechnologyFragment extends Fragment {\r\n\r\n    private RecyclerView hBuzzRecyclerView;\r\n    private ArticleResponse articleResponse;\r\n\r\n    @Override\r\n    public View onCreateView(LayoutInflater inflater, ViewGroup container,\r\n                             Bundle savedInstanceState) {\r\n        // Inflate the layout for this fragment\r\n        return inflater.inflate(R.layout.fragment_technology, container, false);\r\n    }\r\n\r\n    @Override\r\n    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {\r\n        super.onViewCreated(view, savedInstanceState);\r\n        hBuzzRecyclerView = view.findViewById(R.id.buzzTechnologyRecyclerView);\r\n        NewsApiClient newsApiClient = new NewsApiClient(\"8e85a7edf08843158833434a0df50e20\");\r\n        // /v2/top-headlines\r\n        newsApiClient.getTopHeadlines(\r\n                new TopHeadlinesRequest.Builder()\r\n                        .language(\"en\")\r\n                        .country(\"in\")\r\n                        .category(\"technology\")\r\n                        .build(),\r\n                new NewsApiClient.ArticlesResponseCallback() {\r\n                    @Override\r\n                    public void onSuccess(ArticleResponse response) {\r\n                        BuzzAdapter buzzAdapter = new BuzzAdapter(response.getArticles());\r\n                        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());\r\n                        hBuzzRecyclerView.setLayoutManager(linearLayoutManager);\r\n                        hBuzzRecyclerView.setAdapter(buzzAdapter);\r\n                    }\r\n\r\n                    @Override\r\n                    public void onFailure(Throwable throwable) {\r\n                        System.out.println(throwable.getMessage());\r\n                    }\r\n                }\r\n        );\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/TechnologyFragment.java b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/TechnologyFragment.java
+--- a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/TechnologyFragment.java	(revision 531d68e83d31253bce3ea816257f5262a67404a8)
++++ b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/News/TechnologyFragment.java	(date 1629988315183)
+@@ -45,7 +45,7 @@
+                 new NewsApiClient.ArticlesResponseCallback() {
+                     @Override
+                     public void onSuccess(ArticleResponse response) {
+-                        BuzzAdapter buzzAdapter = new BuzzAdapter(response.getArticles());
++                        BuzzAdapter buzzAdapter = new BuzzAdapter(getContext(), response.getArticles());
+                         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+                         hBuzzRecyclerView.setLayoutManager(linearLayoutManager);
+                         hBuzzRecyclerView.setAdapter(buzzAdapter);

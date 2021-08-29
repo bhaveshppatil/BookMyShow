@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.navigation:navigation-ui:2.3.5@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/b084315c444fbeff8ae8e14e44494261/transformed/navigation-ui-2.3.5/res" />
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/b084315c444fbeff8ae8e14e44494261/transformed/navigation-ui-2.3.5/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/b084315c444fbeff8ae8e14e44494261/transformed/navigation-ui-2.3.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/androidx.navigation/navigation-ui/2.3.5/c3b1c72fb42a6c6ea70970fa444614a2aaa64742/navigation-ui-2.3.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

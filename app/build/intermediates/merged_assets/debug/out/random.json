@@ -1,0 +1,144 @@
+{
+  "Events": [
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00137584-uzlfyzbunj-portrait.jpg",
+      "EventName": "Learn To Speak English",
+      "EventType": "Education",
+      "WhereToWatch": "Online Streaming",
+      "Price": "Rs.499"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAzMSBBdWc%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00304004-cpfnbdagcz-portrait.jpg",
+      "EventName": "Data Science",
+      "EventType": "Education",
+      "WhereToWatch": "Watch on Zoom",
+      "Price": "Rs.899"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyOSBBdWc%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00131881-gahlffmrxv-portrait.jpg",
+      "EventName": "Vipul Goyal Live",
+      "EventType": "Stand up Comedy",
+      "WhereToWatch": "Watch on Zoom",
+      "Price": "Rs.599"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAyNiBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00313611-dhpqvasetj-portrait.jpg",
+      "EventName": "Front Row Open Mics",
+      "EventType": "Comedy Show",
+      "WhereToWatch": "Online Streaming",
+      "Price": "Free"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAzMSBBdWc%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00314109-drrxyfhcuc-portrait.jpg",
+      "EventName": "Atoms",
+      "EventType": "Education",
+      "WhereToWatch": "Watch on Zoom",
+      "Price": "Rs.299"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyOSBBdWc%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00314047-ajknpjwbcs-portrait.jpg",
+      "EventName": "HariKatha By Sharat...",
+      "EventType": "Music",
+      "WhereToWatch": "Watch on BookMyShow",
+      "Price": "Free"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCA1IFNlcA%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00313928-ruaarvmdne-portrait.jpg",
+      "EventName": "Barkha Ritu",
+      "EventType": "Music",
+      "WhereToWatch": "Online Streaming",
+      "Price": "Rs.236"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyOSBBdWc%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00313916-pfqzaxzhln-portrait.jpg",
+      "EventName": "Strange Perceptions...",
+      "EventType": "Magic",
+      "WhereToWatch": "Watch on Zoom",
+      "Price": "Free"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAzMSBBdWc%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00138061-rqwxvcntle-portrait.jpg",
+      "EventName": "Bollywood Dance..",
+      "EventType": "Dance",
+      "WhereToWatch": "Online Streaming",
+      "Price": "Rs.250"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00308489-sazgvngnrc-portrait.jpg",
+      "EventName": "Sudoko by EMPLIHI",
+      "EventType": "Education",
+      "WhereToWatch": "Watch on Zoom",
+      "Price": "Rs.3399"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-V2VkLCAxIFNlcCBvbndhcmRz,ots-29,otc-FFFFFF,oy-612,ox-24/et00312836-gywueyxlvx-portrait.jpg",
+      "EventName": "Vaccinated Jokes",
+      "EventType": "Cafe Azzure",
+      "WhereToWatch": "Comedy Show",
+      "Price": "Rs.149"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyOCBBdWc%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00313699-vnrcucgdaz-portrait.jpg",
+      "EventName": "Piyush Sharma..",
+      "EventType": "Kalagrah-House..",
+      "WhereToWatch": "Stand up Comedy",
+      "Price": "Rs.249"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyOSBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00313847-zqljthzrez-portrait.jpg",
+      "EventName": "Brunch Comedy Show",
+      "EventType": "The Grey House..",
+      "WhereToWatch": "Comedy Shows",
+      "Price": "Rs.100"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00096067-tatmckbgca-portrait.jpg",
+      "EventName": "Skandagiri Sunrise",
+      "EventType": "Meeting Point",
+      "WhereToWatch": "Trekking",
+      "Price": "Rs.1249"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00089195-aubsbcluda-portrait.jpg",
+      "EventName": "Anthargange",
+      "EventType": "Sunrise....",
+      "WhereToWatch": "Meeting Point",
+      "Price": "Rs.1249"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00309721-xpapzhncnh-portrait.jpg",
+      "EventName": "Lakeside Camping in..",
+      "EventType": "Triquetru(Aqua..",
+      "WhereToWatch": "Nightlife",
+      "Price": "Rs.1399 onwards"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyOSBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00314178-cmsmypftwl-portrait.jpg",
+      "EventName": "THE COMEDY_BEER",
+      "EventType": "Sumnerland...",
+      "WhereToWatch": "Comedy Shows",
+      "Price": "Rs.125 onwards"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyOCBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00313598-jcvxtxgnam-portrait.jpg",
+      "EventName": "Romantic Moive Date",
+      "EventType": "Bingle club(HSR..",
+      "WhereToWatch": "Flims",
+      "Price": "Rs.3600"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyOSBBdWc%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00314282-nryvxkvtwr-portrait.jpg",
+      "EventName": "TharleBox-Live",
+      "EventType": "Pop of Pastel..",
+      "WhereToWatch": "Comedy Show",
+      "Price": "Rs.249"
+    },
+    {
+      "Images":"https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00300417-kxxvmahtzc-portrait.jpg",
+      "EventName": "Narayanagiri Sunrise",
+      "EventType": "Meeting Point",
+      "WhereToWatch": "Trekking",
+      "Price": "Rs.1249"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.bumptech.glide:gifdecoder:4.12.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/de0449d0b9021b4a525a3d97e421b0b9/transformed/jetified-gifdecoder-4.12.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/5a9a7e36fb84fbf5957000c8ff848a03/transformed/jetified-gifdecoder-4.12.0/res" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/de0449d0b9021b4a525a3d97e421b0b9/transformed/jetified-gifdecoder-4.12.0/res" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/de0449d0b9021b4a525a3d97e421b0b9/transformed/jetified-gifdecoder-4.12.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/de0449d0b9021b4a525a3d97e421b0b9/transformed/jetified-gifdecoder-4.12.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/com.github.bumptech.glide/gifdecoder/4.12.0/746b9323bb108e97840d4dacd37bd8d4cec34419/gifdecoder-4.12.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/com.github.bumptech.glide/gifdecoder/4.12.0/756734cd8ffb3c771f376767fa8464157f2d02d4/gifdecoder-4.12.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

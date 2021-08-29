@@ -1,0 +1,242 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/drawable/arrow_left.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/drawable/bg.xml\" value=\"0.20277777777777778\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/drawable/myhome_horizontalscroll_musicicon.xml\" value=\"0.20277777777777778\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/drawable/myhome_horizontalscroll_streamicon.xml\" value=\"0.20277777777777778\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_home.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_laughter.xml\" value=\"0.12092391304347826\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_login_screen.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_main.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_outdoor_events.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_popular.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_register_event.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_select_date.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_select_language.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_sport.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_streaming_see_all.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/activity_user_details.xml\" value=\"0.15\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/buzz_item_layout.xml\" value=\"0.21\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/content_streaming_see_all.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/custom_tab.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/entertainment_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_buzz.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_entertainment.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_first.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_home.xml\" value=\"0.22\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_profile.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_registration.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_second.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_select_date_time.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_select_ticket_quantuty.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_user_details.xml\" value=\"0.12092391304347826\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/games_layout.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/imageslider_first_layout.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/imageslider_second_layout.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/laughter_layout.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_registration.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_second.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_select_date_time.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_select_ticket_quantuty.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_sports.xml\" value=\"0.11458333333333333\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_technology.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/fragment_user_details.xml\" value=\"0.12092391304347826\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/games_layout.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/imageslider_first_layout.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/imageslider_second_layout.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/BookMyShow/app/src/main/res/layout/laughter_layout.xml\" value=\"0.1094224924012158\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/drawable/circleforsecondsliderbutton.xml\" value=\"0.12222222222222222\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/drawable/imgaeshap.xml\" value=\"0.1175925925925926\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_home.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_laughter.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_login_screen.xml\" value=\"0.18\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_main.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_outdoor_events.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_popular.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_register_event.xml\" value=\"0.15\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_sport.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_streaming_see_all.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_streaming_see_all2.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_user_details.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/buzz_item_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/content_streaming_see_all.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/custom_tab.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/entertainment_layout.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_buzz.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_first.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_home.xml\" value=\"0.18\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_profile.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_second.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/games_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_first_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_second_layout.xml\" value=\"0.5\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/laughter_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/outdoor_event_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/outdoor_events_layout.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/popular_event_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streaming_seeall_item_layout.xml\" value=\"0.14\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streamingevents_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/bookmyshow_logo.xml\" value=\"0.2703125\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/btnshape.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/ic_baseline_thumb_up_24.xml\" value=\"0.2703125\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_home.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_login_screen.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_main.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_register_event.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_select_date.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/activity_select_language.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/custom_tab.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/entertainment_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_buzz.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_home.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_profile.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_registration.xml\" value=\"0.24010416666666667\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_select_date_time.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/fragment_select_ticket_quantuty.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/imageslider_first_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/imageslider_second_layout.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/select_ticket_quantity.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/streamingevents_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/drawable/btnshape.xml\" value=\"0.2703125\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_main.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_register_event.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_select_date.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_user_details.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/custom_tab.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/entertainment_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_payment_page.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_profile.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_registration.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_second.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_select_date_time.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_select_ticket_quantuty.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/fragment_ticket_details.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/outdoor_event_layout.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/payment_success.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/select_ticket_quantity.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streamingevents_layout.xml\" value=\"0.25\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"11\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision c06402bbfa82901a2999b453ef4abedfc7c71909)
++++ b/.idea/misc.xml	(date 1629994861017)
+@@ -11,6 +11,7 @@
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_laughter.xml" value="0.12092391304347826" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_login_screen.xml" value="0.1094224924012158" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_main.xml" value="0.1094224924012158" />
++        <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_news_detail_view.xml" value="0.1" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_outdoor_events.xml" value="0.1094224924012158" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_popular.xml" value="0.1094224924012158" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/activity_register_event.xml" value="0.1094224924012158" />
+@@ -32,15 +33,6 @@
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_second.xml" value="0.1094224924012158" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_select_date_time.xml" value="0.1094224924012158" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_select_ticket_quantuty.xml" value="0.1094224924012158" />
+-        <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_user_details.xml" value="0.12092391304347826" />
+-        <entry key="..\:/BookMyShow/app/src/main/res/layout/games_layout.xml" value="0.1094224924012158" />
+-        <entry key="..\:/BookMyShow/app/src/main/res/layout/imageslider_first_layout.xml" value="0.1094224924012158" />
+-        <entry key="..\:/BookMyShow/app/src/main/res/layout/imageslider_second_layout.xml" value="0.25" />
+-        <entry key="..\:/BookMyShow/app/src/main/res/layout/laughter_layout.xml" value="0.1094224924012158" />
+-        <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_registration.xml" value="0.1094224924012158" />
+-        <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_second.xml" value="0.1094224924012158" />
+-        <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_select_date_time.xml" value="0.1094224924012158" />
+-        <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_select_ticket_quantuty.xml" value="0.1094224924012158" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_sports.xml" value="0.11458333333333333" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_technology.xml" value="0.1094224924012158" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/fragment_user_details.xml" value="0.12092391304347826" />
+@@ -48,35 +40,18 @@
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/imageslider_first_layout.xml" value="0.1094224924012158" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/imageslider_second_layout.xml" value="0.25" />
+         <entry key="..\:/BookMyShow/app/src/main/res/layout/laughter_layout.xml" value="0.1094224924012158" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/drawable/circleforsecondsliderbutton.xml" value="0.12222222222222222" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/drawable/imgaeshap.xml" value="0.1175925925925926" />
+         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_home.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_laughter.xml" value="0.1" />
+         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_login_screen.xml" value="0.18" />
+         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_main.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_outdoor_events.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_popular.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_register_event.xml" value="0.15" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_sport.xml" value="0.1" />
+         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_streaming_see_all.xml" value="0.1" />
+         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_streaming_see_all2.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/activity_user_details.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/buzz_item_layout.xml" value="0.1" />
+         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/content_streaming_see_all.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/custom_tab.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/entertainment_layout.xml" value="0.25" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_buzz.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_second.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/games_layout.xml" value="0.1" />
++        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/entertainment_layout.xml" value="0.16" />
++        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_first_layout.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_second_layout.xml" value="0.5" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/laughter_layout.xml" value="0.1" />
++        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/imageslider_second_layout.xml" value="0.18" />
+         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/outdoor_event_layout.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/outdoor_events_layout.xml" value="0.25" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/popular_event_layout.xml" value="0.1" />
++        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/outdoor_events_layout.xml" value="0.1" />
+         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streaming_seeall_item_layout.xml" value="0.14" />
+         <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streamingevents_layout.xml" value="0.1" />
+         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/drawable/bookmyshow_logo.xml" value="0.2703125" />
+@@ -117,11 +92,10 @@
+         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/outdoor_event_layout.xml" value="0.25025641025641027" />
+         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/payment_success.xml" value="0.25416666666666665" />
+         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/select_ticket_quantity.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/BookMyShowFinal/app/src/main/res/layout/streamingevents_layout.xml" value="0.25" />
+       </map>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="11" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: app/src/main/java/com/example/bookmyshow/Home/cProfile/UserDetailsActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.bookmyshow.Home.cProfile;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.os.Bundle;\r\nimport android.widget.EditText;\r\nimport android.widget.ImageView;\r\nimport android.widget.TextView;\r\n\r\nimport com.bumptech.glide.Glide;\r\nimport com.example.bookmyshow.R;\r\nimport com.google.firebase.auth.FirebaseAuth;\r\nimport com.google.firebase.auth.FirebaseUser;\r\n\r\npublic class UserDetailsActivity extends AppCompatActivity {\r\n    private FirebaseAuth mAuth;\r\n    private EditText userName, userEmail, userMobileNumber;\r\n    private ImageView userImage;\r\n\r\n    @Override\r\n    protected void onStart() {\r\n        super.onStart();\r\n        FirebaseUser user = mAuth.getCurrentUser();\r\n        userName.setText(user.getDisplayName());\r\n        userEmail.setText(user.getEmail());\r\n        userMobileNumber.setText(user.getPhoneNumber());\r\n        Glide.with(userImage).load(user.getPhotoUrl()).into(userImage);\r\n    }\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_user_details);\r\n        mAuth = FirebaseAuth.getInstance();\r\n        userName = findViewById(R.id.etUserName);\r\n        userEmail = findViewById(R.id.etUserEmail);\r\n        userMobileNumber = findViewById(R.id.etUserMobileNumber);\r\n        userImage = findViewById(R.id.ivUserImage);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/bookmyshow/Home/cProfile/UserDetailsActivity.java b/app/src/main/java/com/example/bookmyshow/Home/cProfile/UserDetailsActivity.java
+--- a/app/src/main/java/com/example/bookmyshow/Home/cProfile/UserDetailsActivity.java	(revision c06402bbfa82901a2999b453ef4abedfc7c71909)
++++ b/app/src/main/java/com/example/bookmyshow/Home/cProfile/UserDetailsActivity.java	(date 1629995213446)
+@@ -5,7 +5,6 @@
+ import android.os.Bundle;
+ import android.widget.EditText;
+ import android.widget.ImageView;
+-import android.widget.TextView;
+ 
+ import com.bumptech.glide.Glide;
+ import com.example.bookmyshow.R;
+Index: app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.bookmyshow.Home.bBuzz;\r\n\r\nimport android.content.Context;\r\nimport android.content.Intent;\r\nimport android.view.LayoutInflater;\r\nimport android.view.View;\r\nimport android.view.ViewGroup;\r\nimport android.widget.ImageView;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport com.example.bookmyshow.Home.bBuzz.Network.models.Article;\r\nimport com.example.bookmyshow.R;\r\n\r\nimport java.util.List;\r\n\r\npublic class BuzzAdapter extends RecyclerView.Adapter<BuzzViewHolder> {\r\n\r\n    private Context context;\r\n    private List<Article> buzzList;\r\n    private ImageView buzzShare;\r\n\r\n    public BuzzAdapter(Context context, List<Article> bList) {\r\n        this.buzzList = bList;\r\n        this.context = context;\r\n    }\r\n\r\n    @NonNull\r\n    @Override\r\n    public BuzzViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {\r\n        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.buzz_item_layout, parent, false);\r\n        buzzShare = view.findViewById(R.id.ivBuzzShareIcon);\r\n        return new BuzzViewHolder(view);\r\n    }\r\n\r\n    @Override\r\n    public void onBindViewHolder(@NonNull BuzzViewHolder holder, int position) {\r\n        holder.setData(buzzList.get(position));\r\n        String tittle = buzzList.get(position).getTitle();\r\n        String url = buzzList.get(position).getUrl();\r\n        buzzShare.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                Intent intent = new Intent(Intent.ACTION_SEND);\r\n                intent.putExtra(Intent.EXTRA_TEXT,\r\n                        tittle +\r\n                                \" -\\n\\n\" + url + \"\\n\\n\" + \"~ via BookMyShow Buzz \\uD83D\\uDCE3\");\r\n                intent.setType(\"text/plain\");\r\n                context.startActivity(Intent.createChooser(intent, \"Send To\"));\r\n            }\r\n        });\r\n    }\r\n\r\n    @Override\r\n    public int getItemCount() {\r\n        return buzzList.size();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzAdapter.java b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzAdapter.java
+--- a/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzAdapter.java	(revision c06402bbfa82901a2999b453ef4abedfc7c71909)
++++ b/app/src/main/java/com/example/bookmyshow/Home/bBuzz/BuzzAdapter.java	(date 1629995498764)
+@@ -2,15 +2,18 @@
+ 
+ import android.content.Context;
+ import android.content.Intent;
++import android.os.Bundle;
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
+ import android.widget.ImageView;
++import android.widget.RelativeLayout;
+ 
+ import androidx.annotation.NonNull;
+ import androidx.recyclerview.widget.RecyclerView;
+ 
+ import com.example.bookmyshow.Home.bBuzz.Network.models.Article;
++import com.example.bookmyshow.Home.bBuzz.News.NewsDetailViewActivity;
+ import com.example.bookmyshow.R;
+ 
+ import java.util.List;
+@@ -20,6 +23,7 @@
+     private Context context;
+     private List<Article> buzzList;
+     private ImageView buzzShare;
++    private RelativeLayout hBuzzItemLayoutRelativeLayout;
+ 
+     public BuzzAdapter(Context context, List<Article> bList) {
+         this.buzzList = bList;
+@@ -31,6 +35,7 @@
+     public BuzzViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.buzz_item_layout, parent, false);
+         buzzShare = view.findViewById(R.id.ivBuzzShareIcon);
++        hBuzzItemLayoutRelativeLayout = view.findViewById(R.id.buzzItemLayoutRelativeLayout);
+         return new BuzzViewHolder(view);
+     }
+ 
+@@ -50,6 +55,16 @@
+                 context.startActivity(Intent.createChooser(intent, "Send To"));
+             }
+         });
++        hBuzzItemLayoutRelativeLayout.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View v) {
++                Bundle bundle = new Bundle();
++                bundle.putString("tittle", tittle);
++                Intent intent = new Intent(context, NewsDetailViewActivity.class);
++                intent.putExtra("data", bundle);
++                context.startActivity(intent);
++            }
++        });
+     }
+ 
+     @Override
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\nbuildscript {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n        mavenCentral()\r\n        maven{\r\n            url \"https://jitpack.io\"\r\n        }\r\n    }\r\n    dependencies {\r\n        classpath 'com.android.tools.build:gradle:7.0.0'\r\n        classpath 'com.google.gms:google-services:4.3.10'\r\n\r\n        // NOTE: Do not place your application dependencies here; they belong\r\n        // in the individual module build.gradle files\r\n    }\r\n}\r\ntask clean(type: Delete) {\r\n    delete rootProject.buildDir\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+--- a/build.gradle	(revision c06402bbfa82901a2999b453ef4abedfc7c71909)
++++ b/build.gradle	(date 1629992822624)
+@@ -9,7 +9,7 @@
+         }
+     }
+     dependencies {
+-        classpath 'com.android.tools.build:gradle:7.0.0'
++        classpath 'com.android.tools.build:gradle:7.0.1'
+         classpath 'com.google.gms:google-services:4.3.10'
+ 
+         // NOTE: Do not place your application dependencies here; they belong
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.bookmyshow\">\r\n\r\n    <uses-permission android:name=\"android.permission.INTERNET\" />\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:hardwareAccelerated=\"false\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:largeHeap=\"true\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.BookMyShow\">\r\n        <activity\r\n            android:name=\".Home.aMyHome.SportActivity\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".Home.aMyHome.PopularActivity\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".Home.aMyHome.LaughterActivity\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".Home.aMyHome.OutdoorEventsActivity\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".Home.cProfile.UserDetailsActivity\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".RegisterEvent.SelectDate\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".RegisterEvent.RegisterEvent\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".Home.aMyHome.StreamingSeeAllActivity\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".Home.HomeActivity\"\r\n            android:exported=\"true\"\r\n            android:theme=\"@style/Theme.AppCompat.DayNight.NoActionBar\" />\r\n        <activity\r\n            android:name=\".LoginScreen\"\r\n            android:exported=\"true\"\r\n            android:theme=\"@style/Theme.AppCompat.DayNight.NoActionBar\" />\r\n        <activity\r\n            android:name=\".SelectLanguage\"\r\n            android:exported=\"true\"\r\n            android:theme=\"@style/Theme.AppCompat.DayNight.NoActionBar\" />\r\n        <activity\r\n            android:name=\".MainActivity\"\r\n            android:exported=\"true\"\r\n            android:theme=\"@style/Theme.AppCompat.DayNight.NoActionBar\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n\r\n        <meta-data\r\n            android:name=\"com.facebook.sdk.ApplicationId\"\r\n            android:value=\"@string/facebook_app_id\" />\r\n        <meta-data\r\n            android:name=\"preloaded_fonts\"\r\n            android:resource=\"@array/preloaded_fonts\" />\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision c06402bbfa82901a2999b453ef4abedfc7c71909)
++++ b/app/src/main/AndroidManifest.xml	(date 1629994752445)
+@@ -14,6 +14,9 @@
+         android:supportsRtl="true"
+         android:theme="@style/Theme.BookMyShow">
+         <activity
++            android:name=".Home.bBuzz.News.NewsDetailViewActivity"
++            android:exported="true" />
++        <activity
+             android:name=".Home.aMyHome.SportActivity"
+             android:exported="true" />
+         <activity
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id 'com.android.application'\r\n    id 'com.google.gms.google-services'\r\n}\r\n\r\nandroid {\r\n    compileSdk 30\r\n\r\n    defaultConfig {\r\n        applicationId \"com.example.bookmyshow\"\r\n        minSdk 21\r\n        targetSdk 30\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility JavaVersion.VERSION_1_8\r\n        targetCompatibility JavaVersion.VERSION_1_8\r\n    }\r\n    buildFeatures {\r\n        viewBinding true\r\n    }\r\n}\r\n\r\ndependencies {\r\n\r\n    implementation 'androidx.appcompat:appcompat:1.3.1'\r\n    implementation 'com.google.android.material:material:1.4.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'\r\n    implementation 'androidx.legacy:legacy-support-v4:1.0.0'\r\n    implementation 'androidx.navigation:navigation-fragment:2.3.5'\r\n    implementation 'androidx.navigation:navigation-ui:2.3.5'\r\n    testImplementation 'junit:junit:4.13.2'\r\n    implementation 'com.google.firebase:firebase-auth:21.0.1'\r\n    implementation 'com.google.android.gms:play-services-auth:19.2.0'\r\n    implementation 'androidx.appcompat:appcompat:1.4.0-alpha03'\r\n    testImplementation 'junit:junit:4.13.2'\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.3'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'\r\n\r\n    implementation fileTree(dir: 'libs', include: ['*.jar'])\r\n    //noinspection GradleCompatible\r\n    implementation 'com.android.support:appcompat-v7:23.2.1'\r\n    //noinspection GradleCompatible\r\n    implementation 'com.android.support:design:23.2.1'\r\n    implementation 'com.github.smarteist:autoimageslider:1.4.0'\r\n    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'\r\n    // Import the BoM for the Firebase platform\r\n    implementation platform('com.google.firebase:firebase-bom:28.4.0')\r\n    implementation 'com.facebook.android:facebook-login:[8.1)'\r\n    // Declare the dependency for the Firebase Authentication library\r\n    // When using the BoM, you don't specify versions in Firebase library dependencies\r\n    implementation 'com.google.firebase:firebase-auth'\r\n    implementation \"com.airbnb.android:lottie:3.4.0\"\r\n    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'\r\n    implementation 'com.squareup.retrofit2:retrofit:2.9.0'\r\n    // This library is used by retrofit internally to convert json-pojo and pojo-json\r\n    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'\r\n    //This library is used to observe the API logs, Http status code and the API response\r\n    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'\r\n    implementation 'com.github.bumptech.glide:glide:4.12.0'\r\n    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle b/app/build.gradle
+--- a/app/build.gradle	(revision c06402bbfa82901a2999b453ef4abedfc7c71909)
++++ b/app/build.gradle	(date 1629992760363)
+@@ -39,6 +39,7 @@
+     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+     implementation 'androidx.navigation:navigation-fragment:2.3.5'
+     implementation 'androidx.navigation:navigation-ui:2.3.5'
++    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+     testImplementation 'junit:junit:4.13.2'
+     implementation 'com.google.firebase:firebase-auth:21.0.1'
+     implementation 'com.google.android.gms:play-services-auth:19.2.0'
+Index: app/src/main/res/layout/buzz_item_layout.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\"\r\n    android:layout_margin=\"10dp\"\r\n    android:background=\"@color/white\">\r\n\r\n    <androidx.cardview.widget.CardView\r\n        android:id=\"@+id/cvBuzzImage\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_margin=\"10dp\"\r\n        app:cardCornerRadius=\"8dp\">\r\n\r\n        <ImageView\r\n            android:id=\"@+id/ivBuzzImage\"\r\n            android:layout_width=\"100dp\"\r\n            android:layout_height=\"100dp\"\r\n            android:scaleType=\"centerCrop\" />\r\n    </androidx.cardview.widget.CardView>\r\n\r\n    <ImageView\r\n        android:id=\"@+id/ivBuzzBookmarkIcon\"\r\n        android:layout_width=\"20dp\"\r\n        android:layout_height=\"20dp\"\r\n        android:layout_alignTop=\"@id/cvBuzzImage\"\r\n        android:layout_alignParentRight=\"true\"\r\n        android:layout_marginRight=\"10dp\"\r\n        android:src=\"@drawable/buzz_bookmark_icon\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/tvBuzzTitle\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_above=\"@id/tvBuzzTime\"\r\n        android:layout_alignTop=\"@id/cvBuzzImage\"\r\n        android:layout_marginLeft=\"20dp\"\r\n        android:layout_marginRight=\"10dp\"\r\n        android:layout_marginBottom=\"10dp\"\r\n        android:layout_toStartOf=\"@+id/ivBuzzBookmarkIcon\"\r\n        android:layout_toEndOf=\"@+id/cvBuzzImage\"\r\n        android:layout_toRightOf=\"@id/cvBuzzImage\"\r\n        android:text=\"Title\"\r\n        android:textColor=\"@color/black\"\r\n        android:textSize=\"14sp\"\r\n        android:textStyle=\"bold\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/tvBuzzTime\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_alignBottom=\"@id/cvBuzzImage\"\r\n        android:layout_marginLeft=\"20dp\"\r\n        android:layout_toRightOf=\"@id/cvBuzzImage\"\r\n        android:text=\"1 Day ago\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/ivBuzzShareIcon\"\r\n        android:layout_width=\"20dp\"\r\n        android:layout_height=\"20dp\"\r\n        android:layout_alignRight=\"@id/ivBuzzBookmarkIcon\"\r\n        android:layout_alignBottom=\"@id/cvBuzzImage\"\r\n        android:scaleType=\"centerCrop\"\r\n        android:src=\"@drawable/buzz_share_icon\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/ivBuzzHeartIcon\"\r\n        android:layout_width=\"20dp\"\r\n        android:layout_height=\"20dp\"\r\n        android:layout_alignBottom=\"@id/cvBuzzImage\"\r\n        android:layout_marginRight=\"15dp\"\r\n        android:layout_toLeftOf=\"@id/ivBuzzShareIcon\"\r\n        android:src=\"@drawable/buzz_heart_icon\" />\r\n\r\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/buzz_item_layout.xml b/app/src/main/res/layout/buzz_item_layout.xml
+--- a/app/src/main/res/layout/buzz_item_layout.xml	(revision c06402bbfa82901a2999b453ef4abedfc7c71909)
++++ b/app/src/main/res/layout/buzz_item_layout.xml	(date 1629995213139)
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
++    android:id="@+id/buzzItemLayoutRelativeLayout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_margin="10dp"

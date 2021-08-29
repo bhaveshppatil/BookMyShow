@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.airbnb.android:lottie:3.4.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/484500c069bea8f50a7ba31bb873853b/transformed/jetified-lottie-3.4.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/484500c069bea8f50a7ba31bb873853b/transformed/jetified-lottie-3.4.0/res" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/484500c069bea8f50a7ba31bb873853b/transformed/jetified-lottie-3.4.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/484500c069bea8f50a7ba31bb873853b/transformed/jetified-lottie-3.4.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/com.airbnb.android/lottie/3.4.0/fc9356b6ab72bf1b6f1eba1324567660d7412c82/lottie-3.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/com.airbnb.android/lottie/3.4.0/34b4f88162ae85bcaceeaa65547be69ce9f0b185/lottie-3.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

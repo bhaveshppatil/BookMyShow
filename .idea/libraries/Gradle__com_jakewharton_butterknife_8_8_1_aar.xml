@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jakewharton:butterknife:8.8.1@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/7bafc26a3915db13c0f25420e1d2db5a/transformed/jetified-butterknife-8.8.1/res" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/694a30059627fca77250abc3c912164e/transformed/jetified-butterknife-8.8.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/694a30059627fca77250abc3c912164e/transformed/jetified-butterknife-8.8.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/transforms-3/694a30059627fca77250abc3c912164e/transformed/jetified-butterknife-8.8.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.8.1/9ab020267dec74a72a89e4aa6d04e34a13072f74/butterknife-8.8.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../New folder/bookMyShowPictures/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.8.1/1de300f9b877d30cea69c2ba84a450549f023ab8/butterknife-8.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
