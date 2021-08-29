@@ -145,8 +145,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:backgroundTint="@color/light_red"
-                    android:hint="Card Number"
-                    android:inputType="number" />
+                    android:hint="Card Number" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -160,8 +159,7 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         android:backgroundTint="@color/light_red"
-                        android:hint="Expiry Date"
-                        android:inputType="number" />
+                        android:hint="Expiry Date" />
 
                     <EditText
                         android:layout_width="match_parent"
@@ -179,8 +177,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:backgroundTint="@color/light_red"
-                    android:hint="Card Holder Name"
-                    android:inputType="number" />
+                    android:hint="Card Holder Name" />
 
                 <CheckBox
                     android:layout_width="match_parent"

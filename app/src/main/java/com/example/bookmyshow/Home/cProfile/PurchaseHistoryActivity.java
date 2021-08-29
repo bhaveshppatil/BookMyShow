@@ -130,6 +130,7 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
                             public void onClick(View v) {
                                 setEditEventPurchaseHistoryDataFromFireBase();
                                 editEventLinearLayout.setVisibility(View.GONE);
+                                goToMyHome.setVisibility(View.VISIBLE);
                             }
                         });
                     }
