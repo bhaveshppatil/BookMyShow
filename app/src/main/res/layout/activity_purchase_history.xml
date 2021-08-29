@@ -158,6 +158,184 @@
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/moviePurchaseHistoryEditCancelConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg"
+        app:layout_constraintTop_toBottomOf="@id/purchaseHistoryEditCancelConstraintLayout">
+
+        <ImageView
+            android:id="@+id/ivMoviePurchaseImage"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMoviePurchaseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="Movie Title"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/ivMoviePurchaseImage"
+            app:layout_constraintTop_toTopOf="@id/ivMoviePurchaseImage" />
+
+        <TextView
+            android:id="@+id/tvMoviePurchaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Date"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvMoviePurchaseTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvMoviePurchaseTitle" />
+
+        <TextView
+            android:id="@+id/tvMoviePurchaseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Time"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvMoviePurchaseTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvMoviePurchaseDate" />
+
+        <TextView
+            android:id="@+id/tvMoviePurchaseAmountPaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="AMOUNT PAID"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvMoviePurchaseTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvMoviePurchaseTime" />
+
+        <TextView
+            android:id="@+id/tvMoviePurchasePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Price"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvMoviePurchaseTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvMoviePurchaseAmountPaid" />
+
+        <TextView
+            android:id="@+id/tvMoviePurchaseTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="TICKETS"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/tvMoviePurchaseAmountPaid"
+            app:layout_constraintTop_toTopOf="@id/tvMoviePurchaseAmountPaid" />
+
+        <TextView
+            android:id="@+id/tvMoviePurchaseNoOfTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="No of Tickets"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvMoviePurchaseTickets"
+            app:layout_constraintTop_toBottomOf="@id/tvMoviePurchaseAmountPaid" />
+
+        <LinearLayout
+            android:id="@+id/btnMovieShowHide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@id/tvMoviePurchaseNoOfTickets">
+
+            <Button
+                android:id="@+id/btnMovieEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@color/light_red"
+                android:padding="10dp"
+                android:text="Edit Detail"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnMovieCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@color/light_red"
+                android:padding="10dp"
+                android:text="Cancel Event"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/editEventLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <EditText
+            android:id="@+id/updateEventNoOfTickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Enter Updated No of Tickets" />
+
+        <EditText
+            android:id="@+id/updateEventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Enter Updated Date" />
+
+        <EditText
+            android:id="@+id/updateEventTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Enter Updated Time" />
+
+        <Button
+            android:id="@+id/btnUpdateEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/light_red"
+            android:text="Update"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnGoToMyHome"
         android:layout_width="match_parent"

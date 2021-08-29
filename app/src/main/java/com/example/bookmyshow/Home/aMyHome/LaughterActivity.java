@@ -1,5 +1,6 @@
 package com.example.bookmyshow.Home.aMyHome;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,47 +16,46 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LaughterActivity extends AppCompatActivity {
+public class LaughterActivity extends AppCompatActivity implements EventClickListner {
 
-    private List<EventsModel> eventsModels = new ArrayList<>();
+    private List<EventsModel> eventsModels=new ArrayList<>();
     private EventsAdapter adapter;
     private RecyclerView recyclerView;
 
-    private Runnable runnable = new Runnable() {
+    private Runnable runnable=new Runnable() {
         @Override
         public void run() {
             readjson();
         }
     };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_laughter);
-        recyclerView = findViewById(R.id.recyclerViewLaughter);
-        adapter = new EventsAdapter(eventsModels);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
+        recyclerView=findViewById(R.id.recyclerViewLaughter);
+        adapter=new EventsAdapter(eventsModels,this);
+        GridLayoutManager gridLayoutManager=new GridLayoutManager(this,2);
         startBackground();
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(gridLayoutManager);
     }
 
-    private void startBackground() {
-        Thread thread = new Thread(runnable);
+    private void startBackground(){
+        Thread thread=new Thread(runnable);
         thread.start();
     }
 
     private void readjson() {
         try {
-            InputStream inputStream = this.getAssets().open("laughter.json");
-            int data = inputStream.read();
+            InputStream inputStream=this.getAssets().open("laughter.json");
+            int data=inputStream.read();
 
-            StringBuilder builder = new StringBuilder();
+            StringBuilder builder=new StringBuilder();
 
-            while (data != -1) {
-                char ch = (char) data;
+            while(data!=-1){
+                char ch=(char) data;
                 builder.append(ch);
-                data = inputStream.read();
+                data=inputStream.read();
             }
             buildpojofromjson(builder.toString());
         } catch (Exception e) {
@@ -64,10 +64,9 @@ public class LaughterActivity extends AppCompatActivity {
     }
 
     private void buildpojofromjson(String json) {
-        Type type = new TypeToken<ResponseModel>() {
-        }.getType();
-        ResponseModel responseModel = new Gson().fromJson(json, type);
-        eventsModels = responseModel.getEvents();
+        Type type=new TypeToken<ResponseModel>(){}.getType();
+        ResponseModel responseModel=new Gson().fromJson(json,type);
+        eventsModels=responseModel.getEvents();
         updateUi();
     }
 
@@ -80,4 +79,15 @@ public class LaughterActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void click(EventsModel model, int position) {
+        String image=model.getImages();
+        String name=model.getEventName();
+        String watch=model.getWhereToWatch();
+        Intent intent=new Intent(LaughterActivity.this,ShowItemsActivity.class);
+        intent.putExtra("Image",image);
+        intent.putExtra("EventName",name);
+        intent.putExtra("EventWhereToWatch",watch);
+        startActivity(intent);
+    }
 }

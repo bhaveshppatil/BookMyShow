@@ -46,20 +46,21 @@
             android:id="@+id/view2"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
             android:elevation="12dp"
             android:innerRadius="0dp"
             android:shape="ring"
             android:thicknessRatio="1.9"
-            app:cardCornerRadius="40dp">
+            app:cardCornerRadius="50dp">
 
             <ImageView
                 android:id="@+id/ivUserImage"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
                 android:src="@drawable/profile_top_bar_icon" />
+
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>

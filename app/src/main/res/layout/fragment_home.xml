@@ -8,6 +8,8 @@
     android:orientation="vertical"
     tools:context=".Home.aMyHome.HomeFragment">
 
+    <!--            // top bar It All Starts Here -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -39,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Select Location >"
+            android:text="Get Current Location >"
             android:textColor="@color/white"
             app:layout_constraintLeft_toLeftOf="@id/tvItAllStartsHere"
             app:layout_constraintTop_toBottomOf="@id/tvItAllStartsHere" />
@@ -87,7 +89,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
 
             <!--            //top Horizontal Scroll-->
 
@@ -518,7 +519,8 @@
             <include
                 layout="@layout/games_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp" />
 
 
         </LinearLayout>
