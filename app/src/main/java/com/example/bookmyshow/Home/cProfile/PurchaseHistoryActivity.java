@@ -37,7 +37,7 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
     private LinearLayout eventLinearLayout, movieLinearLayout, editEventLinearLayout;
     private FirebaseUser user;
     private FirebaseAuth mAuth;
-    private String title, mTitle;
+    private String title, mTitle, eventImage, eName, eEmail, eContactNo, stp;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
@@ -125,7 +125,13 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
                         updateEventTime.setText(purchaseDataHelper.getTime());
                         updateEventDate.setText(purchaseDataHelper.getDate());
                         updateEventNoOfTickets.setText(purchaseDataHelper.getTicketQuantity());
-                        setEditEventPurchaseHistoryDataFromFireBase();
+                        updateEvent.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                setEditEventPurchaseHistoryDataFromFireBase();
+                                editEventLinearLayout.setVisibility(View.GONE);
+                            }
+                        });
                     }
 
                     @Override
@@ -165,10 +171,17 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
     private void setEditEventPurchaseHistoryDataFromFireBase() {
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("UserData");
-        DataHelper dataHelper = new DataHelper("", "", "", "", "", "", "", "", "");
-        databaseReference.child(user.getDisplayName()).setValue(dataHelper);
-        eventEditCancelConstraintLayout.setAlpha((float) 0.50);
-        eventLinearLayout.setVisibility(View.GONE);
+        String eventUDate = updateEventDate.getText().toString();
+        String eventUTime = updateEventTime.getText().toString();
+        String eventUNoOfTickets = updateEventNoOfTickets.getText().toString();
+        int tp = Integer.parseInt(stp);
+        String sn = purchaseNoOfTickets.getText().toString();
+        int n = Integer.parseInt(sn);
+        int cn = Integer.parseInt(eventUNoOfTickets);
+        int eventPrice = (tp / n) * cn;
+        String ePrice = String.valueOf(eventPrice);
+        DataHelper dataHelper2 = new DataHelper(eName, eEmail, eContactNo, purchaseTitle.getText().toString(), eventUDate, eventUTime, eventUNoOfTickets, ePrice, eventImage);
+        databaseReference.child(user.getDisplayName()).setValue(dataHelper2);
     }
 
     private void setCancelMoviePurchaseHistoryDataFromFireBase() {
@@ -197,11 +210,16 @@ public class PurchaseHistoryActivity extends AppCompatActivity {
                 GenericTypeIndicator<PurchaseDataHelper> genericTypeIndicator = new GenericTypeIndicator<PurchaseDataHelper>() {
                 };
                 PurchaseDataHelper purchaseDataHelper = snapshot.getValue(genericTypeIndicator);
+                eName = purchaseDataHelper.getName();
+                eEmail = purchaseDataHelper.getEmail();
+                eContactNo = purchaseDataHelper.getContact();
                 purchaseTitle.setText(purchaseDataHelper.getEventName());
                 purchaseDate.setText(purchaseDataHelper.getDate());
                 purchaseTime.setText(purchaseDataHelper.getTime());
                 purchasePrice.setText("₹ " + purchaseDataHelper.getPrice());
+                stp = purchaseDataHelper.getPrice();
                 purchaseNoOfTickets.setText(purchaseDataHelper.getTicketQuantity());
+                eventImage = purchaseDataHelper.getImageUrl();
                 Glide.with(purchaseImage).load(purchaseDataHelper.getImageUrl()).into(purchaseImage);
                 title = purchaseDataHelper.getEventName();
                 if (title.length() == 0) {

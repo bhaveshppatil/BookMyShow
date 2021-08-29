@@ -203,7 +203,7 @@ public class HomeFragment extends Fragment {
                 default:
                     locationAddress = null;
             }
-            hLocation.setText(locationAddress + " >");
+            hLocation.setText(locationAddress);
         }
     }
 
