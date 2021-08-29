@@ -42,7 +42,7 @@ public class RegisterEvent extends AppCompatActivity {
         btnInterested.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(RegisterEvent.this, "Thank You For Showing Interest " + R.drawable.ic_baseline_thumb_up_24, Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterEvent.this, "Thank You For Showing Interest ", Toast.LENGTH_SHORT).show();
             }
         });
 
