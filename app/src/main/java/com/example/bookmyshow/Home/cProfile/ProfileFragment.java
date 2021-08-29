@@ -39,6 +39,7 @@ public class ProfileFragment extends Fragment {
     private void initViews(View view) {
         profileViewBar = view.findViewById(R.id.vTopBarProfile);
         pPurchaseHistoryBar = view.findViewById(R.id.purchaseHistoryBar);
+
         profileViewBar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +47,7 @@ public class ProfileFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         pPurchaseHistoryBar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

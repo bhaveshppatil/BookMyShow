@@ -10,6 +10,7 @@ import com.bumptech.glide.Glide;
 import com.example.bookmyshow.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class UserDetailsActivity extends AppCompatActivity {
 
@@ -41,5 +42,4 @@ public class UserDetailsActivity extends AppCompatActivity {
         userMobileNumber = findViewById(R.id.etUserMobileNumber);
         userImage = findViewById(R.id.ivUserImage);
     }
-
 }

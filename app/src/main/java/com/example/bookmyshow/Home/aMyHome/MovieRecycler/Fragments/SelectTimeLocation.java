@@ -1,6 +1,7 @@
 package com.example.bookmyshow.Home.aMyHome.MovieRecycler.Fragments;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -63,6 +64,7 @@ public class SelectTimeLocation extends AppCompatActivity implements ClickListen
 
                                 etDate.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
                                 recyclerViewCard.setVisibility(View.VISIBLE);
+
                                 databaseReference.child("Ticket").setValue(etDate.getText().toString());
 
                             }
@@ -102,6 +104,7 @@ public class SelectTimeLocation extends AppCompatActivity implements ClickListen
 
         TermsAndConditionFragment termsAndConditionFragment = new TermsAndConditionFragment();
         termsAndConditionFragment.show(getSupportFragmentManager(), "TermsAndCondition");
+
     }
 }
 

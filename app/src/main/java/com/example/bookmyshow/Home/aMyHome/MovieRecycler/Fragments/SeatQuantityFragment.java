@@ -12,16 +12,19 @@ import android.widget.TableLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.bookmyshow.Home.aMyHome.MovieRecycler.MovieDataHelper;
 import com.example.bookmyshow.R;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class SeatQuantityFragment extends BottomSheetDialogFragment implements View.OnClickListener {
+
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     int click = 0;
     int totalPrice = 220;
+    private MovieDataHelper movieDataHelper;
     private TableLayout tableLayout;
     private ImageView ivVehicle;
     private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btnSeatQuantity;
@@ -77,8 +80,9 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
         switch (v.getId()) {
 
             case R.id.seat1:
-                databaseReference.child("Total Price").setValue(totalPrice);
-                databaseReference.child("Seat Quantity").setValue(1);
+                movieDataHelper = new MovieDataHelper("https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzklICAxNmsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00117102-gukaentnqs-portrait.jpg", "Bell Bottom", totalPrice + "", 1 + "", "05-09-2021");
+                databaseReference.child("Ticket").setValue(movieDataHelper);
+
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.bicycle);
                     btn1.setBackgroundColor(Color.parseColor("#C62222"));
@@ -90,8 +94,10 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
                 click++;
                 break;
             case R.id.seat2:
-                databaseReference.child("Total Price").setValue(totalPrice * 2);
-                databaseReference.child("Seat Quantity").setValue(2);
+
+                movieDataHelper = new MovieDataHelper("https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzklICAxNmsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00117102-gukaentnqs-portrait.jpg", "Bell Bottom", totalPrice + "", 1 + "", "05-09-2021");
+                databaseReference.child("Ticket").setValue(movieDataHelper);
+
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.motorcycle);
                     btn2.setBackgroundColor(Color.parseColor("#C62222"));
@@ -103,8 +109,9 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
                 click++;
                 break;
             case R.id.seat3:
-                databaseReference.child("Total Price").setValue(totalPrice * 3);
-                databaseReference.child("Seat Quantity").setValue(3);
+                movieDataHelper = new MovieDataHelper("https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzklICAxNmsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00117102-gukaentnqs-portrait.jpg", "Bell Bottom", totalPrice * 2 + "", 2 + "", "05-09-2021");
+                databaseReference.child("Ticket").setValue(movieDataHelper);
+
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.rickshaw);
                     btn3.setBackgroundColor(Color.parseColor("#C62222"));
@@ -117,8 +124,9 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
 
                 break;
             case R.id.seat4:
-                databaseReference.child("Total Price").setValue(totalPrice * 4);
-                databaseReference.child("Seat Quantity").setValue(4);
+
+                movieDataHelper = new MovieDataHelper("https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzklICAxNmsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00117102-gukaentnqs-portrait.jpg", "Bell Bottom", totalPrice * 4 + "", 4 + "", "05-09-2021");
+                databaseReference.child("Ticket").setValue(movieDataHelper);
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.baby_car);
                     btn4.setBackgroundColor(Color.parseColor("#C62222"));
@@ -130,8 +138,9 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
                 click++;
                 break;
             case R.id.seat5:
-                databaseReference.child("Total Price").setValue(totalPrice * 5);
-                databaseReference.child("Seat Quantity").setValue(5);
+                movieDataHelper = new MovieDataHelper("https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzklICAxNmsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00117102-gukaentnqs-portrait.jpg", "Bell Bottom", totalPrice * 5 + "", 5 + "", "05-09-2021");
+                databaseReference.child("Ticket").setValue(movieDataHelper);
+
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.bus);
                     btn5.setBackgroundColor(Color.parseColor("#C62222"));
@@ -144,8 +153,10 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
 
                 break;
             case R.id.seat6:
-                databaseReference.child("Total Price").setValue(totalPrice * 6);
-                databaseReference.child("Seat Quantity").setValue(6);
+
+                movieDataHelper = new MovieDataHelper("https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzklICAxNmsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00117102-gukaentnqs-portrait.jpg", "Bell Bottom", totalPrice * 6 + "", 6 + "", "05-09-2021");
+                databaseReference.child("Ticket").setValue(movieDataHelper);
+
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.bus);
                     btn6.setBackgroundColor(Color.parseColor("#C62222"));
@@ -158,8 +169,8 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
 
                 break;
             case R.id.seat7:
-                databaseReference.child("Total Price").setValue(totalPrice * 7);
-                databaseReference.child("Seat Quantity").setValue(7);
+                movieDataHelper = new MovieDataHelper("https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzklICAxNmsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00117102-gukaentnqs-portrait.jpg", "Bell Bottom", totalPrice * 7 + "", 7 + "", "05-09-2021");
+                databaseReference.child("Ticket").setValue(movieDataHelper);
 
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.sedan);
@@ -173,8 +184,9 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
 
                 break;
             case R.id.seat8:
-                databaseReference.child("Total Price").setValue(totalPrice * 8);
-                databaseReference.child("Seat Quantity").setValue(8);
+                movieDataHelper = new MovieDataHelper("https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzklICAxNmsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00117102-gukaentnqs-portrait.jpg", "Bell Bottom", totalPrice * 8 + "", 8 + "", "05-09-2021");
+                databaseReference.child("Ticket").setValue(movieDataHelper);
+
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.bus);
                     btn8.setBackgroundColor(Color.parseColor("#C62222"));
@@ -187,9 +199,11 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
 
                 break;
             case R.id.seat9:
+                movieDataHelper = new MovieDataHelper("https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzklICAxNmsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00117102-gukaentnqs-portrait.jpg", "Bell Bottom", totalPrice * 9 + "", 9 + "", "05-09-2021");
+                databaseReference.child("Ticket").setValue(movieDataHelper);
+
                 if (click % 2 == 0) {
-                    databaseReference.child("Total Price").setValue(totalPrice * 9);
-                    databaseReference.child("Seat Quantity").setValue(9);
+
                     ivVehicle.setImageResource(R.drawable.bus);
                     btn9.setBackgroundColor(Color.parseColor("#C62222"));
                     btn9.setTextColor(Color.parseColor("#FFFFFF"));
@@ -201,8 +215,9 @@ public class SeatQuantityFragment extends BottomSheetDialogFragment implements V
 
                 break;
             case R.id.seat10:
-                databaseReference.child("Total Price").setValue(totalPrice * 10);
-                databaseReference.child("Seat Quantity").setValue(10);
+                movieDataHelper = new MovieDataHelper("https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzklICAxNmsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00117102-gukaentnqs-portrait.jpg", "Bell Bottom", totalPrice * 10 + "", 10 + "", "05-09-2021");
+                databaseReference.child("Ticket").setValue(movieDataHelper);
+
                 if (click % 2 == 0) {
                     ivVehicle.setImageResource(R.drawable.bus);
                     btn10.setBackgroundColor(Color.parseColor("#C62222"));
