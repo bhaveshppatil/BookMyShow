@@ -2,7 +2,9 @@
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,10 +24,10 @@
                 android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/mic"
-                app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
-                app:strokeWidth="10dp" />
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/mic"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -56,10 +58,10 @@
                 android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/digitalmarketing"
-                app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
-                app:strokeWidth="10dp" />
+                app:strokeWidth="10dp"
+                android:src="@drawable/digitalmarketing"
+                app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -90,10 +92,10 @@
                 android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/vipulgoyal"
-                app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
-                app:strokeWidth="10dp" />
+                app:strokeWidth="10dp"
+                android:src="@drawable/vipulgoyal"
+                app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -125,9 +127,9 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/datascience"
-                app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
-                app:strokeWidth="10dp" />
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -158,10 +160,10 @@
                 android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/standupcomedy"
-                app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
-                app:strokeWidth="10dp" />
+                app:strokeWidth="10dp"
+                android:src="@drawable/standupcomedy"
+                app:shapeAppearanceOverlay="@style/RoundImage" />
 
             <TextView
                 android:layout_width="wrap_content"

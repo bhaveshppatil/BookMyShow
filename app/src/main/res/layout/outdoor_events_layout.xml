@@ -1,183 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:orientation="horizontal">
-
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="140dp"
                 android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/jawaharlal"
-                app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
-                app:strokeWidth="10dp" />
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/jawaharlal"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
                 android:text="Jawaharlal Nehru\nPlanetarium"
+                android:textSize="15dp"
                 android:textColor="@color/black"
-                android:textSize="15dp" />
-
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
                 android:text="Jawaharlal Nehru.."
+                android:textSize="12dp"
                 android:textColor="#353935"
-                android:textSize="12dp" />
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="140dp"
                 android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/clubnight"
-                app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
-                app:strokeWidth="10dp" />
-
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/clubnight"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
                 android:text="CLUB NIGHTS"
+                android:textSize="15dp"
                 android:textColor="@color/black"
-                android:textSize="15dp" />
-
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
                 android:text="IndigoXP :Bengaluru"
+                android:textSize="12dp"
                 android:textColor="#353935"
-                android:textSize="12dp" />
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="140dp"
                 android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/mystory"
-                app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
-                app:strokeWidth="10dp" />
-
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/mystory"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
                 android:text="Mystery Rooms-\nBangalore"
+                android:textSize="15dp"
                 android:textColor="@color/black"
-                android:textSize="15dp" />
-
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
                 android:text="Mystery Rooms.."
+                android:textSize="12dp"
                 android:textColor="#353935"
-                android:textSize="12dp" />
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="140dp"
                 android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/sitdown"
-                app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
-                app:strokeWidth="10dp" />
-
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/sitdown"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
                 android:text="Sit Down Buffet \nSultans"
+                android:textSize="15dp"
                 android:textColor="@color/black"
-                android:textSize="15dp" />
-
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
                 android:text="Restaurant(Koraman..."
+                android:textSize="12dp"
                 android:textColor="#353935"
-                android:textSize="12dp" />
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="140dp"
                 android:layout_height="220dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/wonderala"
-                app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
-                app:strokeWidth="10dp" />
-
+                app:strokeWidth="10dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:src="@drawable/wonderala"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
                 android:text="Wonderala Park \nAmusement..."
+                android:textSize="15dp"
                 android:textColor="@color/black"
-                android:textSize="15dp" />
-
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
                 android:text="Park Bangalore..."
+                android:textSize="12dp"
                 android:textColor="#353935"
-                android:textSize="12dp" />
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
 
     </LinearLayout>
