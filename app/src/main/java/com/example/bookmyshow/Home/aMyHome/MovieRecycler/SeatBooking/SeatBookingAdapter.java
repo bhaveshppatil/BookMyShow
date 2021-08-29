@@ -9,11 +9,11 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bookmyshow.R;
-import com.example.bookmyshow.RegisterEvent.TicketDetailsFragment;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.List;
 
@@ -47,10 +47,12 @@ public class SeatBookingAdapter extends RecyclerView.Adapter<seatViewHolder> {
 }
 
 class seatViewHolder extends RecyclerView.ViewHolder {
+
     private SeatClickListener clickListener;
-    private int countSeat = 0;
+    private int countSeat = 1;
     private FragmentManager fragmentManager;
     private TextView tvSeatNumber;
+    private Button btnPaymentMovie;
 
     public seatViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -59,10 +61,10 @@ class seatViewHolder extends RecyclerView.ViewHolder {
 
     public void setSeatNumber(SeatBookingModel seatNumber, SeatClickListener clickListener) {
         tvSeatNumber.setText(seatNumber.getSeatNumber() + "");
+
         tvSeatNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                countSeat++;
                 tvSeatNumber.setBackgroundColor(Color.parseColor("#EC5E71"));
                 tvSeatNumber.setTextColor(Color.parseColor("#FFFFFF"));
             }

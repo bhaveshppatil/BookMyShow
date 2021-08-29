@@ -1,6 +1,7 @@
 package com.example.bookmyshow.RegisterEvent;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,19 +15,19 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.bookmyshow.R;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 
 public class RegistrationFragment extends Fragment {
 
-    private FirebaseAuth mAuth;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     String date, quantity, price;
+    private FirebaseAuth mAuth;
     private Button btnNextContact;
     private EditText etName, etEmail, etContact;
     private FragmentCommunication communication;
@@ -81,7 +82,8 @@ public class RegistrationFragment extends Fragment {
                 if (name.length() >= 1 && email.matches(emailPattern) && contactNum.length() == 10) {
                     DataHelper dataHelper = new DataHelper(name, email, contactNum, eventName, date, time, quantity, price, imageUrl);
                     databaseReference.child(userName).setValue(dataHelper);
-                    communication.launchRegistrationFrag(bundle);
+                    Intent intent = new Intent(getContext(), EventsDetails.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getContext(), "Please check information again", Toast.LENGTH_SHORT).show();
                 }
@@ -95,11 +97,4 @@ public class RegistrationFragment extends Fragment {
         etContact = view.findViewById(R.id.etContact);
         etName = view.findViewById(R.id.etName);
     }
-
-    @Override
-    public void onAttach(@NonNull Context context) {
-        super.onAttach(context);
-        communication = (FragmentCommunication) context;
-    }
-
 }

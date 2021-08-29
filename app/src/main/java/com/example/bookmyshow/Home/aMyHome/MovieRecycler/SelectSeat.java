@@ -1,6 +1,8 @@
 package com.example.bookmyshow.Home.aMyHome.MovieRecycler;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,23 +10,28 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.Fragments.SeatQuantityFragment;
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatBookingAdapter;
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatBookingModel;
 import com.example.bookmyshow.Home.aMyHome.MovieRecycler.SeatBooking.SeatClickListener;
 import com.example.bookmyshow.R;
+import com.example.bookmyshow.RegisterEvent.EventsDetails;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SelectSeat extends AppCompatActivity implements SeatClickListener {
     private RecyclerView recyclerView, normalRecyclerView;
+
     private List<SeatBookingModel> seatBookingModels = new ArrayList<>();
     private List<SeatBookingModel> seatBookingModelList = new ArrayList<>();
     private SeatClickListener clickListener;
     private Button btnPaymentMovie;
     private FragmentManager fragmentManager;
-
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +44,14 @@ public class SelectSeat extends AppCompatActivity implements SeatClickListener {
         recyclerView = findViewById(R.id.seatRecyclerView);
         btnPaymentMovie = findViewById(R.id.btnMoviePayment);
         normalRecyclerView = findViewById(R.id.seatNormalRecyclerView);
+
+        btnPaymentMovie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SelectSeat.this, EventsDetails.class);
+                startActivity(intent);
+            }
+        });
 
         buildData();
         buildNormalSeatData();
@@ -75,6 +90,5 @@ public class SelectSeat extends AppCompatActivity implements SeatClickListener {
 
     @Override
     public void OnItemClick(SeatBookingModel bookingModel, int position) {
-
     }
 }
