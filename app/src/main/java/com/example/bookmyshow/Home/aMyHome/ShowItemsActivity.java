@@ -22,12 +22,13 @@ public class ShowItemsActivity extends AppCompatActivity {
         image=findViewById(R.id.imageView);
         eventName=findViewById(R.id.txtEventName);
         whereToWatch=findViewById(R.id.txtWhereToWatch);
-        Intent intent=getIntent();
-        String image1=intent.getStringExtra("Image");
-        String name=intent.getStringExtra("EventName");
-        String watch=intent.getStringExtra("EventWhereToWatch");
-        Glide.with(image).load(image1).into(image);
-        eventName.setText(name);
-        whereToWatch.setText(watch);
+
+//        Intent intent=getIntent();
+//        String image1=intent.getStringExtra("Image");
+//        String name=intent.getStringExtra("EventName");
+//        String watch=intent.getStringExtra("EventWhereToWatch");
+//        Glide.with(image).load(image1).into(image);
+//        eventName.setText(name);
+//        whereToWatch.setText(watch);
     }
 }

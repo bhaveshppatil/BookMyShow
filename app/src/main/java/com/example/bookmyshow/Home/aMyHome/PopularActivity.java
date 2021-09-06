@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bookmyshow.R;
+import com.example.bookmyshow.RegisterEvent.RegisterEvent;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -57,13 +58,13 @@ public class PopularActivity extends AppCompatActivity implements EventClickList
                 builder.append(ch);
                 data=inputStream.read();
             }
-            buildpojofromjson(builder.toString());
+            buildPojoFromJson(builder.toString());
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private void buildpojofromjson(String json) {
+    private void buildPojoFromJson(String json) {
         Type type=new TypeToken<ResponseModel>(){}.getType();
         ResponseModel responseModel=new Gson().fromJson(json,type);
         eventsModels=responseModel.getEvents();
@@ -84,8 +85,11 @@ public class PopularActivity extends AppCompatActivity implements EventClickList
         String image=model.getImages();
         String name=model.getEventName();
         String watch=model.getWhereToWatch();
-        Intent intent=new Intent(PopularActivity.this,ShowItemsActivity.class);
+        String price = model.getPrice();
+
+        Intent intent=new Intent(PopularActivity.this, RegisterEvent.class);
         intent.putExtra("Image",image);
+        intent.putExtra("price", price);
         intent.putExtra("EventName",name);
         intent.putExtra("EventWhereToWatch",watch);
         startActivity(intent);

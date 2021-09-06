@@ -10,20 +10,32 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bumptech.glide.Glide;
 import com.example.bookmyshow.R;
 
 public class RegisterEvent extends AppCompatActivity {
 
     private Button btnRegister, btnInterested;
-    private TextView tvLike, tvShowTerms;
-    private ImageView ivTermsArrow;
-    private int countLike = 21, termsCount = 0;
+    private TextView tvLike, tvShowTerms, tvEventName, tvprice;
+    private ImageView ivTermsArrow, ivEventBanner;
+    private int countLike = 20, termsCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_event);
         initViews();
+
+        Intent intent = getIntent();
+        String imagePath = intent.getStringExtra("Image");
+        String eventName = intent.getStringExtra("EventName");
+        String price = intent.getStringExtra("price");
+        String EventWhereToWatch = intent.getStringExtra("EventWhereToWatch");
+
+        Glide.with(ivEventBanner).load(imagePath).into(ivEventBanner);
+        tvEventName.setText(eventName);
+        tvprice.setText(price);
+
 
         tvLike.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,8 +83,11 @@ public class RegisterEvent extends AppCompatActivity {
         btnInterested = findViewById(R.id.btnInterested);
         btnRegister = findViewById(R.id.btnRegister);
         tvLike = findViewById(R.id.tvLike);
+        tvprice = findViewById(R.id.tvPrice);
         tvShowTerms = findViewById(R.id.tvShowTerms);
         ivTermsArrow = findViewById(R.id.ivTermsConditions);
+        ivEventBanner = findViewById(R.id.ivEventBanner);
+        tvEventName = findViewById(R.id.tvEventName);
     }
 
 }

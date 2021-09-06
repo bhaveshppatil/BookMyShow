@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bookmyshow.R;
+import com.example.bookmyshow.RegisterEvent.RegisterEvent;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -84,11 +85,15 @@ public class StreamingSeeAllActivity extends AppCompatActivity implements EventC
     public void click(EventsModel model, int position) {
         String image=model.getImages();
         String name=model.getEventName();
+        String price = model.getPrice();
         String watch=model.getWhereToWatch();
-        Intent intent=new Intent(StreamingSeeAllActivity.this,ShowItemsActivity.class);
+        Intent intent=new Intent(StreamingSeeAllActivity.this, RegisterEvent.class);
+
         intent.putExtra("Image",image);
         intent.putExtra("EventName",name);
+        intent.putExtra("price", price);
         intent.putExtra("EventWhereToWatch",watch);
+
         startActivity(intent);
     }
 }

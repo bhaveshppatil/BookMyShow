@@ -106,9 +106,12 @@
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/select_ticket_quantity.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/Android Project/BookMyShow2/app/src/main/res/layout/streamingevents_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/drawable/btnshape.xml" value="0.2703125" />
+        <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_events_details.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_payment_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_register_event.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_select_date.xml" value="0.1" />
+        <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_show_items.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/activity_user_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/custom_tab.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Pictures/BookMyShow/app/src/main/res/layout/entertainment_layout.xml" value="0.25416666666666665" />
@@ -125,7 +128,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

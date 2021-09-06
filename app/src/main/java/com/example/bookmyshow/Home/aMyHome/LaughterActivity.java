@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bookmyshow.R;
+import com.example.bookmyshow.RegisterEvent.RegisterEvent;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -84,9 +85,13 @@ public class LaughterActivity extends AppCompatActivity implements EventClickLis
         String image=model.getImages();
         String name=model.getEventName();
         String watch=model.getWhereToWatch();
-        Intent intent=new Intent(LaughterActivity.this,ShowItemsActivity.class);
+        String price = model.getPrice();
+
+        Intent intent=new Intent(LaughterActivity.this, RegisterEvent.class);
+
         intent.putExtra("Image",image);
         intent.putExtra("EventName",name);
+        intent.putExtra("price", price);
         intent.putExtra("EventWhereToWatch",watch);
         startActivity(intent);
     }
