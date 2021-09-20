@@ -59,13 +59,13 @@ public class SelectLanguage extends AppCompatActivity {
                         Toast.makeText(SelectLanguage.this, "Hindi Language Selected", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.marathi:
-                        Toast.makeText(SelectLanguage.this, "Marathi Language Selected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SelectLanguage.this, " Marathi Language Selected", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.tamil:
-                        Toast.makeText(SelectLanguage.this, "Tamil Language Selected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SelectLanguage.this, " Tamil Language Selected", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.telugu:
-                        Toast.makeText(SelectLanguage.this, "Telugu Language Selected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SelectLanguage.this, " Telugu Language Selected", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.kannada:
                         Toast.makeText(SelectLanguage.this, "Kannada Language Selected", Toast.LENGTH_SHORT).show();
