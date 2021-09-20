@@ -1,9 +1,13 @@
 package com.example.bookmyshow;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +20,7 @@ public class SelectLanguage extends AppCompatActivity {
     private Button btnStarted;
     private FirebaseAuth mAuth;
     private FirebaseAuth firebaseAuth;
+    private RadioButton english, hindi, marathi, tamil, kannada, telugu, malayalam;
 
     @Override
     protected void onStart() {
@@ -33,6 +38,44 @@ public class SelectLanguage extends AppCompatActivity {
         setContentView(R.layout.activity_select_language);
         mAuth = FirebaseAuth.getInstance();
         btnStarted = findViewById(R.id.btnStarted);
+        english = findViewById(R.id.english);
+        hindi = findViewById(R.id.hindi);
+        malayalam = findViewById(R.id.malayalam);
+        marathi = findViewById(R.id.marathi);
+        telugu = findViewById(R.id.telugu);
+        kannada = findViewById(R.id.kannada);
+        tamil = findViewById(R.id.tamil);
+
+        RadioGroup radioGroup = findViewById(R.id.radioGroup);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId) {
+                    case R.id.english:
+                        Toast.makeText(SelectLanguage.this, "English Language Selected", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.hindi:
+                        Toast.makeText(SelectLanguage.this, "Hindi Language Selected", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.marathi:
+                        Toast.makeText(SelectLanguage.this, "Marathi Language Selected", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.tamil:
+                        Toast.makeText(SelectLanguage.this, "Tamil Language Selected", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.telugu:
+                        Toast.makeText(SelectLanguage.this, "Telugu Language Selected", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.kannada:
+                        Toast.makeText(SelectLanguage.this, "Kannada Language Selected", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.malayalam:
+                        Toast.makeText(SelectLanguage.this, "Malayalam Language Selected", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+        });
 
         btnStarted.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,5 +85,4 @@ public class SelectLanguage extends AppCompatActivity {
             }
         });
     }
-
 }
