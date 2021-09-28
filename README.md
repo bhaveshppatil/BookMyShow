@@ -1,5 +1,5 @@
 # BookMyShow
-Bookmyshow is an entertainment ticketing platform. Its platform allows users to buy tickets for cinemas, theaters, and sports.
+Bookmyshow is an entertainment ticketing platform. Its a platform which allows users to buy tickets for cinemas, theaters, and sports.
 
 ![WhatsApp Image 2021-09-26 at 12 53 26 AM](https://www.google.com/imgres?imgurl=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fprojects%2F404%2F4898d5117102141.Y3JvcCwyNzI3LDIxMzMsNjAsMA.jpg&imgrefurl=https%3A%2F%2Fwww.behance.net%2Fsearch%2Fprojects%2F%3Fsearch%3Dbookmyshow%26sort%3Drecommended%26time%3Dmonth&tbnid=luAP_RxEcPb0rM&vet=12ahUKEwjcxei1-KDzAhUGhEsFHZ7FALgQMygBegUIARCiAQ..i&docid=HFZyDFzfjhm9nM&w=404&h=316&itg=1&q=bookmyshow%20collage%20%20images%20of%20app&ved=2ahUKEwjcxei1-KDzAhUGhEsFHZ7FALgQMygBegUIARCiAQ)
 
