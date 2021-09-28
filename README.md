@@ -24,7 +24,6 @@ Bookmyshow is an entertainment ticketing platform. Its platform allows users to 
 * Retrofit Library
 * API
 * Videoview
-* Voice search
 * Fragments
 * Navigation
 
