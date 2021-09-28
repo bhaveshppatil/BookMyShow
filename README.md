@@ -53,9 +53,9 @@ Bookmyshow is an entertainment ticketing platform. Its platform allows users to 
 
 * Click on “Clone or download” and copy the URL.
 
-* Use the git clone command along with the copied URL from earlier. $ git clone [BookMyShow]https://github.com/bhaveshppatil/BookMyShow.git
+* Use the git clone command along with the copied URL from earlier. $ git clone [BookMyShow](https://github.com/bhaveshppatil/BookMyShow.git)
 
-* Press Enter. $ git clone [BookMyShow]https://github.com/bhaveshppatil/BookMyShow.git Cloning into Git … remote: Counting objects: 13, done. remote: Compressing objects: 100% (13/13), done. remove: Total 13 (delta 1), reused 0 (delta 1) Unpacking objects: 100% (13/13), done.
+* Press Enter. $ git clone [BookMyShow](https://github.com/bhaveshppatil/BookMyShow.git) Cloning into Git … remote: Counting objects: 13, done. remote: Compressing objects: 100% (13/13), done. remove: Total 13 (delta 1), reused 0 (delta 1) Unpacking objects: 100% (13/13), done.
 
 Congratulations, you have created your first local clone from your remote Github repository.
 
