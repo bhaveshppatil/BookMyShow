@@ -2,7 +2,7 @@
 <h1 align="center"> <img alt="GIF" src="https://github.com/bhaveshppatil/BookMyShow/blob/master/Bookmyshow/bookMyShow.png" width = 200/></h1>
 
 # BookMyShow
-Bookmyshow is an entertainment ticketing platform. Its a platform which allows users to buy tickets for cinemas, theaters, and sports.
+Bookmyshow is India's largest entertainment ticket booking platform. Its a Service which allows users to buy tickets for movies, concerts, live events, sports, activities, and much more.
 
 # Links 
 
