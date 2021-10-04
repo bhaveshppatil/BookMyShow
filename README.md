@@ -1,7 +1,8 @@
+
+<h1 align="center"> <img alt="GIF" src="https://github.com/bhaveshppatil/BookMyShow/blob/master/Bookmyshow/bookMyShow.png" width = 200/></h1>
+
 # BookMyShow
 Bookmyshow is an entertainment ticketing platform. Its a platform which allows users to buy tickets for cinemas, theaters, and sports.
-
-![WhatsApp Image 2021-09-26 at 12 53 26 AM](https://www.google.com/imgres?imgurl=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fprojects%2F404%2F4898d5117102141.Y3JvcCwyNzI3LDIxMzMsNjAsMA.jpg&imgrefurl=https%3A%2F%2Fwww.behance.net%2Fsearch%2Fprojects%2F%3Fsearch%3Dbookmyshow%26sort%3Drecommended%26time%3Dmonth&tbnid=luAP_RxEcPb0rM&vet=12ahUKEwjcxei1-KDzAhUGhEsFHZ7FALgQMygBegUIARCiAQ..i&docid=HFZyDFzfjhm9nM&w=404&h=316&itg=1&q=bookmyshow%20collage%20%20images%20of%20app&ved=2ahUKEwjcxei1-KDzAhUGhEsFHZ7FALgQMygBegUIARCiAQ)
 
 # Links 
 
@@ -31,6 +32,19 @@ Bookmyshow is an entertainment ticketing platform. Its a platform which allows u
 
 * [Android Studio](https://developer.android.com/studio)
 * [Java](https://www.java.com/en/)
+
+# Task-Distribution 
+In Unit 3 construct week project, we got a project BookMyShow with the team members are Reeta Thakur, Murali Krishna. We all are familiar with BookMyShow but On first day we researched more about BookMyShow app and distribute the task to all team members.
+- **[Reeta Thakur](https://github.com/ReetaThakur)** was working on RecyclerView, UI and API.
+- **[Murali Krishna](https://github.com/MuraliKrishnaSundara)** was working on the Splash screen, News Updates & Profile Page.
+- **[Bhavesh Patil](https://github.com/bhaveshppatil)** was working on Social Login page, Integrated Event Booking, and Movie Booking Features.
+
+<h3 align="left">Features we implemented in it. : </h3>
+
+1.	Trying to create UI More Attractive 
+2.	Trying to implement App Setting features
+3.	Find nearest Theater/Event Hall from user current location
+4.	Trying to implement Seat Booking UI
 
 # Clone this Repo To Your System Using Android Studio✨
 
