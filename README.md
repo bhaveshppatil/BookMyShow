@@ -34,19 +34,6 @@ Bookmyshow is India's largest entertainment ticket booking platform. Its a Servi
 * [Android Studio](https://developer.android.com/studio)
 * [Java](https://www.java.com/en/)
 
-# Task-Distribution 
-
-- **[Reeta Thakur](https://github.com/ReetaThakur)** was working on RecyclerView, UI and API.
-- **[Murali Krishna](https://github.com/MuraliKrishnaSundara)** was working on the Splash screen, News Updates & Profile Page.
-- **[Bhavesh Patil](https://github.com/bhaveshppatil)** was working on Social Login page, Integrated Event Booking, and Movie Booking Features.
-
-<h3 align="left">Features we implemented in it. : </h3>
-
-1.	Trying to create UI More Attractive 
-2.	Trying to implement App Setting features
-3.	Find nearest Theater/Event Hall from user current location
-4.	Trying to implement Seat Booking UI
-
 # Clone this Repo To Your System Using Android Studio✨
 
 * Step 1: Open your Android Studio then go to the File > New > Project from Version Control as shown in the below image.
