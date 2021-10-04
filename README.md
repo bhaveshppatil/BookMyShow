@@ -34,7 +34,7 @@ Bookmyshow is an entertainment ticketing platform. Its a platform which allows u
 * [Java](https://www.java.com/en/)
 
 # Task-Distribution 
-In Unit 3 construct week project, we got a project BookMyShow with the team members are Reeta Thakur, Murali Krishna. We all are familiar with BookMyShow but On first day we researched more about BookMyShow app and distribute the task to all team members.
+
 - **[Reeta Thakur](https://github.com/ReetaThakur)** was working on RecyclerView, UI and API.
 - **[Murali Krishna](https://github.com/MuraliKrishnaSundara)** was working on the Splash screen, News Updates & Profile Page.
 - **[Bhavesh Patil](https://github.com/bhaveshppatil)** was working on Social Login page, Integrated Event Booking, and Movie Booking Features.
