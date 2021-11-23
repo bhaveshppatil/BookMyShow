@@ -7,7 +7,7 @@ android {
     compileSdk 30
 
     defaultConfig {
-        applicationId "com.example.bookmyshow"
+        applicationId "com.teamBookMyShow.bookmyshow"
         minSdk 21
         targetSdk 30
         versionCode 1
