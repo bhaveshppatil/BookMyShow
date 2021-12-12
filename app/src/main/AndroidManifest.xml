@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.teamBookMyShow.bookmyshow">
+    package="com.example.bookmyshow">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -17,80 +17,80 @@
         android:theme="@style/Theme.BookMyShow">
 
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.aMyHome.ShowItemsActivity"
+            android:name="com.example.bookmyshow.Home.aMyHome.ShowItemsActivity"
             android:exported="true" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.RegisterEvent.PaymentPage"
+            android:name="com.example.bookmyshow.RegisterEvent.PaymentPage"
             android:exported="true" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.RegisterEvent.EventsDetails"
+            android:name="com.example.bookmyshow.RegisterEvent.EventsDetails"
             android:exported="true" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.cProfile.PurchaseHistoryActivity"
+            android:name="com.example.bookmyshow.Home.cProfile.PurchaseHistoryActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.aMyHome.MovieRecycler.SelectSeat"
+            android:name="com.example.bookmyshow.Home.aMyHome.MovieRecycler.SelectSeat"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.aMyHome.MovieRecycler.Fragments.SelectTimeLocation"
+            android:name="com.example.bookmyshow.Home.aMyHome.MovieRecycler.Fragments.SelectTimeLocation"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.aMyHome.MovieRecycler.BookMovieTicket"
+            android:name="com.example.bookmyshow.Home.aMyHome.MovieRecycler.BookMovieTicket"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.aMyHome.MovieRecycler.Movies"
+            android:name="com.example.bookmyshow.Home.aMyHome.MovieRecycler.Movies"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.aMyHome.SportActivity"
+            android:name="com.example.bookmyshow.Home.aMyHome.SportActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.aMyHome.PopularActivity"
+            android:name="com.example.bookmyshow.Home.aMyHome.PopularActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.aMyHome.LaughterActivity"
+            android:name="com.example.bookmyshow.Home.aMyHome.LaughterActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.aMyHome.OutdoorEventsActivity"
+            android:name="com.example.bookmyshow.Home.aMyHome.OutdoorEventsActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.cProfile.UserDetailsActivity"
+            android:name="com.example.bookmyshow.Home.cProfile.UserDetailsActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.RegisterEvent.SelectDate"
+            android:name="com.example.bookmyshow.RegisterEvent.SelectDate"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.RegisterEvent.RegisterEvent"
+            android:name="com.example.bookmyshow.RegisterEvent.RegisterEvent"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.aMyHome.StreamingSeeAllActivity"
+            android:name="com.example.bookmyshow.Home.aMyHome.StreamingSeeAllActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.Home.HomeActivity"
+            android:name="com.example.bookmyshow.Home.HomeActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.LoginScreen"
+            android:name="com.example.bookmyshow.LoginScreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.SelectLanguage"
+            android:name="com.example.bookmyshow.SelectLanguage"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name="com.teamBookMyShow.bookmyshow.MainActivity"
+            android:name="com.example.bookmyshow.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
