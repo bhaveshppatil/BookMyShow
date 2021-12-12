@@ -1,9 +1,9 @@
 package com.example.bookmyshow.RegisterEvent;
 
-import android.content.Intent;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -13,9 +13,6 @@ import androidx.fragment.app.FragmentManager;
 
 import com.example.bookmyshow.R;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class EventsDetails extends AppCompatActivity {
 
     private Spinner spinner;
@@ -24,12 +21,19 @@ public class EventsDetails extends AppCompatActivity {
     private FragmentCommunication communication;
     private TextView tvEventPrice, tvAmount;
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events_details);
 
-        spinner = findViewById(R.id.spinner);
+        WebView w = (WebView) findViewById(R.id.webView);
+        w.loadUrl("https://in.bookmyshow.com/buytickets/sooryavanshi-hyderabad/movie-hyd-ET00097952-MT/20211105#!seatlayout");
+        w.getSettings().setJavaScriptEnabled(true);
+        w.setWebViewClient(new WebViewClient());
+    }
+
+        /*spinner = findViewById(R.id.spinner);
         btnPayment = findViewById(R.id.btnPayment);
 
         List<String> categories = new ArrayList<String>();
@@ -61,6 +65,5 @@ public class EventsDetails extends AppCompatActivity {
                 Intent intent = new Intent(EventsDetails.this, PaymentPage.class);
                 startActivity(intent);
             }
-        });
-    }
+        });*/
 }
